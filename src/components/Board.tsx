@@ -100,8 +100,8 @@ const Board = () => {
                   className="w-full h-full object-cover"
                 />
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
-                  alt="Macedonian flag"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.svg.png"
+                  alt="German flag"
                   className="absolute bottom-0 right-0 w-8 h-6 rounded-sm shadow-md"
                 />
               </div>
@@ -137,8 +137,8 @@ const Board = () => {
                   className="w-full h-full object-cover"
                 />
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
-                  alt="Macedonian flag"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/800px-Flag_of_Spain.svg.png"
+                  alt="Spanish flag"
                   className="absolute bottom-0 right-0 w-8 h-6 rounded-sm shadow-md"
                 />
               </div>
@@ -159,8 +159,8 @@ const Board = () => {
                   className="w-full h-full object-cover"
                 />
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
-                  alt="Macedonian flag"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/800px-Flag_of_Italy.svg.png"
+                  alt="Italian flag"
                   className="absolute bottom-0 right-0 w-8 h-6 rounded-sm shadow-md"
                 />
               </div>
@@ -207,7 +207,8 @@ const Board = () => {
               className="absolute bottom-0 right-0 w-8 h-6 rounded-sm shadow-md"
             />
           </div>
-          <h4 className="text-xl font-semibold mb-4 text-secondary text-center">{t('marko.name')}</h4>
+          <h4 className="text-xl font-semibold mb-2 text-secondary text-center">{t('marko.name')}</h4>
+          <p className="text-gray-600 mb-4 text-center">{t('executive.director')}</p>
           <p className="text-gray-600 mb-6 text-center">
             {t('manager.description')}
           </p>
