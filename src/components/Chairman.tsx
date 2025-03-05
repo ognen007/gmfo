@@ -10,9 +10,9 @@ const Chairman = () => {
       <div className="md:grid md:grid-cols-2">
         <div className="relative h-64 md:h-auto">
           <img 
-            src="https://media.licdn.com/dms/image/v2/D4E03AQHO6O_g8LUZsw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1666715247443?e=1744848000&v=beta&t=Bd35HTdfGxlKSeR8ZHaZy_c2Nvv1ExqqwqU4emmDm24"
+            src="https://i.ibb.co/nNHh5TGM/74b2e5e8-fb70-4052-b9ef-30e159c06be5.jpg"
             alt="Mirčo Krsteski" 
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-auto object-cover"
           />
         </div>
         
