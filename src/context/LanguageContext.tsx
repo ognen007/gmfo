@@ -45,6 +45,7 @@ const translations = {
     'executive.manager': 'Executive Manager',
     'marko.name': 'Marko Vidachek',
     'manager.description': 'PhD Candidate in Security Sciences, LLM in Constitutional Law and MA in Strategic Communication Management. Lecturer and consultant in the areas of constitutional law, security and strategic communication.',
+    'executive.director': 'Executive Director',
     'contact.position': 'If you are interested in the position of Executive Manager, we invite you to contact us at:',
 
     // Stay Tuned
@@ -170,6 +171,7 @@ const translations = {
     'executive.manager': 'Извршен менаџер',
     'marko.name': 'Марко Видачек',
     'manager.description': 'Кандидат за докторски студии во областа на безбедносните науки, магистер по уставно право и магистер по управување со стратешка комуникација. Предавач и консултант во областите на уставното право, безбедноста и стратешката комуникација.',
+    'executive.director': 'Извршен директор',
     'contact.position': 'Доколку сте заинтересирани за позицијата извршен менаџер, ве покануваме да не контактирате на:',
 
     // Stay Tuned
