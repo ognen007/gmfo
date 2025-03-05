@@ -62,7 +62,7 @@ const Events = () => {
 
           <div className="bg-white rounded-xl overflow-hidden shadow-sm transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
             <img 
-              src="https://scontent-dus1-1.xx.fbcdn.net/v/t39.30808-6/476872400_1052034120284524_749989946685716973_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=EMPmjKAv3VgQ7kNvgEROVU6&_nc_oc=Adip2npzZuDC90bynUGzoy97x5Ttqn34rw9Zy0CESENYTqe8V-jpnLSBKphO5xclp6o&_nc_zt=23&_nc_ht=scontent-dus1-1.xx&_nc_gid=AO9d8RhQ9Fo3sGGVhQWWnA3&oh=00_AYBySuGf7FMDMZyBVeWhJXOaJVjDIbs_5-zMZIRmTjZoXw&oe=67CA4642"
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/8a/cd/29/caption.jpg?w=900&h=500&s=1"
               alt="Educational Programs"
               className="w-full h-48 object-cover"
             />
