@@ -207,8 +207,8 @@ const Board = () => {
               className="absolute bottom-0 right-0 w-8 h-6 rounded-sm shadow-md"
             />
           </div>
-          <h4 className="text-xl font-semibold mb-2 text-secondary text-center">{t('marko.name')}</h4>
-          <p className="text-gray-600 mb-4 text-center">{t('executive.director')}</p>
+          <h4 className="text-xl font-semibold mb-2 text-center">{t('marko.name')}</h4>
+          <p className="text-secondary font-medium mb-4 text-center">{t('executive.director')}</p>
           <p className="text-gray-600 mb-6 text-center">
             {t('manager.description')}
           </p>
