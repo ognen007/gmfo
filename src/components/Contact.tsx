@@ -12,6 +12,7 @@ const Contact = () => {
   const [captchaValue, setCaptchaValue] = React.useState<string | null>(null);
   const [error, setError] = React.useState<string>('');
   const [sending, setSending] = React.useState(false);
+  const recaptchaRef = React.useRef<ReCAPTCHA>(null);
   const { t } = useLanguage();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -32,17 +33,17 @@ const Contact = () => {
         'service_x2c8ued',
         'template_58bqmq6',
         {
-          user_name: formData.get('name'),
-          user_email: formData.get('email'),
-          user_subject: formData.get('subject'),
-          user_message: formData.get('message'),
+          name: formData.get('name'),
+          email: formData.get('email'),
+          subject: formData.get('subject'),
+          message: formData.get('message'),
         },
         'dSJNVJa5OB6GyjC9t'
       );
       
       // Clear form
       e.currentTarget.reset();
-      setCaptchaValue(null);
+      recaptchaRef.current?.reset();
       setError('Message sent successfully!');
     } catch (err) {
       console.error('EmailJS Error:', err);
@@ -178,6 +179,7 @@ const Contact = () => {
             <div className="flex flex-col items-center space-y-4">
               <ReCAPTCHA
                 sitekey="6LfwXMEqAAAAANjAb2QkjYaFKr39iGH7KlkFBrOU"
+                ref={recaptchaRef}
                 onChange={handleCaptchaChange}
                 className="mx-auto"
               />
