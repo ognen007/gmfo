@@ -196,7 +196,7 @@ const Contact = () => {
                 disabled={sending}
                 className="inline-flex justify-center items-center bg-secondary text-white px-10 py-4 rounded-full font-semibold hover:opacity-90 transition-all transform hover:scale-105 hover:shadow-lg group"
               >
-                <span style={{color:"black"}}>{sending ? 'Sending...' : t('send.message')}</span>
+                <span style={{color:"white"}}>{sending ? 'Sending...' : t('send.message')}</span>
                 <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
