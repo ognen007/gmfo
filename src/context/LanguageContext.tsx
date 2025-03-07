@@ -198,7 +198,7 @@ const translations = {
     'message.about': 'За што се однесува вашата порака?',
     'your.message': 'Вашата порака...',
     'captcha.error': 'Ве молиме пополнете ја CAPTCHA верификацијата',
-    "message.sent": "Порака испратена"
+    "message.sent": "Порака испратена",
     
     // Navigation
     'mission': 'Мисија',
