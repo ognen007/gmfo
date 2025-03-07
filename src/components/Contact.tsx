@@ -4,8 +4,9 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser';
 import { useLanguage } from '../context/LanguageContext';
 
-// Initialize EmailJS
-emailjs.init('dSJNVJa5OB6GyjC9t');
+emailjs.init({
+  publicKey: 'dSJNVJa5OB6GyjC9t',
+});
 
 const Contact = () => {
   const [captchaValue, setCaptchaValue] = React.useState<string | null>(null);
@@ -29,13 +30,14 @@ const Contact = () => {
     try {
       await emailjs.send(
         'service_x2c8ued',
-        'template_58bqmq6', 
+        'template_58bqmq6',
         {
           user_name: formData.get('name'),
           user_email: formData.get('email'),
           user_subject: formData.get('subject'),
           user_message: formData.get('message'),
-        }
+        },
+        'dSJNVJa5OB6GyjC9t'
       );
       
       // Clear form
@@ -43,11 +45,12 @@ const Contact = () => {
       setCaptchaValue(null);
       setError('Message sent successfully!');
     } catch (err) {
-      setError('Failed to send message. Please try again.');
+      console.error('EmailJS Error:', err);
+      setError(`Failed to send message: ${err instanceof Error ? err.message : 'Please try again.'}`);
     } finally {
       setSending(false);
     }
-  };
+  }
 
   const handleCaptchaChange = (value: string | null) => {
     setCaptchaValue(value);
@@ -198,6 +201,6 @@ const Contact = () => {
       </div>
     </section>
   );
-};
+}
 
-export default Contact
+export default Contact;
