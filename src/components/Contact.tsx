@@ -1,14 +1,16 @@
 import React from 'react';
 import { Send, Mail, Users, Globe, Heart } from 'lucide-react';
 import ReCAPTCHA from 'react-google-recaptcha';
+import emailjs from '@emailjs/browser';
 import { useLanguage } from '../context/LanguageContext';
 
 const Contact = () => {
   const [captchaValue, setCaptchaValue] = React.useState<string | null>(null);
   const [error, setError] = React.useState<string>('');
+  const [sending, setSending] = React.useState(false);
   const { t } = useLanguage();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     if (!captchaValue) {
@@ -17,21 +19,32 @@ const Contact = () => {
     }
     
     setError('');
+    setSending(true);
+
     const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      subject: formData.get('subject'),
-      message: formData.get('message')
-    };
-
-    // Create mailto URL with form data
-    const mailtoUrl = `mailto:contact@gmfe.org?subject=${encodeURIComponent(data.subject as string)}&body=${encodeURIComponent(
-      `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
-    )}`;
-
-    // Open default email client
-    window.location.href = mailtoUrl;
+    
+    try {
+      await emailjs.send(
+        'service_x2c8ued',
+        'template_58bqmq6',
+        {
+          user_name: formData.get('name'),
+          user_email: formData.get('email'),
+          user_subject: formData.get('subject'),
+          user_message: formData.get('message'),
+        },
+        'dSJNVJa5OB6GyjC9t'
+      );
+      
+      // Clear form
+      e.currentTarget.reset();
+      setCaptchaValue(null);
+      setError('Message sent successfully!');
+    } catch (err) {
+      setError('Failed to send message. Please try again.');
+    } finally {
+      setSending(false);
+    }
   };
 
   const handleCaptchaChange = (value: string | null) => {
@@ -171,9 +184,10 @@ const Contact = () => {
             <div className="text-center">
               <button
                 type="submit"
+                disabled={sending}
                 className="inline-flex justify-center items-center bg-secondary text-white px-10 py-4 rounded-full font-semibold hover:opacity-90 transition-all transform hover:scale-105 hover:shadow-lg group"
               >
-                <span>{t('send.message')}</span>
+                <span>{sending ? 'Sending...' : t('send.message')}</span>
                 <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
