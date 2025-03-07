@@ -71,6 +71,7 @@ const translations = {
     'message.about': 'What is your message about?',
     'your.message': 'Your message...',
     'captcha.error': 'Please complete the CAPTCHA verification',
+    'message.sent': 'Message Sent',
     
     // Common buttons and labels
     'donate.now': 'Donate Now',
@@ -197,6 +198,7 @@ const translations = {
     'message.about': 'За што се однесува вашата порака?',
     'your.message': 'Вашата порака...',
     'captcha.error': 'Ве молиме пополнете ја CAPTCHA верификацијата',
+    "message.sent": "Порака испратена"
     
     // Navigation
     'mission': 'Мисија',
