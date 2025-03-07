@@ -13,20 +13,21 @@ const Contact = () => {
   const [error, setError] = React.useState<string>('');
   const [sending, setSending] = React.useState(false);
   const recaptchaRef = React.useRef<ReCAPTCHA>(null);
+  const formRef = React.useRef<HTMLFormElement>(null);
   const { t } = useLanguage();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     if (!captchaValue) {
-      setError('Please complete the CAPTCHA verification');
+      setError(t('captcha.error'));
       return;
     }
     
     setError('');
     setSending(true);
 
-    const formData = new FormData(e.currentTarget);
+    const formData = new FormData(formRef.current!);
     
     try {
       await emailjs.send(
@@ -42,9 +43,10 @@ const Contact = () => {
       );
       
       // Clear form
-      e.currentTarget.reset();
+      formRef.current?.reset();
       recaptchaRef.current?.reset();
-      setError('Message sent successfully!');
+      setCaptchaValue(null);
+      setError(t('message.sent'));
     } catch (err) {
       console.error('EmailJS Error:', err);
       setError(`Failed to send message: ${err instanceof Error ? err.message : 'Please try again.'}`);
@@ -116,7 +118,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 space-y-6">
+          <form ref={formRef} onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 space-y-6">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center font-playfair">
               {t('get.in.touch')}</h3>
             <div className="grid md:grid-cols-2 gap-6">
