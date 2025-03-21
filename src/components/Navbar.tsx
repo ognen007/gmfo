@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: language === 'en' ? 'Mission' : t('mission'), href: '#mission' },
     { name: language === 'en' ? 'Endeavors' : t('endeavors'), href: '#endeavors' },
     { name: language === 'en' ? 'Board' : t('board'), href: '#board' },
-    { name: language === 'en' ? 'Donate' : t('donate'), href: '#donate' },
+    { name: language === 'en' ? 'Donate' : t('donate'), href: 'https://pay.raisenow.io/ndyvq' },
     { name: language === 'en' ? 'Contact' : t('contact'), href: '#contact' },
   ];
 
@@ -21,9 +21,9 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <a href="#" className="flex items-center space-x-2">
-              <div className="h-8 w-8 text-yellow-500">
+              <div className="h-14 w-14 text-yellow-500">
                 <img 
-                  src="https://i.ibb.co/ymdhg0t4/image.png"
+                  src="https://i.ibb.co/N2LRZchC/Logo-Bildmarke-SCREEN-RGB.png"
                   alt="Vergina Sun"
                   className="h-full w-full"
                 />
