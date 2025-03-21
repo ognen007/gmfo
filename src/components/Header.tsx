@@ -36,7 +36,7 @@ const Header = () => {
             {t('join.message')}
           </p>
           <a 
-            href="https://gmfe.org/donations/givewp-donation-form/"
+            href="https://pay.raisenow.io/ndyvq" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-secondary text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-colors"
