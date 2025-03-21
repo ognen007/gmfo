@@ -43,12 +43,12 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">{t('connect.with.us')}</h3>
             <ul className="flex flex-wrap gap-4">
               <li>
-                <a href="#" className="hover:text-yellow-400 inline-flex items-center">
+                <a href="https://www.linkedin.com/company/global-macedonian-foundation-eternal" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 inline-flex items-center">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </li>
               <li className="flex items-center">
-                <a href="#" className="hover:text-yellow-400 inline-flex items-center justify-center">
+                <a href="https://x.com/gmf_eternal" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 inline-flex items-center justify-center">
                   <img 
                     src="https://i.ibb.co/rG5fL1vP/image-removebg-preview.png"
                     alt="X (formerly Twitter)"
@@ -57,17 +57,17 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-400 inline-flex items-center">
+                <a href="https://www.facebook.com/share/18kjijLX24/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 inline-flex items-center">
                   <Facebook className="h-5 w-5" />
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-400 inline-flex items-center">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 inline-flex items-center">
                   <Instagram className="h-5 w-5" />
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-400 inline-flex items-center">
+                <a href="https://www.youtube.com/@GMF_Eternal" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 inline-flex items-center">
                   <Youtube className="h-5 w-5" />
                 </a>
               </li>
@@ -77,13 +77,20 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">{t('support.cause')}</h3>
             <p className="mb-4">{t('help.preserve')}</p>
             <a
-              href="https://gmfe.org/donations/givewp-donation-form/"
+              href="https://pay.raisenow.io/ndyvq"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-secondary text-white px-6 py-2 rounded-md hover:opacity-90 transition-colors font-semibold"
             >
               <Heart className="h-5 w-5 mr-2 text-white" /> {t('donate.now')}
             </a>
+            <div className="mt-10">
+              <img 
+                src="https://i.ibb.co/MypN8Tkj/Logo-Wort-Bildmarke-SCREEN-RGB.png"
+                alt="GMFE Logo"
+                className="max-w-[250px] md:mx-auto ml-0"
+              />
+            </div>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
