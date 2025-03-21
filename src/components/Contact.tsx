@@ -34,11 +34,10 @@ const Contact = () => {
         'service_x2c8ued',
         'template_58bqmq6',
         {
-          user_subject: formData.get('subject'),
-          user_message: formData.get('message'),
-          user_name: formData.get('name'),
-          user_email: formData.get('email'),
-          reply_to: formData.get('email'),
+          subject: formData.get('subject'),
+          message: formData.get('message'),
+          name: formData.get('name'),
+          email: formData.get('email'),
         },
         'dSJNVJa5OB6GyjC9t'
       );
