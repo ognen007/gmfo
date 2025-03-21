@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: language === 'en' ? 'Mission' : t('mission'), href: '#mission' },
     { name: language === 'en' ? 'Endeavors' : t('endeavors'), href: '#endeavors' },
     { name: language === 'en' ? 'Board' : t('board'), href: '#board' },
-    { name: language === 'en' ? 'Donate' : t('donate'), href: 'https://pay.raisenow.io/ndyvq' },
+    { name: language === 'en' ? 'Donate' : t('donate'), href: 'https://pay.raisenow.io/ndyvq', external: true },
     { name: language === 'en' ? 'Contact' : t('contact'), href: '#contact' },
   ];
 
@@ -41,6 +41,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
+                {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="text-white hover:text-secondary px-3 py-2 rounded-md text-base font-medium text-base	 transition-colors"
               >
                 {item.name}
@@ -69,6 +70,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
+                {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="text-white hover:text-secondary block px-3 py-2 rounded-md text-base font-medium"
                 onClick={() => setIsOpen(false)}
               >
