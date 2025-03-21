@@ -72,7 +72,12 @@ const Events = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3 text-primary mt-4 font-playfair">{t('education.title')}</h3>
               <p className="text-gray-600 mb-4">{t('education.description')}</p>
-              <a href="#" className="text-secondary font-semibold hover:opacity-90 inline-flex items-center">
+              <a 
+                href="https://donate.raisenow.io/gmtzs"
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="text-secondary font-semibold hover:opacity-90 inline-flex items-center"
+              >
                 {t('learn.more')}
                 <span className="ml-2">→</span>
               </a>
@@ -89,23 +94,23 @@ const Events = () => {
                   {t('stay.tuned.description')}
                 </p>
                 <div className="flex flex-wrap gap-4 mb-8">
-                  <a href="#" className="bg-black/30 hover:bg-black/50 p-3 rounded-full transition-all transform hover:scale-110">
+                  <a href="https://www.linkedin.com/company/global-macedonian-foundation-eternal" target="_blank" rel="noopener noreferrer" className="bg-black/30 hover:bg-black/50 p-3 rounded-full transition-all transform hover:scale-110">
                     <Linkedin className="h-6 w-6 text-black" />
                   </a>
-                  <a href="#" className="bg-black/30 hover:bg-black/50 p-3 rounded-full transition-all transform hover:scale-110 flex items-center justify-center">
+                  <a href="https://x.com/gmf_eternal" target="_blank" rel="noopener noreferrer" className="bg-black/30 hover:bg-black/50 p-3 rounded-full transition-all transform hover:scale-110 flex items-center justify-center">
                     <img 
                       src="https://i.ibb.co/rG5fL1vP/image-removebg-preview.png"
                       alt="X (formerly Twitter)"
                       className="h-6 w-6 invert"
                     />
                   </a>
-                  <a href="#" className="bg-black/30 hover:bg-black/50 p-3 rounded-full transition-all transform hover:scale-110">
+                  <a href="https://www.facebook.com/share/18kjijLX24/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" className="bg-black/30 hover:bg-black/50 p-3 rounded-full transition-all transform hover:scale-110">
                     <Facebook className="h-6 w-6 text-black" />
                   </a>
-                  <a href="#" className="bg-black/30 hover:bg-black/50 p-3 rounded-full transition-all transform hover:scale-110">
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-black/30 hover:bg-black/50 p-3 rounded-full transition-all transform hover:scale-110">
                     <Instagram className="h-6 w-6 text-black" />
                   </a>
-                  <a href="#" className="bg-black/30 hover:bg-black/50 p-3 rounded-full transition-all transform hover:scale-110">
+                  <a href="https://www.youtube.com/@GMF_Eternal" target="_blank" rel="noopener noreferrer" className="bg-black/30 hover:bg-black/50 p-3 rounded-full transition-all transform hover:scale-110">
                     <Youtube className="h-6 w-6 text-black" />
                   </a>
                 </div>
