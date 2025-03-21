@@ -21,13 +21,26 @@ const Board = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-xl shadow-sm p-8 mb-16">
-          <h3 className="text-2xl font-bold mb-6 font-playfair">
-            {t('founders.board')}
-          </h3>
-          <p className="text-gray-600 mb-6">{t('founders.description')}</p>
-          <p className="text-gray-600 mb-6">{t('founders.mission')}</p>
-          <p className="text-gray-600">{t('founders.invitation')}</p>
+        <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-16">
+          <div className="md:grid md:grid-cols-2">
+            <div className="relative h-64 md:h-auto">
+              <img 
+                src="https://i.ibb.co/QFFsfF9H/0715d1f0-7ce6-4a0a-8ff2-21ae7cf10069.jpg"
+                alt="Founders of GMFE"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <h3 className="text-2xl font-bold mb-6 font-playfair">
+                {t('founders.board')}
+              </h3>
+              <div className="space-y-4">
+                <p className="text-gray-600">{t('founders.description')}</p>
+                <p className="text-gray-600">{t('founders.mission')}</p>
+                <p className="text-gray-600">{t('founders.invitation')}</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <h3 className="text-2xl font-bold text-center mb-8 font-playfair">
@@ -54,9 +67,6 @@ const Board = () => {
                 {t('zila.description')}
               </p>
               <div className="flex justify-center space-x-4">
-                <a href="https://www.facebook.com/NatasaKotlar/?locale=mk_MK" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
-                  <Facebook className="h-5 w-5" />
-                </a>
               </div>
             </div>
           </div>
@@ -212,6 +222,11 @@ const Board = () => {
           <p className="text-gray-600 mb-6 text-center">
             {t('manager.description')}
           </p>
+          <div className="flex justify-center space-x-4">
+            <a href="https://www.linkedin.com/in/marko-vidachek-55491721a/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
+              <Linkedin className="h-5 w-5" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
