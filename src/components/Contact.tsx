@@ -34,10 +34,11 @@ const Contact = () => {
         'service_x2c8ued',
         'template_58bqmq6',
         {
-          name: formData.get('name'),
-          email: formData.get('email'),
-          subject: formData.get('subject'),
-          message: formData.get('message'),
+          user_subject: formData.get('subject'),
+          user_message: formData.get('message'),
+          user_name: formData.get('name'),
+          user_email: formData.get('email'),
+          reply_to: formData.get('email'),
         },
         'dSJNVJa5OB6GyjC9t'
       );
@@ -131,6 +132,7 @@ const Contact = () => {
                   name="name"
                   id="name"
                   required
+                  maxLength={100}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                   placeholder={t('your.name')}
                 />
@@ -144,6 +146,7 @@ const Contact = () => {
                   name="email"
                   id="email"
                   required
+                  maxLength={100}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                   placeholder={t('your.email')}
                 />
@@ -159,6 +162,7 @@ const Contact = () => {
                 name="subject"
                 id="subject"
                 required
+                maxLength={200}
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                 placeholder={t('message.about')}
               />
@@ -172,6 +176,7 @@ const Contact = () => {
                 id="message"
                 name="message"
                 required
+                maxLength={1000}
                 rows={6}
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors resize-none bg-gray-50"
                 placeholder={t('your.message')}
