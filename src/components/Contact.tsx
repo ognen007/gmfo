@@ -56,7 +56,6 @@ const Contact = () => {
       formRef.current?.reset();
       recaptchaRef.current?.reset();
       setCaptchaValue(null);
-      setError(t('message.sent'));
     } catch (err) {
       console.error('EmailJS Error:', err);
       setError(`Failed to send message: ${err instanceof Error ? err.message : 'Please try again.'}`);
