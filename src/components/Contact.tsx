@@ -4,6 +4,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser';
 import { useLanguage } from '../context/LanguageContext';
 
+// Initialize EmailJS with your public key (this only needs to be done once)
 emailjs.init({
   publicKey: 'dSJNVJa5OB6GyjC9t',
 });
@@ -18,30 +19,39 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     if (!captchaValue) {
       setError(t('captcha.error'));
       return;
     }
-    
+
     setError('');
     setSending(true);
 
     const formData = new FormData(formRef.current!);
-    
+
+    // Debug the form data to ensure values are captured correctly
+    console.log({
+      subject: formData.get('subject'),
+      message: formData.get('message'),
+      name: formData.get('name'),
+      email: formData.get('email'),
+    });
+
     try {
       await emailjs.send(
         'service_x2c8ued',
         'template_58bqmq6',
         {
-          subject: formData.get('subject'),
-          message: formData.get('message'),
-          name: formData.get('name'),
-          email: formData.get('email'),
-        },
-        'dSJNVJa5OB6GyjC9t'
+          user: {
+            subject: formData.get('subject'),
+            message: formData.get('message'),
+            name: formData.get('name'),
+            email: formData.get('email'),
+          },
+        }
       );
-      
+
       // Clear form
       formRef.current?.reset();
       recaptchaRef.current?.reset();
@@ -53,7 +63,7 @@ const Contact = () => {
     } finally {
       setSending(false);
     }
-  }
+  };
 
   const handleCaptchaChange = (value: string | null) => {
     setCaptchaValue(value);
@@ -120,7 +130,8 @@ const Contact = () => {
 
           <form ref={formRef} onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 space-y-6">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center font-playfair">
-              {t('get.in.touch')}</h3>
+              {t('get.in.touch')}
+            </h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -181,7 +192,7 @@ const Contact = () => {
                 placeholder={t('your.message')}
               ></textarea>
             </div>
-            
+
             <div className="flex flex-col items-center space-y-4">
               <ReCAPTCHA
                 sitekey="6LfwXMEqAAAAANjAb2QkjYaFKr39iGH7KlkFBrOU"
@@ -209,6 +220,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Contact;
