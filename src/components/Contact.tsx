@@ -124,7 +124,7 @@ const Contact = () => {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
-              <div className "inline-flex items-center gap-3 mb-4">
+<div className="inline-flex items-center gap-3 mb-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <GraduationCap className="h-6 w-6 text-primary" />
                 </div>
