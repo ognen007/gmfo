@@ -17,53 +17,52 @@ const Contact = () => {
   const formRef = React.useRef<HTMLFormElement>(null);
   const { t } = useLanguage();
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-    if (!captchaValue) {
-      setError(t('captcha.error'));
-      return;
-    }
+  if (!captchaValue) {
+    setError(t('captcha.error'));
+    return;
+  }
 
-    setError('');
-    setSending(true);
+  setError('');
+  setSending(true);
 
-    const formData = new FormData(formRef.current!);
+  const formData = new FormData(formRef.current!);
 
-    console.log({
-      subject: formData.get('subject'),
-      message: formData.get('message'),
-      name: formData.get('name'),
-      email: formData.get('email'),
-    });
+  console.log({
+    subject: formData.get('subject'),
+    message: formData.get('message'),
+    name: formData.get('name'),
+    email: formData.get('email'),
+  });
 
-    try {
-      await emailjs.send(
-        'service_x2c8ued',
-        'template_58bqmq6',
-        {
-          user: {
-            subject: formData.get('subject'),
-            message: formData.get('message'),
-            name: formData.get('name'),
-            email: formData.get('email'),
-          },
-          reply_to: formData.get('email'), // Add this to map to {{reply_to}}
-        }
-      );
+  try {
+    await emailjs.send(
+      'service_x2c8ued',
+      'template_58bqmq6',
+      {
+        user: {
+          subject: formData.get('subject'),
+          message: formData.get('message'),
+          name: formData.get('name'),
+          email: formData.get('email'),
+        },
+        reply_to: formData.get('email'), // Maps to {{reply_to}}
+      }
+    );
 
-      formRef.current?.reset();
-      recaptchaRef.current?.reset();
-      setCaptchaValue(null);
-      setError(t('message.sent')); // Add success message back
-    } catch (err) {
-      console.error('EmailJS Error:', err);
-      setError(`Failed to send message: ${err instanceof Error ? err.message : 'Please try again.'}`);
-    } finally {
-      setSending(false);
-    }
-  };
-
+    formRef.current?.reset();
+    recaptchaRef.current?.reset();
+    setCaptchaValue(null);
+    setError(t('message.sent'));
+  } catch (err) {
+    console.error('EmailJS Error:', err);
+    setError(`Failed to send message: ${err instanceof Error ? err.message : 'Please try again.'}`);
+  } finally {
+    setSending(false);
+  }
+};
   const handleCaptchaChange = (value: string | null) => {
     setCaptchaValue(value);
     setError('');
