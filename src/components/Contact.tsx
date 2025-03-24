@@ -48,12 +48,14 @@ const Contact = () => {
             name: formData.get('name'),
             email: formData.get('email'),
           },
+          reply_to: formData.get('email'), // Add this to map to {{reply_to}}
         }
       );
 
       formRef.current?.reset();
       recaptchaRef.current?.reset();
       setCaptchaValue(null);
+      setError(t('message.sent')); // Add success message back
     } catch (err) {
       console.error('EmailJS Error:', err);
       setError(`Failed to send message: ${err instanceof Error ? err.message : 'Please try again.'}`);
@@ -76,7 +78,7 @@ const Contact = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center p-2 bg-primary/10 rounded-full mb-4">
               <Mail className="h-6 w-6 text-primary" />
@@ -91,25 +93,17 @@ const Contact = () => {
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                 {t('donation.confirmation')}
               </p>
-              <a
-                href="https://pay.raisenow.io/ndyvq"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-secondary text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-colors"
-              >
-                {t('donate.now')} <Heart className="ml-2 h-5 w-5" />
-              </a>
             </div>
           </div>
 
           {/* Grid for cards */}
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-12">
             <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
               <div className="inline-flex items-center gap-3 mb-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <Heart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-primary font-playfair">{t('support.mission.title')}</h3>
+                <h3 className="text-xl font-bold text-primary">{t('support.mission.title')}</h3>
               </div>
               <p className="text-gray-600 mb-4">
                 {t('support.mission.description')}
@@ -118,23 +112,23 @@ const Contact = () => {
                 <span className="text-blue-600">🔹</span> {t('support.mission.highlight')}
               </div>
               <div className="mt-auto pt-4">
-              <a
-                href="https://pay.raisenow.io/ndyvq"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center min-w-[200px]"
-              >
-                {t('donate.now')} <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+                <a
+                  href="https://pay.raisenow.io/ndyvq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
+                >
+                  {t('donate.now')} <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </div>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
-              <div className="inline-flex items-center gap-3 mb-4">
+              <div className "inline-flex items-center gap-3 mb-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <GraduationCap className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-primary font-playfair">{t('young.researchers.title')}</h3>
+                <h3 className="text-xl font-bold text-primary">{t('young.researchers.title')}</h3>
               </div>
               <div className="text-lg font-semibold text-secondary mb-4">{t('young.researchers.goal')}</div>
               <p className="text-gray-600 mb-4">
@@ -144,14 +138,14 @@ const Contact = () => {
                 <span className="text-blue-600">🔹</span> {t('young.researchers.highlight')}
               </div>
               <div className="mt-auto pt-4">
-              <a
-                href="https://donate.raisenow.io/gmtzs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center min-w-[200px]"
-              >
-                {t('young.researchers.button')} <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+                <a
+                  href="https://donate.raisenow.io/gmtzs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
+                >
+                  {t('young.researchers.button')} <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </div>
             </div>
 
@@ -160,7 +154,7 @@ const Contact = () => {
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <Library className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-primary font-playfair">{t('preserving.knowledge.title')}</h3>
+                <h3 className="text-xl font-bold text-primary">{t('preserving.knowledge.title')}</h3>
               </div>
               <div className="text-lg font-semibold text-secondary mb-4">{t('preserving.knowledge.goal')}</div>
               <p className="text-gray-600 mb-4">
@@ -170,20 +164,20 @@ const Contact = () => {
                 <span className="text-blue-600">🔹</span> {t('preserving.knowledge.highlight')}
               </div>
               <div className="mt-auto pt-4">
-              <a
-                href="https://donate.raisenow.io/knqgq"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center min-w-[200px]"
-              >
-                {t('preserving.knowledge.button')} <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+                <a
+                  href="https://donate.raisenow.io/knqgq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
+                >
+                  {t('preserving.knowledge.button')} <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <form ref={formRef} onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 space-y-6 mt-16 max-w-4xl mx-auto">
+          <form ref={formRef} onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 space-y-6 mt-12">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center font-playfair">
               {t('get.in.touch')}
             </h3>
