@@ -1,5 +1,5 @@
 import React from 'react';
-import { Send, Mail, Users, Globe, Heart } from 'lucide-react';
+import { Send, Mail, Heart, ArrowRight, GraduationCap, BookOpen, Library } from 'lucide-react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser';
 import { useLanguage } from '../context/LanguageContext';
@@ -30,7 +30,6 @@ const Contact = () => {
 
     const formData = new FormData(formRef.current!);
 
-    // Debug the form data to ensure values are captured correctly
     console.log({
       subject: formData.get('subject'),
       message: formData.get('message'),
@@ -52,7 +51,6 @@ const Contact = () => {
         }
       );
 
-      // Clear form
       formRef.current?.reset();
       recaptchaRef.current?.reset();
       setCaptchaValue(null);
@@ -77,8 +75,8 @@ const Contact = () => {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/10 rounded-full opacity-20"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative z-10 max-w-4xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center p-2 bg-primary/10 rounded-full mb-4">
               <Mail className="h-6 w-6 text-primary" />
@@ -102,32 +100,90 @@ const Contact = () => {
                 {t('donate.now')} <Heart className="ml-2 h-5 w-5" />
               </a>
             </div>
-            <div className="grid md:grid-cols-3 gap-8 mt-12">
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-4">
-                  <Mail className="h-6 w-6 text-primary" />
+          </div>
+
+          {/* Grid for cards */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-12">
+            <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
+              <div className="inline-flex items-center gap-3 mb-4">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <Heart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">Stay Connected</h3>
-                <p className="text-gray-500 text-sm">Get the latest updates and insights</p>
+                <h3 className="text-xl font-bold text-primary">{t('support.mission.title')}</h3>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-4">
-                  <Users className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="font-semibold mb-2">Join Our Community</h3>
-                <p className="text-gray-500 text-sm">Be part of our growing network</p>
+              <p className="text-gray-600 mb-4">
+                {t('support.mission.description')}
+              </p>
+              <div className="mb-4">
+                <span className="text-blue-600">🔹</span> {t('support.mission.highlight')}
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-4">
-                  <Globe className="h-6 w-6 text-primary" />
+              <div className="mt-auto pt-4">
+              <a
+                href="https://pay.raisenow.io/ndyvq"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
+              >
+                {t('donate.now')} <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
+              <div className="inline-flex items-center gap-3 mb-4">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <GraduationCap className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">Global Impact</h3>
-                <p className="text-gray-500 text-sm">Help spread our message worldwide</p>
+                <h3 className="text-xl font-bold text-primary">{t('young.researchers.title')}</h3>
+              </div>
+              <div className="text-lg font-semibold text-secondary mb-4">{t('young.researchers.goal')}</div>
+              <p className="text-gray-600 mb-4">
+                {t('young.researchers.description')}
+              </p>
+              <div className="mb-4">
+                <span className="text-blue-600">🔹</span> {t('young.researchers.highlight')}
+              </div>
+              <div className="mt-auto pt-4">
+              <a
+                href="https://donate.raisenow.io/gmtzs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
+              >
+                {t('young.researchers.button')} <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
+              <div className="inline-flex items-center gap-3 mb-4">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <Library className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-primary">{t('preserving.knowledge.title')}</h3>
+              </div>
+              <div className="text-lg font-semibold text-secondary mb-4">{t('preserving.knowledge.goal')}</div>
+              <p className="text-gray-600 mb-4">
+                {t('preserving.knowledge.description')}
+              </p>
+              <div className="mb-4">
+                <span className="text-blue-600">🔹</span> {t('preserving.knowledge.highlight')}
+              </div>
+              <div className="mt-auto pt-4">
+              <a
+                href="https://donate.raisenow.io/knqgq"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
+              >
+                {t('preserving.knowledge.button')} <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
               </div>
             </div>
           </div>
 
-          <form ref={formRef} onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 space-y-6">
+          {/* Contact Form */}
+          <form ref={formRef} onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 space-y-6 mt-12">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center font-playfair">
               {t('get.in.touch')}
             </h3>
@@ -199,9 +255,7 @@ const Contact = () => {
                 onChange={handleCaptchaChange}
                 className="mx-auto"
               />
-              {error && (
-                <p className="text-red-600 text-sm">{error}</p>
-              )}
+              {error && <p className="text-red-600 text-sm">{error}</p>}
             </div>
 
             <div className="text-center">
