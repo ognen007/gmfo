@@ -91,14 +91,6 @@ const Contact = () => {
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                 {t('donation.confirmation')}
               </p>
-              <a
-                href="https://pay.raisenow.io/ndyvq"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-secondary text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-colors"
-              >
-                {t('donate.now')} <Heart className="ml-2 h-5 w-5" />
-              </a>
             </div>
           </div>
 
