@@ -113,7 +113,7 @@ const translations = {
     'preserving.knowledge.goal': '€150,000 Research Fund',
     'preserving.knowledge.description': 'To secure and advance Macedonian historical research, we aim to raise €150,000 for a dedicated research fund. This will finance groundbreaking projects, academic publications, and studies that document and safeguard our national heritage.',
     'preserving.knowledge.highlight': 'Invest in research that protects and strengthens our legacy!',
-    'preserving.knowledge.button': 'Contribute to the Research Fund',
+    'preserving.knowledge.button': 'Support Research Fund',
 
     // Footer
     'quick.links': 'Quick Links',
