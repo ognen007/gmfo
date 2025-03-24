@@ -98,6 +98,23 @@ const translations = {
     'support.difference': 'Your support makes a difference! By donating, you help preserve and promote Macedonia\'s rich heritage, culture, and history for future generations. Together, we can achieve impactful projects and create a lasting legacy.',
     'donation.confirmation': 'Make Your Impact Today! Click "Donate Now" and receive an automated confirmation email with your donation receipt attached. Your generosity shapes our shared future!',
 
+        // Donation Cards
+    'support.mission.title': 'Support Our Mission',
+    'support.mission.description': 'Your donation helps sustain the Global Macedonian Foundation Eternal and its long-term initiatives. With your support, we can continue to promote Macedonian heritage, fund key projects, and expand our impact globally.',
+    'support.mission.highlight': 'Ensure the foundation\'s success with your contribution!',
+    
+    'young.researchers.title': 'Fund for Young Researchers',
+    'young.researchers.goal': '€15,000 Goal',
+    'young.researchers.description': 'We are raising €15,000 to provide scholarships and grants for young historians, linguists, and ethnologists. By supporting this fund, you help the next generation of scholars preserve and share Macedonia\'s history and culture.',
+    'young.researchers.highlight': 'Help us reach our goal and empower future academics!',
+    'young.researchers.button': 'Support Young Researchers',
+    
+    'preserving.knowledge.title': 'Preserving Knowledge',
+    'preserving.knowledge.goal': '€150,000 Research Fund',
+    'preserving.knowledge.description': 'To secure and advance Macedonian historical research, we aim to raise €150,000 for a dedicated research fund. This will finance groundbreaking projects, academic publications, and studies that document and safeguard our national heritage.',
+    'preserving.knowledge.highlight': 'Invest in research that protects and strengthens our legacy!',
+    'preserving.knowledge.button': 'Contribute to the Research Fund',
+
     // Footer
     'quick.links': 'Quick Links',
     'connect.with.us': 'Connect With Us',
@@ -230,6 +247,22 @@ const translations = {
     'make.impact': 'Направете го вашето влијание денес!',
     'donation.confirmation': 'Кликнете „Донирај сега" и добијте автоматска потврдна е-пошта со приложена потврда за донација. Вашата великодушност ја обликува нашата заедничка иднина!',
 
+    // Donation Cards
+    'support.mission.title': 'Поддржете ја нашата мисија',
+    'support.mission.description': 'Вашата донација помага во одржувањето на Глобалната Македонска Фондација Вечна и нејзините долгорочни иницијативи. Со вашата поддршка, можеме да продолжиме да го промовираме македонското наследство, да финансираме клучни проекти и да го прошириме нашето влијание глобално.',
+    'support.mission.highlight': 'Осигурајте го успехот на фондацијата со вашиот придонес!',
+    
+    'young.researchers.title': 'Фонд за млади истражувачи',
+    'young.researchers.goal': 'Цел €15,000',
+    'young.researchers.description': 'Собираме €15,000 за да обезбедиме стипендии и грантови за млади историчари, лингвисти и етнолози. Со поддршка на овој фонд, помагате на следната генерација на научници да го зачуваат и споделат македонското историја и култура.',
+    'young.researchers.highlight': 'Помогнете ни да ја достигнеме нашата цел и да ги зајакнеме идните академици!',
+    'young.researchers.button': 'Поддржете млади истражувачи',
+    
+    'preserving.knowledge.title': 'Зачувување на знаењето',
+    'preserving.knowledge.goal': 'Истражувачки фонд €150,000',
+    'preserving.knowledge.description': 'За да го обезбедиме и унапредиме македонското историско истражување, целиме да собереме €150,000 за наменски истражувачки фонд. Ова ќе финансира иновативни проекти, академски публикации и студии кои го документираат и штитат нашето национално наследство.',
+    'preserving.knowledge.highlight': 'Инвестирајте во истражување кое го штити и зајакнува нашето наследство!',
+    'preserving.knowledge.button': 'Придонесете во истражувачкиот фонд',
     // Common buttons and labels
     'donate.now': 'Донирајте сега',
     'learn.more': 'Дознајте повеќе',
