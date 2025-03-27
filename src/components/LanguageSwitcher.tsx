@@ -11,22 +11,10 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className = '' }) =
   return (
     <button
       onClick={() => setLanguage(language === 'en' ? 'mk' : 'en')}
-      className={`${className}`}
+      className={`${className} font-medium text-white hover:text-secondary transition-colors`}
       aria-label={language === 'en' ? 'Switch to Macedonian' : 'Switch to English'}
     >
-      {language === 'en' ? (
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
-          alt="Macedonian flag"
-          className="w-6 h-6 object-contain"
-        />
-      ) : (
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
-          alt="USA flag"
-          className="w-6 h-6 object-contain"
-        />
-      )}
+      {language === 'en' ? 'MK' : 'EN'}
     </button>
   );
 };
