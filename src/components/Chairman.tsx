@@ -3,7 +3,7 @@ import { Linkedin } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Chairman = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <div className="bg-white rounded-xl shadow-sm overflow-hidden transform transition-all duration-300 hover:shadow-lg">
@@ -17,7 +17,7 @@ const Chairman = () => {
         </div>
         
         <div className="p-6 md:p-8 lg:p-12">
-          <h3 className="text-2xl md:text-3xl font-bold mb-2 font-playfair">Mirčo Krsteski</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-2 font-playfair">{language === 'en' ? 'Mirčo Krsteski' : 'Мирчо Крстески'}</h3>
           <p className="text-secondary font-semibold mb-4 text-lg">{t('chairman.title')}</p>
           <p className="text-gray-600 mb-6 leading-relaxed">
             {t('chairman.description')}
