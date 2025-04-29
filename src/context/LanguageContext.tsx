@@ -93,6 +93,19 @@ const translations = {
     'education.title': 'Educational Initiatives',
     'education.description': 'To empower the next generation of scholars from Macedonia and neighboring regions by awarding prestigious scholarships, enabling them to pursue advanced postgraduate studies and contribute to the global academic landscape.',
 
+
+    // Contact
+    'research.funding.title': 'Research Funding & Project Applications',
+    'research.funding.subtitle': 'Supporting Emerging Talents and Established Scholars',
+    'research.funding.description': 'The Global Macedonian Foundation Eternal (GMFE) funds academic projects in the fields of history, language, and ethnology – aiming to actively research, preserve, and promote Macedonia\'s cultural heritage worldwide.',
+    'research.funding.cta': 'Are you conducting research or preparing a new project?',
+    'research.funding.details': 'We invite you to submit your proposal through our online application form. All submissions will be carefully reviewed by our Scientific Advisory Board. Selected projects will receive targeted financial support.',
+    'submit.proposal': 'Submit Your Project Proposal',
+    'shape.future': 'Shape the Future Together',
+    'support.difference': 'Your support makes a difference! By donating, you help preserve and promote Macedonia\'s rich heritage, culture, and history for future generations. Together, we can achieve impactful projects and create a lasting legacy.',
+    'donation.confirmation': 'Make Your Impact Today! Click "Donate Now" and receive an automated confirmation email with your donation receipt attached. Your generosity shapes our shared future!',
+
+    
     // Contact
     'shape.future': 'Shape the Future Together',
     'support.difference': 'Your support makes a difference! By donating, you help preserve and promote Macedonia\'s rich heritage, culture, and history for future generations. Together, we can achieve impactful projects and create a lasting legacy.',
@@ -267,6 +280,19 @@ const translations = {
     'donate.now': 'Донирајте сега',
     'learn.more': 'Дознајте повеќе',
 
+    // Contact
+    'research.funding.title': 'Истражувачки фондови и пријави за проекти',
+    'research.funding.subtitle': 'Поддршка за млади таленти и етаблирани истражувачи',
+    'research.funding.description': 'Глобалната Македонска Фондација Вечна (ГМФВ) нуди финансиска поддршка за научни проекти во областа на историјата, македонскиот јазик и етнологијата — со јасна мисија за активно истражување, зачувување и промоција на македонското културно наследство ширум светот.',
+    'research.funding.cta': 'Дали веќе работите на истражувачки проект или подготвувате нов?',
+    'research.funding.details': 'Ве охрабруваме да ја поднесете вашата апликација преку нашиот онлајн формулар. Сите пријави ќе бидат темелно разгледани од страна на Научниот совет на Фондацијата. Одбраните проекти ќе добијат финансиска поддршка за нивна реализација.',
+    'submit.proposal': 'Поднеси проектна апликација',
+    'shape.future': 'Обликувајте ја иднината заедно',
+    'support.difference': 'Вашата поддршка прави разлика!',
+    'donation.impact': 'Со донирање помагате за зачувување и промовирање на богатото наследство, култура и историја на Македонија за идните генерации. Заедно, можеме да постигнеме влијателни проекти и да создадеме трајно наследство.',
+    'make.impact': 'Направете го вашето влијание денес!',
+    'donation.confirmation': 'Кликнете „Донирај сега" и добијте автоматска потврдна е-пошта со приложена потврда за донација. Вашата великодушност ја обликува нашата заедничка иднина!',
+    
     // Footer
     'quick.links': 'Брзи линкови',
     'connect.with.us': 'Поврзете се со нас',
