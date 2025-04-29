@@ -1,9 +1,9 @@
 import React from 'react';
-import { Linkedin, Calendar, BookOpen, GraduationCap, Facebook, Instagram, Youtube } from 'lucide-react';
+import { Linkedin, Calendar, BookOpen, GraduationCap, Facebook, Instagram, Youtube, ScrollText } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Events = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section id="endeavors" className="py-20 bg-gray-100">
@@ -82,6 +82,37 @@ const Events = () => {
                 <span className="ml-2">→</span>
               </a>
             </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-16">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-3 bg-primary/10 rounded-lg">
+                <ScrollText className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-3xl font-bold text-primary font-playfair">{t('research.funding.title').replace('📚 ', '')}</h3>
+            </div>
+            <p className="text-xl font-semibold text-secondary mb-6">{t('research.funding.subtitle')}</p>
+            <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+              {t('research.funding.description')}
+            </p>
+            <p className="text-xl font-semibold text-primary mb-4">{t('research.funding.cta')}</p>
+            <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+              {t('research.funding.details')}
+            </p>
+            <a 
+              href={language === 'en' 
+                ? 'https://docs.google.com/forms/d/e/1FAIpQLSdwjPbpfKTRidKMCgTN24rRuWcRzEBDLtOuOgo1EGFsyc9zug/viewform'
+                : 'https://docs.google.com/forms/d/e/1FAIpQLScDg-mF2h-IDAUEMFIzSl08skJkxMWOT4kTiHQq1ymXebjkdQ/viewform'
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-secondary text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-colors"
+            >
+              {t('submit.proposal')}
+              <span className="ml-2">→</span>
+            </a>
           </div>
         </div>
 
