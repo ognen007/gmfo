@@ -29,7 +29,7 @@ const Footer = () => {
                 </p>
               </div>
               <div className="pt-4">
-                <p className="font-medium mb-2">{t('bank.details')}</p>
+                <p className="font-medium mb-2">Bank Details</p>
                 <div className="text-sm space-y-1">
                   <p>GLOBALNA MAKEDONSKA FONDACIJA VECNA</p>
                   <p>Domestic Account (MKD): 250-0003026762-92</p>
