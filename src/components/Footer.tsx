@@ -28,6 +28,16 @@ const Footer = () => {
                   <a href="mailto:contact@gmfe.org" className="hover:text-yellow-400">contact@gmfe.org</a>
                 </p>
               </div>
+              <div className="pt-4">
+                <p className="font-medium mb-2">{t('bank.details')}</p>
+                <div className="text-sm space-y-1">
+                  <p>GLOBALNA MAKEDONSKA FONDACIJA VECNA</p>
+                  <p>Domestic Account (MKD): 250-0003026762-92</p>
+                  <p>IBAN: MK07 2507 2200 0042 008</p>
+                  <p>SWIFT/BIC: INSBMK22</p>
+                  <p>Bank: Sparkasse Bank Macedonia AD Skopje</p>
+                </div>
+              </div>
             </div>
           </div>
           <div>
@@ -94,7 +104,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p>&copy; 2025 Global Macedonian Foundation Eternal</p>
+          <p>© 2025 Global Macedonian Foundation Eternal</p>
         </div>
       </div>
     </footer>
