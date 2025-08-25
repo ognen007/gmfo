@@ -1,9 +1,21 @@
 import React from 'react';
-import { Mail, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { useState } from 'react';
+import { Mail, Linkedin, Twitter, Facebook, ChevronDown, ChevronUp } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Board = () => {
   const { t, language } = useLanguage();
+  const [expandedCard, setExpandedCard] = useState<string | null>(null);
+
+  const truncateText = (text: string, wordLimit: number = 30) => {
+    const words = text.split(' ');
+    if (words.length <= wordLimit) return text;
+    return words.slice(0, wordLimit).join(' ') + '...';
+  };
+
+  const toggleExpanded = (cardId: string) => {
+    setExpandedCard(expandedCard === cardId ? null : cardId);
+  };
 
   return (
     <section id="board" className="py-20 bg-gray-50">
@@ -202,7 +214,7 @@ const Board = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-            <div className="relative h-64">
+            <div className="relative h-80">
               <img 
                 src="https://i.ibb.co/zVzqwHLT/image.png"
                 alt="Assoc. Prof. Dr. Stojanche Kostov"
@@ -219,15 +231,35 @@ const Board = () => {
                 {language === 'en' ? 'Assoc. Prof. Dr. Stojanche Kostov' : 'Доц. д-р Стојанче Костов'}
               </h3>
               <p className="text-secondary font-medium mb-3 text-sm">{t('kostov.title')}</p>
-              <p className="text-gray-600 mb-3 leading-relaxed text-sm">
-                {t('kostov.description')}
-              </p>
-              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
-                📍 {t('kostov.focus')}
-              </p>
-              <blockquote className="border-l-4 border-secondary pl-3 italic text-gray-700 mb-4 text-sm">
-                {t('kostov.quote')}
-              </blockquote>
+              
+              <div className="mb-4">
+                <p className="text-gray-600 mb-3 leading-relaxed text-sm">
+                  {expandedCard === 'kostov' ? t('kostov.description') : truncateText(t('kostov.description'))}
+                </p>
+                
+                {expandedCard === 'kostov' && (
+                  <>
+                    <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                      📍 {t('kostov.focus')}
+                    </p>
+                    <blockquote className="border-l-4 border-secondary pl-3 italic text-gray-700 mb-4 text-sm">
+                      {t('kostov.quote')}
+                    </blockquote>
+                  </>
+                )}
+                
+                <button
+                  onClick={() => toggleExpanded('kostov')}
+                  className="flex items-center text-secondary hover:text-primary transition-colors text-sm font-medium"
+                >
+                  {expandedCard === 'kostov' ? 'Show Less' : 'Read More'}
+                  {expandedCard === 'kostov' ? 
+                    <ChevronUp className="ml-1 h-4 w-4" /> : 
+                    <ChevronDown className="ml-1 h-4 w-4" />
+                  }
+                </button>
+              </div>
+              
               <div className="flex space-x-3">
                 <a href="https://www.facebook.com/stojance.kostov.2025/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
                   <Facebook className="h-5 w-5" />
