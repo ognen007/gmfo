@@ -275,10 +275,10 @@ const Board = () => {
         </div>
 
         {/* IT Support Section */}
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl shadow-lg p-8 mb-16 border border-blue-200">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-lg p-8 mb-16 border border-gray-200">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <div className="inline-flex items-center justify-center p-3 bg-blue-600 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center p-3 bg-primary rounded-full mb-4">
                 <svg className="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
@@ -307,14 +307,14 @@ const Board = () => {
                   
                   <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <div className="w-2 h-2 bg-secondary rounded-full"></div>
                       <span className="text-sm font-medium text-gray-600">Professional Network</span>
                     </div>
                     <a 
                       href="https://www.linkedin.com/in/ognen-veljanovski-470069238/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                      className="inline-flex items-center px-4 py-2 bg-secondary text-white rounded-lg hover:bg-primary transition-colors font-medium"
                     >
                       <Linkedin className="h-4 w-4 mr-2" />
                       LinkedIn
