@@ -311,8 +311,8 @@ const Board = () => {
                     </p>
                   </div>
                   
-                  <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
-                    <div className="flex items-center space-x-2 order-2 md:order-1">
+                  <div className="flex flex-col space-y-4">
+                    <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-secondary rounded-full"></div>
                       <span className="text-sm font-medium text-gray-600">{t('professional.network')}</span>
                     </div>
@@ -320,7 +320,7 @@ const Board = () => {
                       href="https://www.linkedin.com/in/ognen-veljanovski-470069238/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="inline-flex items-center px-4 py-2 bg-secondary text-white rounded-lg hover:bg-primary transition-colors font-medium order-1 md:order-2 self-start"
+                      className="inline-flex items-center px-4 py-2 bg-secondary text-white rounded-lg hover:bg-primary transition-colors font-medium self-start"
                     >
                       <Linkedin className="h-4 w-4 mr-2" />
                       LinkedIn
