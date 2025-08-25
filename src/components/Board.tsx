@@ -200,9 +200,9 @@ const Board = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-16">
-          <div className="md:grid md:grid-cols-2">
-            <div className="relative h-64 md:h-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+            <div className="relative h-64">
               <img 
                 src="https://i.ibb.co/zVzqwHLT/image.png"
                 alt="Assoc. Prof. Dr. Stojanche Kostov"
@@ -214,21 +214,21 @@ const Board = () => {
                 className="absolute bottom-2 right-2 w-8 h-6 rounded-sm shadow-md"
               />
             </div>
-            <div className="p-8">
-              <h3 className="text-2xl font-bold mb-2 font-playfair">
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2 font-playfair">
                 {language === 'en' ? 'Assoc. Prof. Dr. Stojanche Kostov' : 'Доц. д-р Стојанче Костов'}
               </h3>
-              <p className="text-secondary font-medium mb-4">{t('kostov.title')}</p>
-              <p className="text-gray-600 mb-4 leading-relaxed">
+              <p className="text-secondary font-medium mb-3 text-sm">{t('kostov.title')}</p>
+              <p className="text-gray-600 mb-3 leading-relaxed text-sm">
                 {t('kostov.description')}
               </p>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
                 📍 {t('kostov.focus')}
               </p>
-              <blockquote className="border-l-4 border-secondary pl-4 italic text-gray-700 mb-6">
+              <blockquote className="border-l-4 border-secondary pl-3 italic text-gray-700 mb-4 text-sm">
                 {t('kostov.quote')}
               </blockquote>
-              <div className="flex space-x-4">
+              <div className="flex space-x-3">
                 <a href="https://www.facebook.com/stojance.kostov.2025/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
                   <Facebook className="h-5 w-5" />
                 </a>
