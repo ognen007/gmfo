@@ -252,7 +252,7 @@ const Board = () => {
                   onClick={() => toggleExpanded('kostov')}
                   className="flex items-center text-secondary hover:text-primary transition-colors text-sm font-medium"
                 >
-                  {expandedCard === 'kostov' ? 'Show Less' : 'Read More'}
+                  {expandedCard === 'kostov' ? t('show.less') : t('read.more')}
                   {expandedCard === 'kostov' ? 
                     <ChevronUp className="ml-1 h-4 w-4" /> : 
                     <ChevronDown className="ml-1 h-4 w-4" />
