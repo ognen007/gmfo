@@ -297,24 +297,29 @@ const Board = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <h4 className="text-xl font-bold text-secondary bg-white/90 px-3 py-1 rounded-lg backdrop-blur-sm">
+                      {t('ognen.veljanovski')}
+                    </h4>
+                  </div>
                 </div>
-                <div className="md:col-span-2 p-8 flex flex-col justify-center">
+                <div className="md:col-span-2 p-8 flex flex-col justify-center space-y-6">
                   <div className="mb-6">
                     <p className="text-gray-700 text-lg leading-relaxed">
                       {t('it.support.description')}
                     </p>
                   </div>
                   
-                  <div className="flex items-center space-x-4">
-                    <div className="flex items-center space-x-2">
+                  <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
+                    <div className="flex items-center space-x-2 order-2 md:order-1">
                       <div className="w-2 h-2 bg-secondary rounded-full"></div>
                       <span className="text-sm font-medium text-gray-600">{t('professional.network')}</span>
                     </div>
-                    <a 
+                    <a
                       href="https://www.linkedin.com/in/ognen-veljanovski-470069238/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="inline-flex items-center px-4 py-2 bg-secondary text-white rounded-lg hover:bg-primary transition-colors font-medium"
+                      className="inline-flex items-center px-4 py-2 bg-secondary text-white rounded-lg hover:bg-primary transition-colors font-medium order-1 md:order-2 self-start"
                     >
                       <Linkedin className="h-4 w-4 mr-2" />
                       LinkedIn
