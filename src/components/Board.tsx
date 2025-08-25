@@ -193,16 +193,16 @@ const Board = () => {
           {t('ambassadors')}
         </h3>
         
-        <div className="max-w-4xl mx-auto mb-16">
+        <div className="prose prose-lg text-gray-600 max-w-3xl mx-auto mb-16">
           <h4 className="text-xl font-semibold mb-4 text-center text-gray-900">{t('our.ambassadors')}</h4>
-          <p className="text-gray-600 text-center leading-relaxed">
+          <p className="text-center">
             {t('ambassadors.description')}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-            <div className="relative h-80">
+            <div className="relative h-64">
               <img 
                 src="https://i.ibb.co/zVzqwHLT/image.png"
                 alt="Assoc. Prof. Dr. Stojanche Kostov"
@@ -211,49 +211,19 @@ const Board = () => {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
                 alt="Macedonian flag"
-                className="absolute top-3 right-3 w-8 h-6 rounded-sm shadow-lg"
+                className="absolute bottom-2 right-2 w-8 h-6 rounded-sm shadow-md"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                <h3 className="text-xl font-bold text-white font-playfair">
-                  {language === 'en' ? 'Assoc. Prof. Dr. Stojanche Kostov' : 'Доц. д-р Стојанче Костов'}
-                </h3>
-                <p className="text-gray-200 text-sm">{t('kostov.title')}</p>
-              </div>
             </div>
             <div className="p-6">
-              <p className="text-gray-600 mb-4 leading-relaxed">
+              <h3 className="text-xl font-bold mb-2 font-playfair">
+                {language === 'en' ? 'Assoc. Prof. Dr. Stojanche Kostov' : 'Доц. д-р Стојанче Костов'}
+              </h3>
+              <p className="text-secondary font-medium mb-3 text-sm">{t('kostov.title')}</p>
+              <p className="text-gray-600 mb-3 leading-relaxed text-sm">
                 {t('kostov.description')}
               </p>
-              <div className="bg-gray-50 p-3 rounded-lg mb-4">
-                <p className="text-gray-700 text-sm font-medium">
-                  📍 {t('kostov.focus')}
-                </p>
-              </div>
-                    </p>
-                    <blockquote className="border-l-4 border-secondary pl-3 italic text-gray-700 mb-4 text-sm">
-                      {t('kostov.quote')}
-                    </blockquote>
-                  </>
-                )}
-                
-                <button
-                  onClick={() => toggleExpanded('kostov')}
-                  className="flex items-center text-secondary hover:text-primary text-sm font-medium transition-colors"
-                >
-                  {expandedCards['kostov'] ? (
-                    <>
-                      {language === 'en' ? 'Show Less' : 'Прикажи помалку'}
-                      <ChevronUp className="ml-1 h-4 w-4" />
-                    </>
-                  ) : (
-                    <>
-                      {language === 'en' ? 'Read More' : 'Прочитај повеќе'}
-                      <ChevronDown className="ml-1 h-4 w-4" />
-                    </>
-                  )}
-                </button>
-              </div>
-              
+              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                📍 {t('kostov.focus')}
               </p>
               <blockquote className="border-l-4 border-secondary pl-3 italic text-gray-700 mb-4 text-sm">
                 {t('kostov.quote')}
