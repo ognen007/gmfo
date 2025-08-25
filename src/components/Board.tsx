@@ -299,12 +299,13 @@ const Board = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
                 <div className="md:col-span-2 p-8 flex flex-col justify-center space-y-6">
-                  <div className="mb-6">
-                    <h4 className="text-xl font-bold text-secondary bg-white/90 px-3 py-1 rounded-lg backdrop-blur-sm">
+                  <div>
+                    <h3 className="text-xl font-bold mb-2 font-playfair">
                       {t('ognen.veljanovski')}
-                    </h4>
+                    </h3>
+                    <p className="text-secondary font-medium mb-3 text-sm">{t('ognen.title')}</p>
                   </div>
-                  <div className="mb-6">
+                  <div>
                     <p className="text-gray-700 text-lg leading-relaxed">
                       {t('it.support.description')}
                     </p>

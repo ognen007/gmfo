@@ -184,6 +184,7 @@ const translations = {
     'it.support.description': 'Software Engineer & Entrepreneur. Founder of Excelerator-AI, building custom AI-powered CRM solutions for industries such as construction, finance, and real estate. Passionate about combining technology and business strategy to deliver innovation.',
     'professional.network': 'Professional Network',
     'ognen.veljanovski': 'Ognen Veljanovski',
+    'ognen.title': 'Software Engineer, Entrepreneur, Innovator',
   },
   mk: {
     // Header
@@ -368,6 +369,7 @@ const translations = {
     'it.support.description': 'Софтверски инженер и претприемач. Основач на Excelerator-AI, каде што развиваме CRM решенија со вграденa вештачка интелигенција за индустрии како градежништво, финансии и недвижнини. Страстен за комбинирање на технологија и бизнис стратегија за создавање иновации.',
     'professional.network': 'Професионална мрежа',
     'ognen.veljanovski': 'Огнен Вељановски',
+    'ognen.title': 'Софтверски инженер, претприемач, иноватор',
   }
 };
 
