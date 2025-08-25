@@ -188,6 +188,60 @@ const Board = () => {
           </div>
         </div>
 
+        {/* Ambassadors Section */}
+        <h3 className="text-2xl font-bold text-center mb-8 font-playfair">
+          {t('ambassadors')}
+        </h3>
+        
+        <div className="prose prose-lg text-gray-600 max-w-3xl mx-auto mb-16">
+          <h4 className="text-xl font-semibold mb-4 text-center text-gray-900">{t('our.ambassadors')}</h4>
+          <p className="text-center">
+            {t('ambassadors.description')}
+          </p>
+        </div>
+
+        <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-16">
+          <div className="md:grid md:grid-cols-2">
+            <div className="relative h-64 md:h-auto">
+              <img 
+                src="https://i.ibb.co/zVzqwHLT/image.png"
+                alt="Assoc. Prof. Dr. Stojanche Kostov"
+                className="w-full h-full object-cover"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
+                alt="Macedonian flag"
+                className="absolute bottom-2 right-2 w-8 h-6 rounded-sm shadow-md"
+              />
+            </div>
+            <div className="p-8">
+              <h3 className="text-2xl font-bold mb-2 font-playfair">
+                {language === 'en' ? 'Assoc. Prof. Dr. Stojanche Kostov' : 'Доц. д-р Стојанче Костов'}
+              </h3>
+              <p className="text-secondary font-medium mb-4">{t('kostov.title')}</p>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                {t('kostov.description')}
+              </p>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                📍 {t('kostov.focus')}
+              </p>
+              <blockquote className="border-l-4 border-secondary pl-4 italic text-gray-700 mb-6">
+                {t('kostov.quote')}
+              </blockquote>
+              <div className="flex space-x-4">
+                <a href="https://www.facebook.com/stojance.kostov.2025/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a href="https://igeografija.academia.edu/StojanceKostov" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary flex items-center justify-center">
+                  <div className="h-5 w-5 bg-gray-600 hover:bg-secondary rounded-sm flex items-center justify-center text-white text-xs font-bold transition-colors">
+                    A
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="bg-white rounded-xl shadow-sm p-8 max-w-3xl mx-auto mb-16">
           <h3 className="text-2xl font-bold mb-4 text-center font-playfair">{t('join.board')}</h3>
           <p className="text-gray-600 text-center mb-6">

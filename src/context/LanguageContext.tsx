@@ -158,6 +158,15 @@ const translations = {
     'nikolovski.title': 'Internal Medicine Specialist',
     'nikolovski.description': 'Specialist in Internal Medicine with extensive experience in clinical care. Currently serving as a department physician, he is dedicated to providing high-quality medical treatment and patient-centered care. Part of the team at ISCC, contributing to the advancement of internal medicine practices.',
 
+    // Ambassadors
+    'ambassadors': 'Ambassadors',
+    'our.ambassadors': 'Our Ambassadors',
+    'ambassadors.description': 'To build bridges between science, culture, and society, the Global Macedonian Foundation Eternal (GMFE) is appointing a selected group of trusted individuals as official Ambassadors. These Ambassadors represent the values, mission, and initiatives of our foundation in academic, cultural, and public spaces - both in Macedonia and abroad. Each of them is a distinguished voice in their respective field and contributes actively to our shared goal: to strengthen the visibility of Macedonian heritage and promote international cooperation rooted in scientific excellence and cultural authenticity. They do not simply speak for us - they carry our vision into the world.',
+    'kostov.title': 'Ethnochoreologist & Research Associate, Institute of Folklore "Marko Cepenkov", Skopje',
+    'kostov.description': 'Stojanče Kostov is a distinguished Macedonian researcher in the field of folk dance and intangible cultural heritage. He holds degrees in ethnocoreology from the University "Goce Delčev" and works as a scientific associate at the Institute of Folklore in Skopje. His fieldwork and academic contributions include over 30 publications and participation in numerous international conferences. Kostov is dedicated to documenting, preserving, and promoting the traditional dances and oral heritage of Macedonia.',
+    'kostov.focus': 'Research focus: dance tradition, ethnocoreological recordings, methodological aspects, and stage presentation of traditional games.',
+    'kostov.quote': 'This collaboration represents a great opportunity for me to promote and affirm the Macedonian intangible cultural heritage. It is especially important to me that, with the support of GMFE – the only foundation of its kind in Macedonia – scientific research projects related to traditional folk dances and our national dance traditions will be published, increasing both the visibility and accessibility of such publications.',
+
     // Community Cards
     'stay.connected': 'Stay Connected',
     'stay.connected.desc': 'Get the latest updates and insights',
@@ -322,6 +331,15 @@ const translations = {
     
     'nikolovski.title': 'Специјалист по интерна медицина',
     'nikolovski.description': 'Специјалист по интерна медицина со долгогодишно искуство во клиничка нега. Моментално работи како лекар во одделение, посветен на обезбедување висококвалитетен медицински третман и нега фокусирана на пациентот. Дел од тимот на ISCC, придонесувајќи за унапредување на практиките во интерната медицина.',
+
+    // Ambassadors
+    'ambassadors': 'Амбасадори',
+    'our.ambassadors': 'Нашите Амбасадори',
+    'ambassadors.description': 'За да изградиме мостови меѓу науката, културата и општеството, Глобална Македонска Фондација Вечна (ГМФВ) именува избрана група доверливи личности како официјални Амбасадори. Овие амбасадори ги претставуваат вредностите, мисијата и иницијативите на фондацијата во академскиот, културниот и јавниот простор - како во Македонија, така и надвор од неа. Секој од нив е препознатлив глас во својата област и придонесува кон нашата заедничка цел: да се зајакне видливоста на македонското наследство и да се промовира меѓународна соработка базирана на научна извонредност и културна автентичност. Тие не зборуваат само за нас - тие ја носат нашата визија пред светот.',
+    'kostov.title': 'Етнокореолог и научен соработник, Институт за фолклор „Марко Цепенков", Скопје',
+    'kostov.description': 'Стојанче Костов е истакнат истражувач од областа на народните ора и нематеријалното културно наследство на Македонија. Дипломиран и магистриран етнокореолог на Универзитетот „Гоце Делчев", денес работи како научен соработник во Институтот за фолклор во Скопје. Има над 30 научни трудови и учество на бројни меѓународни конференции. Неговата работа е посветена на документирање, зачувување и афирмација на традиционалната игра и оралното наследство на Македонија.',
+    'kostov.focus': 'Истражувачки фокус: орска традиција, етнокореолошки записи, методски аспекти и сценска презентација на народните игри.',
+    'kostov.quote': 'Оваа соработка за мене претставува одлична можност за промоција и афирмација на македонското нематеријално културно наследство. За мене е особено важно тоа што со поддршка на ГМФВ која е единствена фондација од ваков вид во Македонија, ќе се публикуваат научно-истражувачки проекти поврзани со народните ора и орската традиција од нашата држава, со што би се зголемила видливоста и достапноста на публикации од ваков вид.',
 
     // Community Cards
     'stay.connected': 'Останете поврзани',
