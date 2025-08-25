@@ -174,6 +174,10 @@ const translations = {
     'join.community.desc': 'Be part of our growing network',
     'global.impact': 'Global Impact',
     'global.impact.desc': 'Help spread our message worldwide',
+    
+    // Read More/Less buttons
+    'read.more': 'Read More',
+    'show.less': 'Show Less',
   },
   mk: {
     // Header
@@ -348,6 +352,10 @@ const translations = {
     'join.community.desc': 'Бидете дел од нашата растечка мрежа',
     'global.impact': 'Глобално влијание',
     'global.impact.desc': 'Помогнете да ја прошириме нашата порака низ светот',
+    
+    // Read More/Less buttons
+    'read.more': 'Прочитај повеќе',
+    'show.less': 'Прикажи помалку',
   }
 };
 
