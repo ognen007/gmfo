@@ -297,13 +297,13 @@ const Board = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4">
+                </div>
+                <div className="md:col-span-2 p-8 flex flex-col justify-center space-y-6">
+                  <div className="mb-6">
                     <h4 className="text-xl font-bold text-secondary bg-white/90 px-3 py-1 rounded-lg backdrop-blur-sm">
                       {t('ognen.veljanovski')}
                     </h4>
                   </div>
-                </div>
-                <div className="md:col-span-2 p-8 flex flex-col justify-center space-y-6">
                   <div className="mb-6">
                     <p className="text-gray-700 text-lg leading-relaxed">
                       {t('it.support.description')}
