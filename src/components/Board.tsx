@@ -275,7 +275,7 @@ const Board = () => {
         </div>
 
         {/* IT Support Section */}
-        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-lg p-8 mb-16 border border-gray-200">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-lg p-8 pb-12 mb-16 border border-gray-200">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
               <div className="inline-flex items-center justify-center p-3 bg-primary rounded-full mb-4">
