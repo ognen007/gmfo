@@ -66,7 +66,6 @@ function App() {
                     <div className="flex flex-col space-y-4">
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                        <span className="text-sm font-medium text-gray-600">Professional Network</span>
                       </div>
                       <div className="flex space-x-3">
                         <a href="https://www.linkedin.com/in/ognen-veljanovski-470069238/" target="_blank" rel="noopener noreferrer" className="text-gray-600">
