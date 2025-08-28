@@ -37,8 +37,9 @@ function App() {
                   IT Support
                 </h3>
               </div>
-              
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+      
+      <Contact />
+                            <div className="bg-white rounded-xl shadow-sm overflow-hidden">
                 <div className="md:grid md:grid-cols-3">
                   <div className="relative h-64 md:h-auto">
                     <img 
@@ -85,8 +86,6 @@ function App() {
           </div>
         </div>
       </section>
-      
-      <Contact />
       <Footer />
     </div>
   );
