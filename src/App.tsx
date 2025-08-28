@@ -69,7 +69,6 @@ function App() {
                       </div>
                       <div className="flex space-x-3">
                         <a href="https://www.linkedin.com/in/ognen-veljanovski-470069238/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
-                          <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
               <Linkedin className="h-5 w-5" />
                         </a>
                       </div>
