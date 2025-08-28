@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: language === 'en' ? 'Mission' : t('mission'), href: '#mission' },
     { name: language === 'en' ? 'Endeavors' : t('endeavors'), href: '#endeavors' },
     { name: language === 'en' ? 'Board' : t('board'), href: '#board' },
-    { name: language === 'en' ? 'Ambassadors' : t('ambassadors'), href: '#board' },
+    { name: language === 'en' ? 'Ambassadors' : t('ambassadors'), href: '#ambassadors' },
     { name: language === 'en' ? 'Donate' : t('donate'), href: '#contact' },
     { name: language === 'en' ? 'Contact' : t('contact'), href: '#contact' },
   ];
