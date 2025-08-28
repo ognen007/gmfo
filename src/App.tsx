@@ -1,4 +1,5 @@
 import React from 'react';
+import { Linkedin } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Mission from './components/Mission';
