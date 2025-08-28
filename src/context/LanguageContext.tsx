@@ -167,6 +167,13 @@ const translations = {
     'kostov.focus': 'Research focus: dance tradition, ethnocoreological recordings, methodological aspects, and stage presentation of traditional games.',
     'kostov.quote': 'This collaboration represents a great opportunity for me to promote and affirm the Macedonian intangible cultural heritage. It is especially important to me that, with the support of GMFE – the only foundation of its kind in Macedonia – scientific research projects related to traditional folk dances and our national dance traditions will be published, increasing both the visibility and accessibility of such publications.',
 
+    // Samuel Naumovski Vickius
+    'samuel.name': 'Samuel Naumovski Vickius',
+    'samuel.title': 'President at Swedish-Macedonian Chamber of Commerce (SMCC)',
+    'samuel.description': 'Samuel is a Swedish-Macedonian professional with a background in peace and development, diplomacy, and international cooperation. As an NGO leader and political representative, he actively works on EU enlargement, transatlantic relations, and promoting equality through global initiatives.',
+    'samuel.focus': 'Focus: Cultural diplomacy, peace and development, EU enlargement, transatlantic relations, and promotion of equality through global initiatives.',
+    'samuel.quote': 'I am a GMFE ambassador to promote cultural heritage, support educational opportunities, and connect communities worldwide. Drawing on my international experience and leadership in global initiatives, I aim to foster collaboration, celebrate shared values, and inspire future generations.',
+
     // Community Cards
     'stay.connected': 'Stay Connected',
     'stay.connected.desc': 'Get the latest updates and insights',
@@ -353,6 +360,13 @@ const translations = {
     'kostov.description': 'Стојанче Костов е истакнат истражувач од областа на народните ора и нематеријалното културно наследство на Македонија. Дипломиран и магистриран етнокореолог на Универзитетот „Гоце Делчев", денес работи како научен соработник во Институтот за фолклор во Скопје. Има над 30 научни трудови и учество на бројни меѓународни конференции. Неговата работа е посветена на документирање, зачувување и афирмација на традиционалната игра и оралното наследство на Македонија.',
     'kostov.focus': 'Истражувачки фокус: орска традиција, етнокореолошки записи, методски аспекти и сценска презентација на народните игри.',
     'kostov.quote': 'Оваа соработка за мене претставува одлична можност за промоција и афирмација на македонското нематеријално културно наследство. За мене е особено важно тоа што со поддршка на ГМФВ која е единствена фондација од ваков вид во Македонија, ќе се публикуваат научно-истражувачки проекти поврзани со народните ора и орската традиција од нашата држава, со што би се зголемила видливоста и достапноста на публикации од ваков вид.',
+
+    // Samuel Naumovski Vickius
+    'samuel.name': 'Самуел Наумовски Викиус',
+    'samuel.title': 'Претседател на Шведско-Македонската стопанска комора (SMCC)',
+    'samuel.description': 'Самуел е шведско-македонски професионалец со позадина во мир и развој, дипломатија и меѓународна соработка. Како лидер на невладина организација и политички претставник, тој активно работи на проширување на ЕУ, трансатлантските односи и унапредување на еднаквоста преку глобални иницијативи.',
+    'samuel.focus': 'Фокус: Културна дипломатија, мир и развој, проширување на ЕУ, трансатлантски односи и промоција на еднаквост преку глобални иницијативи.',
+    'samuel.quote': 'Јас сум амбасадор на ГМФВ со мисија да го промовирам културното наследство, да поддржувам образовни можности и да поврзувам заедници ширум светот. Врз основа на моето меѓународно искуство и лидерство во глобални иницијативи, се стремам да поттикнувам соработка, да ги славам заедничките вредности и да ги инспирирам идните генерации.',
 
     // Community Cards
     'stay.connected': 'Останете поврзани',
