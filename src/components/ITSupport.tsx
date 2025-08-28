@@ -45,9 +45,6 @@ const ITSupport = () => {
                   </div>
                   
                   <div className="flex flex-col space-y-4">
-                    <div className="flex items-center space-y-2">
-                      <p className="text-gray-600 font-medium">{t('professional.network')}</p>
-                    </div>
                     <div className="flex space-x-3">
                       <a href="https://www.linkedin.com/in/ognen-veljanovski-470069238/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
                         <Linkedin className="h-5 w-5" />
