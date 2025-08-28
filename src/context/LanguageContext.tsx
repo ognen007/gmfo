@@ -254,6 +254,7 @@ const translations = {
     'mission': 'Мисија',
     'endeavors': 'Иницијативи',
     'board': 'Одбор',
+    'ambassadors': 'Амбасадори',
     'donate': 'Донирај',
     'contact': 'Контакт',
 
