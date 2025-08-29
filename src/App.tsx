@@ -22,6 +22,7 @@ function App() {
       
       <Events />
       <Board />
+      <Contact />
       
       <ITSupport />
       <Footer />
