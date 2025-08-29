@@ -253,7 +253,7 @@ const Board = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
           <div className="bg-white rounded-xl shadow-sm overflow-hidden">
             <div className="relative h-80">
               <img 
