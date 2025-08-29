@@ -200,6 +200,47 @@ const Board = () => {
           </div>
         </div>
 
+                <div className="bg-white rounded-xl shadow-sm p-8 max-w-3xl mx-auto mb-16">
+          <h3 className="text-2xl font-bold mb-4 text-center font-playfair">{t('join.board')}</h3>
+          <p className="text-gray-600 text-center mb-6">
+            {t('join.board.description').replace('contact(at)GMFE.org', '')}
+          </p>
+          <div className="text-center">
+            <a 
+              href="mailto:contact@gmfe.org" 
+              className="inline-flex items-center text-secondary hover:text-primary font-semibold"
+            >
+              <Mail className="h-5 w-5 mr-2" />
+              contact@gmfe.org
+            </a>
+          </div>
+        </div>
+        {/* Executive Manager Position */}
+        <div className="bg-white rounded-xl shadow-sm p-8 max-w-3xl mx-auto">
+          <div className="w-32 h-32 mx-auto mb-6 rounded-xl overflow-hidden relative">
+            <img 
+              src="https://i.ibb.co/q3hpTcnw/58e03b0c-c501-40f6-ac6f-081ceb2046b4.jpg"
+              alt="Marko Vidachek"
+              className="w-full h-full object-cover"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
+              alt="Macedonian flag"
+              className="absolute bottom-0 right-0 w-8 h-6 rounded-sm shadow-md"
+            />
+          </div>
+          <h4 className="text-xl font-semibold mb-2 text-center">{t('marko.name')}</h4>
+          <p className="text-secondary font-medium mb-4 text-center">{t('executive.director')}</p>
+          <p className="text-gray-600 mb-6 text-center">
+            {t('manager.description')}
+          </p>
+          <div className="flex justify-center space-x-4">
+            <a href="https://www.linkedin.com/in/marko-vidachek-55491721a/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
+              <Linkedin className="h-5 w-5" />
+            </a>
+          </div>
+        </div>
+
         {/* Ambassadors Section */}
         <h3 id="ambassadors" className="text-2xl font-bold text-center mb-8 font-playfair">
           {t('ambassadors')}
@@ -327,8 +368,6 @@ const Board = () => {
             </div>
           </div>
         </div>
-
-
 
       </div>
     </section>
