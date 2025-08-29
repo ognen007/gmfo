@@ -242,11 +242,12 @@ const Board = () => {
         </div>
 
         {/* Ambassadors Section */}
-        <h3 id="ambassadors" className="text-2xl font-bold text-center mt-8 font-playfair">
-          {t('ambassadors')}
-        </h3>
+
         
         <div className="prose prose-lg text-gray-600 max-w-3xl mx-auto mt-16">
+                  <h3 id="ambassadors" className="text-2xl font-bold text-center mt-8 font-playfair">
+          {t('ambassadors')}
+        </h3>
           <h4 className="text-xl font-semibold mb-4 text-center text-gray-900">{t('our.ambassadors')}</h4>
           <p className="text-center">
             {t('ambassadors.description')}
