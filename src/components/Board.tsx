@@ -242,7 +242,7 @@ const Board = () => {
         </div>
 
         {/* Ambassadors Section */}
-        <h3 id="ambassadors" className="text-2xl font-bold text-center mb-8 font-playfair">
+        <h3 id="ambassadors" className="text-2xl font-bold text-center mt-8 font-playfair">
           {t('ambassadors')}
         </h3>
         
