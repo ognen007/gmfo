@@ -242,7 +242,7 @@ const Board = () => {
           <div className="bg-white rounded-xl shadow-sm overflow-hidden">
             <div className="relative h-80">
               <img 
-                src="https://i.ibb.co/zVzqwHLT/image.png"
+                src="https://i.ibb.co/4RfLf983/image.png"
                 alt="Assoc. Prof. Dr. Stojanche Kostov"
                 className="w-full h-full object-cover"
               />
