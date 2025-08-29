@@ -200,21 +200,6 @@ const Board = () => {
           </div>
         </div>
 
-                <div className="bg-white rounded-xl shadow-sm p-8 max-w-3xl mx-auto mb-16">
-          <h3 className="text-2xl font-bold mb-4 text-center font-playfair">{t('join.board')}</h3>
-          <p className="text-gray-600 text-center mb-6">
-            {t('join.board.description').replace('contact(at)GMFE.org', '')}
-          </p>
-          <div className="text-center">
-            <a 
-              href="mailto:contact@gmfe.org" 
-              className="inline-flex items-center text-secondary hover:text-primary font-semibold"
-            >
-              <Mail className="h-5 w-5 mr-2" />
-              contact@gmfe.org
-            </a>
-          </div>
-        </div>
         {/* Executive Manager Position */}
         <div className="bg-white rounded-xl shadow-sm p-8 max-w-3xl mx-auto">
           <div className="w-32 h-32 mx-auto mb-6 rounded-xl overflow-hidden relative">
