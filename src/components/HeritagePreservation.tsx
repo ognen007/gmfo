@@ -153,7 +153,7 @@ const HeritagePreservation = () => {
                 <div className="mb-6">
                   <h3 className="text-2xl font-bold text-primary mb-2 font-playfair">
                     {language === 'en' ? 'Assoc. Prof. Dr. Stojanche Kostov' : 'Доц. д-р Стојанче Костов'}
-                  </p>
+                  </h3>
                   <p className="text-secondary font-medium">
                     {t('kostov.title')}
                   </p>
