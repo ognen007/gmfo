@@ -39,7 +39,105 @@ const HeritagePreservation = () => {
       </section>
 
       {/* Project Section */}
-      <section className="py-20">
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+            {/* Project Image Card */}
+            <div className="lg:col-span-1">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+                <div className="relative h-64">
+                  <img 
+                    src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80"
+                    alt="Traditional Macedonian Folk Dance"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <BookOpen className="h-8 w-8" />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-primary mb-3 font-playfair">
+                    {t('ethnochoreological.study.title')}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {t('ethnochoreological.study.intro')}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Details */}
+            <div className="lg:col-span-2">
+              <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 h-full">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-3 bg-secondary/10 rounded-lg">
+                    <BookOpen className="h-6 w-6 text-secondary" />
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-primary font-playfair">
+                    {language === 'en' ? 'Stojanche Kostov Research Project' : 'Истражувачки проект на Стојанче Костов'}
+                  </h2>
+                </div>
+                
+                <div className="space-y-8">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4 text-gray-900 flex items-center gap-2">
+                      <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                      {t('project.description')}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {t('ethnochoreological.study.description')}
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4 text-gray-900 flex items-center gap-2">
+                      <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                      {t('our.support')}
+                    </h3>
+                    <p className="text-gray-600 mb-4">
+                      {t('our.support.description')}
+                    </p>
+                    <div className="grid md:grid-cols-3 gap-4">
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <div className="flex items-start gap-2">
+                          <span className="text-secondary text-lg">•</span>
+                          <span className="text-gray-600 text-sm">{t('support.monograph')}</span>
+                        </div>
+                      </div>
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <div className="flex items-start gap-2">
+                          <span className="text-secondary text-lg">•</span>
+                          <span className="text-gray-600 text-sm">{t('support.promotion')}</span>
+                        </div>
+                      </div>
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <div className="flex items-start gap-2">
+                          <span className="text-secondary text-lg">•</span>
+                          <span className="text-gray-600 text-sm">{t('support.distribution')}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-4 text-gray-900 flex items-center gap-2">
+                      <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                      {language === 'en' ? 'Impact' : 'Влијание'}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {t('project.impact')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Researcher Profile Section */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="md:grid md:grid-cols-2">
@@ -49,54 +147,39 @@ const HeritagePreservation = () => {
                   alt="Assoc. Prof. Dr. Stojanche Kostov"
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
-              <div className="p-8 md:p-12">
-                <h2 className="text-3xl font-bold mb-6 text-primary font-playfair">
-                  {t('ethnochoreological.study.title')}
-                </h2>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                  {t('ethnochoreological.study.intro')}
-                </p>
-                
-                <div className="mb-8">
-                  <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                    {t('project.description')}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {t('ethnochoreological.study.description')}
+              <div className="p-8 md:p-12 flex flex-col justify-center">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-primary mb-2 font-playfair">
+                    {language === 'en' ? 'Assoc. Prof. Dr. Stojanche Kostov' : 'Доц. д-р Стојанче Костов'}
+                  </p>
+                  <p className="text-secondary font-medium">
+                    {t('kostov.title')}
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    {language === 'en' ? 'Institute of Folklore "Marko Cepenkov", Skopje' : 'Институт за фолклор „Марко Цепенков", Скопје'}
                   </p>
                 </div>
-
-                <div className="mb-8">
-                  <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                    {t('our.support')}
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    {t('our.support.description')}
-                  </p>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-start">
-                      <span className="text-secondary mr-2">•</span>
-                      {t('support.monograph')}
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-secondary mr-2">•</span>
-                      {t('support.promotion')}
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-secondary mr-2">•</span>
-                      {t('support.distribution')}
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="mb-8">
-                  <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                    {language === 'en' ? 'Impact' : 'Влијание'}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {t('project.impact')}
-                  </p>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2"></div>
+                    <p className="text-gray-600 text-sm">
+                      {language === 'en' ? 'Research Focus: Macedonian dance traditions in Ovče Pole, Štip, Kočani, Kratovo, and Zletovo' : 'Истражувачки фокус: Македонски орски традиции во Овче Поле, Штип, Кочани, Кратово и Злетово'}
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2"></div>
+                    <p className="text-gray-600 text-sm">
+                      {language === 'en' ? 'Over 10 years of field research and documentation' : 'Повеќе од 10 години теренски истражувања и документација'}
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2"></div>
+                    <p className="text-gray-600 text-sm">
+                      {language === 'en' ? 'Preserving intangible cultural heritage' : 'Зачувување на нематеријалното културно наследство'}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
