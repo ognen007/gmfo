@@ -208,6 +208,19 @@ const translations = {
     'support.distribution': 'International distribution to universities and libraries',
     'project.impact': 'This project ensures that Macedonia\'s folk dance traditions are documented, published, and accessible for generations to come, strengthening both cultural identity and academic heritage.',
     'heritage.cta': 'By supporting GMFE\'s Heritage Preservation fund, you help safeguard traditions that might otherwise fade into silence.',
+    
+    // Educational Initiatives Page
+    'educational.initiatives.title': 'Empowering the Next Generation of Macedonian Scholars',
+    'educational.initiatives.intro': 'At GMFE, we believe that investing in education means investing in the future of Macedonia. Through our Educational Initiatives, we provide scholarships, mentorship, and project support to young researchers from Macedonia and beyond. These initiatives enable students and early-career scholars to pursue advanced studies, publish groundbreaking research, and represent Macedonian identity in the global academic landscape.',
+    'empowering.scholars.title': 'Empowering Future Scholars – Research Project',
+    'empowering.scholars.intro': 'The Global Macedonian Foundation Eternal (GMFE) proudly supports young scholars whose work strengthens the academic and cultural understanding of Macedonia.',
+    'grujeski.project.description': 'Vladimir Grujeski, an emerging researcher with a Master\'s degree in International Relations and European Studies from the University of Florence, is conducting groundbreaking research on Italy\'s foreign policy toward Macedonia from the late 19th century until 1919. His project combines archival research in Italy, Portugal, and Hungary with a strong focus on understanding Macedonia\'s place in European diplomacy and history.',
+    'grujeski.support.description': 'GMFE supports Vladimir\'s work by:',
+    'grujeski.support.costs': 'Covering essential research and publication costs',
+    'grujeski.support.mentorship': 'Providing mentorship and advisory support from senior scholars',
+    'grujeski.support.showcase': 'Showcasing his work as part of the Foundation\'s Educational Initiatives',
+    'grujeski.impact': 'This project will not only highlight Macedonia\'s international historical position but will also serve as an example of how young researchers, with the right support, can contribute to global academic discourse.',
+    'educational.cta': 'Your support enables us to fund more young talents like Vladimir. Every contribution helps pave the way for a new generation of Macedonian scholars.',
   },
   mk: {
     // Header
@@ -417,6 +430,19 @@ const translations = {
     'support.distribution': 'Меѓународна дистрибуција до универзитети и библиотеки',
     'project.impact': 'Овој проект обезбедува македонската орска традиција да биде документирана, објавена и достапна за идните генерации, зајакнувајќи го и културниот идентитет и академското наследство.',
     'heritage.cta': 'Со поддршка на фондот за зачувување на наследството на ГМФВ, помагате да се зачуваат традиции кои инаку би можеле да избледат во тишина.',
+    
+    // Educational Initiatives Page
+    'educational.initiatives.title': 'Овозможување на следната генерација македонски научници',
+    'educational.initiatives.intro': 'Во ГМФВ веруваме дека вложувањето во образованието значи вложување во иднината на Македонија. Преку нашите Образовни иницијативи ние обезбедуваме стипендии, менторство и поддршка на проекти за млади истражувачи од Македонија и пошироко. Овие иницијативи им овозможуваат на студентите и младите научници да продолжат со напредни студии, да објавуваат истражувања и да го претставуваат македонскиот идентитет на глобалната академска сцена.',
+    'empowering.scholars.title': 'Овозможување на идните научници – Истражувачки проект',
+    'empowering.scholars.intro': 'Глобална Македонска Фондација Вечна со гордост ги поддржува младите научници чии трудови ја зајакнуваат академската и културната перспектива за Македонија.',
+    'grujeski.project.description': 'Владимир Грујески, млад истражувач со магистерска диплома по Меѓународни односи и европски студии од Универзитетот во Фиренца, спроведува значајно истражување за италијанската надворешна политика кон Македонија од крајот на XIX век до 1919 година. Неговиот проект комбинира архивски истражувања во Италија, Португалија и Унгарија со фокус на разбирањето на местото на Македонија во европската дипломатија и историја.',
+    'grujeski.support.description': 'ГМФВ го поддржува трудот на Владимир преку:',
+    'grujeski.support.costs': 'Покривање на основните трошоци за истражување и публикација',
+    'grujeski.support.mentorship': 'Менторство и советодавна поддршка од искусни научници',
+    'grujeski.support.showcase': 'Промоција на неговата работа како дел од образовните иницијативи на Фондацијата',
+    'grujeski.impact': 'Овој проект не само што ќе ја истакне меѓународната историска положба на Македонија, туку и ќе послужи како пример дека младите истражувачи, со соодветна поддршка, можат да придонесат во глобалниот академски дискурс.',
+    'educational.cta': 'Вашата поддршка ни овозможува да финансираме повеќе млади таленти како Владимир. Секој придонес помага да се отвори патот за нова генерација македонски научници.',
   }
 };
 

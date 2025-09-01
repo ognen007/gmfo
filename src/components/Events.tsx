@@ -72,12 +72,7 @@ const Events = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3 text-primary mt-4 font-playfair">{t('education.title')}</h3>
               <p className="text-gray-600 mb-4">{t('education.description')}</p>
-              <a 
-                href="https://donate.raisenow.io/gmtzs"
-                target="_blank"
-                rel="noopener noreferrer" 
-                className="text-secondary font-semibold hover:opacity-90 inline-flex items-center"
-              >
+              <a href="/projects/educational-initiatives" className="text-secondary font-semibold hover:opacity-90 inline-flex items-center">
                 {t('learn.more')}
                 <span className="ml-2">→</span>
               </a>
