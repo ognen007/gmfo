@@ -193,6 +193,21 @@ const translations = {
     'professional.network': 'Professional Network',
     'ognen.veljanovski': 'Ognen Veljanovski',
     'ognen.title': 'Software Engineer, Entrepreneur, Innovator',
+
+    // Heritage Preservation Page
+    'heritage.preservation.title': 'Safeguarding Macedonia\'s Cultural Memory',
+    'heritage.preservation.intro': 'Macedonia\'s cultural heritage is not only history – it is a living identity. Through Heritage Preservation projects, GMFE supports the research, documentation, and promotion of traditions, folklore, archaeology, and historical narratives. Our goal is to ensure that both tangible and intangible heritage remain preserved, celebrated, and accessible for future generations – in Macedonia and worldwide.',
+    'ethnochoreological.study.title': 'Safeguarding Intangible Heritage – Ethnochoreological Study',
+    'ethnochoreological.study.intro': 'Preserving the living traditions of Macedonia is at the heart of GMFE\'s mission. Folklore, dance, and oral culture are not only artistic expressions but also the carriers of collective memory.',
+    'project.description': 'Project Description',
+    'ethnochoreological.study.description': 'Assoc. Prof. Dr. Stojanche Kostov (Стојанче Костов), affiliated with the "Marko Cepenkov" Institute of Folklore in Skopje, leads a major project documenting and analyzing Macedonian dance traditions (оrа) in the regions of Ovče Pole, Štip, Kočani, Kratovo, and Zletovo. Based on over ten years of field research, his work includes melodic and kinetic notation of dances, contextual analysis of performance practices, and preservation of intangible cultural heritage.',
+    'our.support': 'Our Support',
+    'our.support.description': 'GMFE is going to partnering with Macedonian publishing houses to bring the research from Stojanche Kostov to print and distribution.',
+    'support.monograph': 'Publication of a scientific monograph',
+    'support.promotion': 'Promotion at academic and cultural events',
+    'support.distribution': 'International distribution to universities and libraries',
+    'project.impact': 'This project ensures that Macedonia\'s folk dance traditions are documented, published, and accessible for generations to come, strengthening both cultural identity and academic heritage.',
+    'heritage.cta': 'By supporting GMFE\'s Heritage Preservation fund, you help safeguard traditions that might otherwise fade into silence.',
   },
   mk: {
     // Header
@@ -387,6 +402,21 @@ const translations = {
     'professional.network': 'Професионална мрежа',
     'ognen.veljanovski': 'Огнен Велјановски',
     'ognen.title': 'Софтверски инженер, претприемач, иноватор',
+
+    // Heritage Preservation Page
+    'heritage.preservation.title': 'Зачувување на културната меморија на Македонија',
+    'heritage.preservation.intro': 'Културното наследство на Македонија не е само историја – тоа е жива идентитетска меморија. Преку Иницијативите за зачувување на наследството, ГМФВ поддржува истражување, документирање и промоција на традиции, фолклор, археологија и историски наративи. Нашата цел е да обезбедиме дека и материјалното и нематеријалното наследство ќе останат сочувани, афирмирани и достапни за идните генерации – во Македонија и во светот.',
+    'ethnochoreological.study.title': 'Зачувување на нематеријалното наследство – Етнокореолошка студија',
+    'ethnochoreological.study.intro': 'Зачувувањето на живите традиции на Македонија е во сржта на мисијата на ГМФВ. Фолклорот, ората и усната култура не се само уметнички изрази, туку и носители на колективната меморија.',
+    'project.description': 'Опис на проектот',
+    'ethnochoreological.study.description': 'Доц. д-р Стојанче Костов, афилиран со Институтот за фолклор „Марко Цепенков" во Скопје, води значаен проект за документирање и анализа на македонската орска традиција во регионите Овче Поле, Штип, Кочани, Кратово и Злетово. Врз основа на повеќе од десет години теренски истражувања, неговата работа вклучува мелографски и кинетографски записи на ора, контекстуална анализа на изведбените практики и зачувување на нематеријалното културно наследство.',
+    'our.support': 'Нашата поддршка',
+    'our.support.description': 'ГМФВ соработува со македонски издавачки куќи за да го објави и дистрибуира истражувањето на Стојанче:',
+    'support.monograph': 'Публикација на научна монографија',
+    'support.promotion': 'Промоција на академски и културни настани',
+    'support.distribution': 'Меѓународна дистрибуција до универзитети и библиотеки',
+    'project.impact': 'Овој проект обезбедува македонската орска традиција да биде документирана, објавена и достапна за идните генерации, зајакнувајќи го и културниот идентитет и академското наследство.',
+    'heritage.cta': 'Со поддршка на фондот за зачувување на наследството на ГМФВ, помагате да се зачуваат традиции кои инаку би можеле да избледат во тишина.',
   }
 };
 

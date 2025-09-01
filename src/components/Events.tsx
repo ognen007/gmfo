@@ -34,7 +34,7 @@ const Events = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3 text-primary mt-4 font-playfair">{t('heritage.title')}</h3>
               <p className="text-gray-600 mb-4">{t('heritage.description')}</p>
-              <a href="#" className="text-secondary font-semibold hover:opacity-90 inline-flex items-center">
+              <a href="/projects/heritage-preservation" className="text-secondary font-semibold hover:opacity-90 inline-flex items-center">
                 {t('learn.more')}
                 <span className="ml-2">→</span>
               </a>
