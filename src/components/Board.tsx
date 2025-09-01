@@ -230,7 +230,7 @@ const Board = () => {
 
         
         <div className="prose prose-lg text-gray-600 max-w-3xl mx-auto mt-16">
-                  <h3 id="ambassadors" className="text-3xl md:text-4xl font-bold text-center mb-8 font-playfair">
+                  <h3 id="ambassadors" className="text-3xl md:text-4xl font-bold text-primary mb-4 font-playfair">
           {t('ambassadors')}
         </h3>
           <p className="text-center">
