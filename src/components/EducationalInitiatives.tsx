@@ -1,6 +1,7 @@
 import React from 'react';
 import { GraduationCap, Heart, BookOpen } from 'lucide-react';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import { useLanguage } from '../context/LanguageContext';
 
 const EducationalInitiatives = () => {
@@ -213,21 +214,7 @@ const EducationalInitiatives = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-primary text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="mb-6">
-              <img 
-                src="https://i.ibb.co/MypN8Tkj/Logo-Wort-Bildmarke-SCREEN-RGB.png"
-                alt="GMFE Logo"
-                className="max-w-[200px] mx-auto"
-              />
-            </div>
-            <p>© 2025 Global Macedonian Foundation Eternal</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
