@@ -80,9 +80,6 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center p-2 bg-primary/10 rounded-full mb-4">
-              <Mail className="h-6 w-6 text-primary" />
-            </div>
             <h2 className="text-4xl font-bold text-primary mb-6 font-playfair">
               {t('shape.future')}
             </h2>
