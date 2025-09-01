@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowLeft, BookOpen, Users, Globe, Heart } from 'lucide-react';
+import { BookOpen, Heart } from 'lucide-react';
+import Navbar from './Navbar';
 import { useLanguage } from '../context/LanguageContext';
 
 const HeritagePreservation = () => {
@@ -7,49 +8,30 @@ const HeritagePreservation = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation Bar */}
-      <nav className="bg-primary text-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex items-center">
-              <a href="/" className="flex items-center space-x-2">
-                <div className="h-14 w-14 text-yellow-500">
-                  <img 
-                    src="https://i.ibb.co/N2LRZchC/Logo-Bildmarke-SCREEN-RGB.png"
-                    alt="Vergina Sun"
-                    className="h-full w-full"
-                  />
-                </div>
-                <span className="font-playfair font-bold text-2xl md:hidden">GMFE</span>
-                <span className="font-playfair font-bold text-2xl hidden md:block">
-                  {language === 'en' ? 'Global Macedonian Foundation Eternal' : 'Глобална Македонска Фондација Вечна'}
-                </span>
-              </a>
-            </div>
-            <div className="flex items-center">
-              <a
-                href="/"
-                className="inline-flex items-center text-white hover:text-secondary px-3 py-2 rounded-md text-base font-medium transition-colors"
-              >
-                <ArrowLeft className="h-5 w-5 mr-2" />
-                {language === 'en' ? 'Back to Home' : 'Назад кон почетна'}
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-16 pb-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center p-4 bg-primary/10 rounded-full mb-6">
-              <BookOpen className="h-12 w-12 text-primary" />
+      <section className="pt-16 relative">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://i.ibb.co/jvT3qhr7/toa-heftiba-4-Czza-Jn-Qh0c-unsplash.jpg"
+            alt="Macedonia Background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center text-white">
+          <div className="max-w-4xl mx-auto">
+            <div className="inline-flex items-center justify-center p-4 bg-white/20 backdrop-blur-sm rounded-full mb-6">
+              <BookOpen className="h-12 w-12 text-white" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-playfair">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-playfair">
               {t('heritage.preservation.title')}
             </h1>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed">
               {t('heritage.preservation.intro')}
             </p>
           </div>
