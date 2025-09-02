@@ -144,7 +144,7 @@ const EducationalInitiatives = () => {
             <div className="md:grid md:grid-cols-2">
               <div className="relative h-64 md:h-auto">
                 <img 
-                  src="https://i.ibb.co/ZMvQQpL/image.png"
+                  src="https://i.ibb.co/ZzFq9Wc4/image.png"
                   alt="Vladimir Grujeski"
                   className="w-full h-full object-cover"
                 />
