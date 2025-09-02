@@ -48,7 +48,7 @@ const HeritagePreservation = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden h-full">
                 <div className="relative h-64">
                   <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Makedonsko_Oro.jpg/640px-Makedonsko_Oro.jpg"
+                    src="https://i.ibb.co/k20Pkk84/image.png"
                     alt="Makedonsko Oro - Traditional Macedonian Folk Dance"
                     className="w-full h-full object-cover"
                   />
