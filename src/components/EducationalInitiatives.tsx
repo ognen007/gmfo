@@ -48,8 +48,8 @@ const EducationalInitiatives = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden h-full">
                 <div className="relative h-64">
                   <img 
-                    src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"
-                    alt="Students studying"
+                    src="https://i.ibb.co/2YgpKzgV/image.png"
+                    alt="Empowering Future Scholars Research Project"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
