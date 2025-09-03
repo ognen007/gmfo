@@ -142,7 +142,7 @@ const HeritagePreservation = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="md:grid md:grid-cols-2">
-              <div className="relative h-48 md:h-64">
+              <div className="relative h-64 md:h-80">
                 <img 
                   src="https://i.ibb.co/4RfLf983/image.png"
                   alt="Assoc. Prof. Dr. Stojanche Kostov"
