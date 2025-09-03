@@ -86,7 +86,7 @@ const Navbar = () => {
                     ? "Global Macedonian Foundation Eternal" 
                     : "Глобална Македонска Фондација Вечна"
                   }
-                  className="h-14"
+                  className="h-10"
                 />
               </div>
             </button>
