@@ -63,17 +63,32 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <button onClick={() => navigate('/')} className="flex items-center space-x-2 hover:opacity-90 transition-opacity">
-              <div className="h-14 w-14 text-yellow-500">
+              {/* Mobile: Show icon + GMFE text */}
+              <div className="md:hidden flex items-center space-x-2">
+                <div className="h-14 w-14 text-yellow-500">
+                  <img 
+                    src="https://i.ibb.co/N2LRZchC/Logo-Bildmarke-SCREEN-RGB.png"
+                    alt="Vergina Sun"
+                    className="h-full w-full"
+                  />
+                </div>
+                <span className="font-playfair font-bold text-2xl">GMFE</span>
+              </div>
+              
+              {/* Desktop: Show language-specific logo only */}
+              <div className="hidden md:block">
                 <img 
-                  src="https://i.ibb.co/N2LRZchC/Logo-Bildmarke-SCREEN-RGB.png"
-                  alt="Vergina Sun"
-                  className="h-full w-full"
+                  src={language === 'en' 
+                    ? "https://i.ibb.co/wNPzhH8h/image.png"
+                    : "https://i.ibb.co/4rB2ncT/image.png"
+                  }
+                  alt={language === 'en' 
+                    ? "Global Macedonian Foundation Eternal" 
+                    : "Глобална Македонска Фондација Вечна"
+                  }
+                  className="h-14"
                 />
               </div>
-              <span className="font-playfair font-bold text-2xl md:hidden">GMFE</span>
-              <span className="font-playfair font-bold text-2xl hidden md:block">
-                {language === 'en' ? 'Global Macedonian Foundation Eternal' : 'Глобална Македонска Фондација Вечна'}
-              </span>
             </button>
           </div>
 
