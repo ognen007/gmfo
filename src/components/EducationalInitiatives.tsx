@@ -80,7 +80,7 @@ const EducationalInitiatives = () => {
                   </h2>
                 </div>
                 
-                <div className="space-y-8">
+                <div className="space-y-6">
                   <div>
                     <h3 className="text-xl font-semibold mb-4 text-gray-900 flex items-center gap-2">
                       <div className="w-2 h-2 bg-secondary rounded-full"></div>
