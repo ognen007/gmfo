@@ -49,7 +49,7 @@ const Navbar = () => {
     },
     { 
       name: language === 'en' ? 'Ambassadors' : 'Амбасадори', 
-      action: () => handleRouteNavigation('/ambassadors')
+      action: () => handleNavigation('ambassadors')
     },
     { 
       name: language === 'en' ? 'Contact' : 'Контакт', 
