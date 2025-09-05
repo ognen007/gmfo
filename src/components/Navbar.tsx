@@ -40,12 +40,12 @@ const Navbar = () => {
 
   const navItems = [
     { 
-      name: language === 'en' ? 'About' : 'За нас', 
-      action: () => handleNavigation('board')
-    },
-    { 
       name: language === 'en' ? 'Mission' : 'Мисија', 
       action: () => handleNavigation('mission')
+    },
+    { 
+      name: language === 'en' ? 'About' : 'За нас', 
+      action: () => handleNavigation('board')
     },
     { 
       name: language === 'en' ? 'Projects' : 'Проекти', 
