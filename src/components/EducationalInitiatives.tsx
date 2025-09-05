@@ -40,9 +40,9 @@ const EducationalInitiatives = () => {
       </section>
 
       {/* Project Section */}
-      <section className="py-20 mb-(-5)">
+      <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid lg:grid-cols-3 gap-8 mb-8">
             {/* Project Image Card */}
             <div className="lg:col-span-1">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden h-full">
@@ -138,7 +138,7 @@ const EducationalInitiatives = () => {
       </section>
 
       {/* Researcher Profile Section */}
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl shadow-lg overflow-hidden">
             <div className="md:grid md:grid-cols-2">
