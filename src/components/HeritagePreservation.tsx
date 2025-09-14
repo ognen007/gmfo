@@ -144,7 +144,7 @@ const HeritagePreservation = () => {
             <div className="md:grid md:grid-cols-2">
               <div className="relative h-64 md:h-auto">
                 <img 
-                  src="https://i.ibb.co/4RfLf983/image.png"
+                  src="https://i.ibb.co/3mn91hLy/image.png"
                   alt="Assoc. Prof. Dr. Stojanche Kostov"
                   className="w-full h-full object-cover"
                 />
