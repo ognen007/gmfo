@@ -108,6 +108,14 @@ const Navbar = () => {
               </button>
             ))}
             <LanguageSwitcher />
+            <a
+              href="https://pay.raisenow.io/ndyvq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-secondary text-white px-4 py-2 rounded-full font-semibold hover:opacity-90 transition-colors text-sm"
+            >
+              {language === 'en' ? 'Donate' : 'Донирај'}
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -136,6 +144,14 @@ const Navbar = () => {
               </button>
             ))}
             <LanguageSwitcher className="mx-3 my-2" />
+            <a
+              href="https://pay.raisenow.io/ndyvq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-secondary text-white px-4 py-2 rounded-full font-semibold hover:opacity-90 transition-colors text-sm mx-3 my-2 text-center block"
+            >
+              {language === 'en' ? 'Donate' : 'Донирај'}
+            </a>
           </div>
         </div>
       )}

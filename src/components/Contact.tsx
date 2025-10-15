@@ -94,7 +94,7 @@ const Contact = () => {
           </div>
 
           {/* Grid for cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mt-12">
             <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
               <div className="inline-flex items-center gap-3 mb-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
@@ -168,6 +168,35 @@ const Contact = () => {
                   className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
                 >
                   {t('preserving.knowledge.button')} <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
+              <div className="inline-flex items-center gap-3 mb-4">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <Heart className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-primary">{t('friends.gmfe.title')}</h3>
+              </div>
+              <div className="text-lg font-semibold text-secondary mb-4">{t('friends.gmfe.goal')}</div>
+              <p className="text-gray-600 mb-4">
+                {t('friends.gmfe.description')}
+              </p>
+              <p className="text-gray-600 mb-4">
+                {t('friends.gmfe.highlight')}
+              </p>
+              <div className="mb-4">
+                <span className="text-blue-600">🔹</span> {t('friends.gmfe.cta')}
+              </div>
+              <div className="mt-auto pt-4">
+                <a
+                  href={`https://donate.raisenow.io/pcyxk?lng=${language}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
+                >
+                  {t('friends.gmfe.button')} <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </div>
             </div>

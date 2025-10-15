@@ -43,10 +43,11 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">{t('quick.links')}</h3>
             <ul className="space-y-2">
-              <li><a href="#mission" className="hover:text-yellow-400">Mission</a></li>
-              <li><a href="#endeavors" className="hover:text-yellow-400">Endeavors</a></li>
-              <li><a href="#board" className="hover:text-yellow-400">Board</a></li>
-              <li><a href="#contact" className="hover:text-yellow-400">Contact</a></li>
+              <li><a href="#mission" className="hover:text-yellow-400">{t('language') === 'en' ? 'Mission' : 'Мисија'}</a></li>
+              <li><a href="#board" className="hover:text-yellow-400">{t('language') === 'en' ? 'About' : 'За нас'}</a></li>
+              <li><a href="#endeavors" className="hover:text-yellow-400">{t('language') === 'en' ? 'Projects' : 'Проекти'}</a></li>
+              <li><a href="#ambassadors" className="hover:text-yellow-400">{t('language') === 'en' ? 'Ambassadors' : 'Амбасадори'}</a></li>
+              <li><a href="#contact" className="hover:text-yellow-400">{t('language') === 'en' ? 'Contact' : 'Контакт'}</a></li>
             </ul>
           </div>
           <div>

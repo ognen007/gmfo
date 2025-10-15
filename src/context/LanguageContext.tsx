@@ -221,6 +221,14 @@ const translations = {
     'grujeski.support.showcase': 'Showcasing his work as part of the Foundation\'s Educational Initiatives',
     'grujeski.impact': 'This project will not only highlight Macedonia\'s international historical position but will also serve as an example of how young researchers, with the right support, can contribute to global academic discourse.',
     'educational.cta': 'Your support enables us to fund more young talents like Vladimir. Every contribution helps pave the way for a new generation of Macedonian scholars.',
+    
+    // Friends of GMFE
+    'friends.gmfe.title': 'Friends of GMFE',
+    'friends.gmfe.goal': '€5–10 Monthly Support',
+    'friends.gmfe.description': 'Join our circle of Friends of GMFE and become part of a global community preserving Macedonia\'s roots and shaping its future. Your monthly support helps fund research, publications, and cultural initiatives that strengthen Macedonian identity worldwide.',
+    'friends.gmfe.highlight': 'By becoming a Friend of GMFE, you\'ll receive exclusive updates, early access to new studies, and public recognition as a valued supporter.',
+    'friends.gmfe.cta': 'Together, we nurture Roots and build the Future!',
+    'friends.gmfe.button': 'Join as a Friend',
   },
   mk: {
     // Header
@@ -443,6 +451,14 @@ const translations = {
     'grujeski.support.showcase': 'Промоција на неговата работа како дел од образовните иницијативи на Фондацијата',
     'grujeski.impact': 'Овој проект не само што ќе ја истакне меѓународната историска положба на Македонија, туку и ќе послужи како пример дека младите истражувачи, со соодветна поддршка, можат да придонесат во глобалниот академски дискурс.',
     'educational.cta': 'Вашата поддршка ни овозможува да финансираме повеќе млади таленти како Владимир. Секој придонес помага да се отвори патот за нова генерација македонски научници.',
+    
+    // Friends of GMFE
+    'friends.gmfe.title': 'Пријатели на ГМФВ',
+    'friends.gmfe.goal': 'Месечна поддршка од 5–10 евра',
+    'friends.gmfe.description': 'Приклучи се во кругот на Пријатели на Глобалната Македонска Фондација ВЕЧНА (ГМФВ) и стани дел од глобалната заедница што ги чува корените и ја гради иднината на Македонија. Твојата месечна поддршка овозможува финансирање на истражувања, изданија и културни иницијативи што го зајакнуваат македонскиот идентитет ширум светот.',
+    'friends.gmfe.highlight': 'Како Пријател на ГМФВ, ќе добиваш ексклузивни информации, ранен пристап до нови трудови и јавно признание како поддржувач на нашата мисија.',
+    'friends.gmfe.cta': 'Заедно ги негуваме корените и ја градиме иднината!',
+    'friends.gmfe.button': 'Стани Пријател',
   }
 };
 
