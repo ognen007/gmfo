@@ -94,107 +94,107 @@ const Contact = () => {
           </div>
 
           {/* Grid for cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mt-12">
-            <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-10 mt-16">
+            <div className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col min-h-[400px]">
               <div className="inline-flex items-center gap-3 mb-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <Heart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-primary">{t('support.mission.title')}</h3>
+                <h3 className="text-lg font-bold text-primary leading-tight">{t('support.mission.title')}</h3>
               </div>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 {t('support.mission.description')}
               </p>
-              <div className="mb-4">
+              <div className="mb-6">
                 <span className="text-blue-600">🔹</span> {t('support.mission.highlight')}
               </div>
-              <div className="mt-auto pt-4">
+              <div className="mt-auto pt-6">
                 <a
                   href="https://pay.raisenow.io/ndyvq"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
+                  className="inline-flex items-center bg-secondary text-white px-6 py-4 rounded-lg font-semibold hover:opacity-90 transition-all hover:scale-105 w-full justify-center"
                 >
                   {t('donate.now')} <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
+            <div className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col min-h-[400px]">
               <div className="inline-flex items-center gap-3 mb-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <GraduationCap className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-primary">{t('young.researchers.title')}</h3>
+                <h3 className="text-lg font-bold text-primary leading-tight">{t('young.researchers.title')}</h3>
               </div>
-              <div className="text-lg font-semibold text-secondary mb-4">{t('young.researchers.goal')}</div>
-              <p className="text-gray-600 mb-4">
+              <div className="text-lg font-semibold text-secondary mb-6">{t('young.researchers.goal')}</div>
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 {t('young.researchers.description')}
               </p>
-              <div className="mb-4">
+              <div className="mb-6">
                 <span className="text-blue-600">🔹</span> {t('young.researchers.highlight')}
               </div>
-              <div className="mt-auto pt-4">
+              <div className="mt-auto pt-6">
                 <a
                   href="https://donate.raisenow.io/gmtzs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
+                  className="inline-flex items-center bg-secondary text-white px-6 py-4 rounded-lg font-semibold hover:opacity-90 transition-all hover:scale-105 w-full justify-center"
                 >
                   {t('young.researchers.button')} <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
+            <div className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col min-h-[400px]">
               <div className="inline-flex items-center gap-3 mb-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <Library className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-primary">{t('preserving.knowledge.title')}</h3>
+                <h3 className="text-lg font-bold text-primary leading-tight">{t('preserving.knowledge.title')}</h3>
               </div>
-              <div className="text-lg font-semibold text-secondary mb-4">{t('preserving.knowledge.goal')}</div>
-              <p className="text-gray-600 mb-4">
+              <div className="text-lg font-semibold text-secondary mb-6">{t('preserving.knowledge.goal')}</div>
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 {t('preserving.knowledge.description')}
               </p>
-              <div className="mb-4">
+              <div className="mb-6">
                 <span className="text-blue-600">🔹</span> {t('preserving.knowledge.highlight')}
               </div>
-              <div className="mt-auto pt-4">
+              <div className="mt-auto pt-6">
                 <a
                   href="https://donate.raisenow.io/knqgq"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
+                  className="inline-flex items-center bg-secondary text-white px-6 py-4 rounded-lg font-semibold hover:opacity-90 transition-all hover:scale-105 w-full justify-center"
                 >
                   {t('preserving.knowledge.button')} <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm flex flex-col">
+            <div className="bg-white p-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col min-h-[400px]">
               <div className="inline-flex items-center gap-3 mb-4">
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <Heart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-primary">{t('friends.gmfe.title')}</h3>
+                <h3 className="text-lg font-bold text-primary leading-tight">{t('friends.gmfe.title')}</h3>
               </div>
-              <div className="text-lg font-semibold text-secondary mb-4">{t('friends.gmfe.goal')}</div>
-              <p className="text-gray-600 mb-4">
+              <div className="text-lg font-semibold text-secondary mb-6">{t('friends.gmfe.goal')}</div>
+              <p className="text-gray-600 mb-4 leading-relaxed">
                 {t('friends.gmfe.description')}
               </p>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 {t('friends.gmfe.highlight')}
               </p>
-              <div className="mb-4">
+              <div className="mb-6">
                 <span className="text-blue-600">🔹</span> {t('friends.gmfe.cta')}
               </div>
-              <div className="mt-auto pt-4">
+              <div className="mt-auto pt-6">
                 <a
                   href={`https://donate.raisenow.io/pcyxk?lng=${language}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors w-full justify-center"
+                  className="inline-flex items-center bg-secondary text-white px-6 py-4 rounded-lg font-semibold hover:opacity-90 transition-all hover:scale-105 w-full justify-center"
                 >
                   {t('friends.gmfe.button')} <ArrowRight className="ml-2 h-5 w-5" />
                 </a>

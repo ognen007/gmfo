@@ -1,9 +1,33 @@
 import React from 'react';
 import { Mail, MapPin, Heart, Linkedin, Facebook, Instagram, Youtube } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleNavigation = (sectionId: string) => {
+    if (location.pathname === '/') {
+      // Already on homepage, just scroll
+      scrollToSection(sectionId);
+    } else {
+      // Navigate to homepage first, then scroll
+      navigate('/');
+      // Use setTimeout to ensure the page has loaded before scrolling
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 100);
+    }
+  };
 
   return (
     <footer className="bg-primary text-white py-12">
@@ -43,11 +67,46 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">{t('quick.links')}</h3>
             <ul className="space-y-2">
-              <li><a href="#mission" className="hover:text-yellow-400">{t('language') === 'en' ? 'Mission' : 'Мисија'}</a></li>
-              <li><a href="#board" className="hover:text-yellow-400">{t('language') === 'en' ? 'About' : 'За нас'}</a></li>
-              <li><a href="#endeavors" className="hover:text-yellow-400">{t('language') === 'en' ? 'Projects' : 'Проекти'}</a></li>
-              <li><a href="#ambassadors" className="hover:text-yellow-400">{t('language') === 'en' ? 'Ambassadors' : 'Амбасадори'}</a></li>
-              <li><a href="#contact" className="hover:text-yellow-400">{t('language') === 'en' ? 'Contact' : 'Контакт'}</a></li>
+              <li>
+                <button 
+                  onClick={() => handleNavigation('mission')} 
+                  className="hover:text-yellow-400 text-left"
+                >
+                  {language === 'en' ? 'Mission' : 'Мисија'}
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => handleNavigation('board')} 
+                  className="hover:text-yellow-400 text-left"
+                >
+                  {language === 'en' ? 'About' : 'За нас'}
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => handleNavigation('endeavors')} 
+                  className="hover:text-yellow-400 text-left"
+                >
+                  {language === 'en' ? 'Projects' : 'Проекти'}
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => handleNavigation('ambassadors')} 
+                  className="hover:text-yellow-400 text-left"
+                >
+                  {language === 'en' ? 'Ambassadors' : 'Амбасадори'}
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => handleNavigation('contact')} 
+                  className="hover:text-yellow-400 text-left"
+                >
+                  {language === 'en' ? 'Contact' : 'Контакт'}
+                </button>
+              </li>
             </ul>
           </div>
           <div>
