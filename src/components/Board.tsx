@@ -355,6 +355,7 @@ const Board = () => {
                 </a>
               </div>
             </div>
+            </div>
           </div>
           <div className="bg-white rounded-xl shadow-sm overflow-hidden">
             <div className="relative h-80">
