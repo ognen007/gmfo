@@ -392,7 +392,7 @@ const Board = () => {
         className="w-full h-full object-cover"
       />
       <img
-        src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/800px-Flag_of_Sweden.svg.png"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
         alt="Swedish flag"
         className="absolute bottom-2 right-2 w-8 h-6 rounded-sm shadow-md"
       />
