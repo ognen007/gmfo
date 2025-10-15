@@ -388,7 +388,7 @@ const Board = () => {
   <div className="bg-white rounded-xl shadow-sm overflow-hidden">
     <div className="relative h-80">
       <img
-        src="https://i.ibb.co/s9pXDXTm/image.png"
+        src="https://i.ibb.co/pjV64TkK/image.png"
         alt="Samuel Naumovski Vickius"
         className="w-full h-full object-cover"
       />
