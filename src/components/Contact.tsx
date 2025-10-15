@@ -126,7 +126,6 @@ const Contact = () => {
 
     {/* Repeat other cards here — the same layout applies */}
   </div>
-</div>
 
           {/* Contact Form */}
           <form ref={formRef} onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 space-y-6 mt-12">
