@@ -15,7 +15,7 @@ const Contact = () => {
   const [sending, setSending] = React.useState(false);
   const recaptchaRef = React.useRef<ReCAPTCHA>(null);
   const formRef = React.useRef<HTMLFormElement>(null);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
