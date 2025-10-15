@@ -344,6 +344,40 @@ const Board = () => {
                   }
                 </button>
               </div>
+
+                          <div className="p-6">
+              <h3 className="text-xl font-bold mb-2 font-playfair">
+                {t('samuel.name')}
+              </h3>
+              <p className="text-secondary font-medium mb-3 text-sm">{t('samuel.title')}</p>
+              
+              <div className="mb-4">
+                <p className="text-gray-600 mb-3 leading-relaxed text-sm">
+                  {expandedCard === 'samuel' ? t('samuel.description') : truncateText(t('samuel.description'))}
+                </p>
+                
+                {expandedCard === 'samuel' && (
+                  <>
+                    <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                      📍 {t('samuel.focus')}
+                    </p>
+                    <blockquote className="border-l-4 border-secondary pl-3 italic text-gray-700 mb-4 text-sm">
+                      {t('samuel.quote')}
+                    </blockquote>
+                  </>
+                )}
+                
+                <button
+                  onClick={() => toggleExpanded('samuel')}
+                  className="flex items-center text-secondary hover:text-primary transition-colors text-sm font-medium"
+                >
+                  {expandedCard === 'samuel' ? t('show.less') : t('read.more')}
+                  {expandedCard === 'samuel' ? 
+                    <ChevronUp className="ml-1 h-4 w-4" /> : 
+                    <ChevronDown className="ml-1 h-4 w-4" />
+                  }
+                </button>
+              </div>
               
               <div className="flex space-x-3">
                 <a href="https://www.linkedin.com/in/samuel-naumovski-" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
