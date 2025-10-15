@@ -384,7 +384,6 @@ const Board = () => {
     </div>
   </div>
 
-  {/* Samuel #2 (duplicate) */}
   <div className="bg-white rounded-xl shadow-sm overflow-hidden">
     <div className="relative h-80">
       <img
