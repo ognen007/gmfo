@@ -176,10 +176,10 @@ const translations = {
 
     // Vasil Sterjovski
     'vasil.name': 'Vasil Sterjovski',
-    'vasil.title': 'Researcher & PhD Candidate',
-    'vasil.project.title': 'Vasil Sterjovski Research Project',
-    'vasil.project.description': 'Vasil Sterjovski, researcher and PhD candidate in history and international relations, is conducting a groundbreaking project focused on the policies toward Macedonians in Albania (1912–2025) and their cultural and historical identity. His doctoral research examines archival sources and political developments across the Balkans and Europe, aiming to document and analyze the persistence, challenges, and affirmation of Macedonians in Albania. This project highlights the intersection of history, diplomacy, and identity, shedding light on an often-overlooked community within the Macedonian cultural space.',
-    'vasil.support.description': 'The Global Macedonian Foundation Eternal (GMFE) supports Vasil Sterjovski\'s work by:',
+    'vasil.title': 'Researcher & PhD Candidate in History and International Relations',
+    'vasil.description': 'Vasil is a Macedonian researcher with a strong academic background in international relations, European studies, and history. His doctoral research focuses on the policies toward Macedonians in Albania and their cultural and historical identity. With years of academic and community engagement, he contributes to preserving cultural memory and strengthening Macedonian identity in the Balkans and beyond.',
+    'vasil.focus': 'Focus: Macedonian identity and history, Macedonians in Albania, European diplomacy, cultural preservation, and international cooperation.',
+    'vasil.quote': 'It is an honor to serve as an Ambassador of GMFE. I see this role as an opportunity to contribute to the promotion and affirmation of Macedonian identity and cultural heritage, especially of Macedonians in Albania. I believe that through this platform, we can collectively strengthen the bonds among Macedonians worldwide and inspire future generations.',
     'vasil.support.tuition': 'Covering part of his doctoral tuition fees through our research fund',
     'vasil.support.mentorship': 'Providing mentorship and academic guidance from Advisory Board members',
     'vasil.support.publication': 'Supporting the promotion and publication of his dissertation results',
@@ -426,10 +426,10 @@ const translations = {
 
     // Vasil Sterjovski
     'vasil.name': 'Васил Стерјовски',
-    'vasil.title': 'Истражувач и докторанд',
-    'vasil.project.title': 'Истражувачки проект на Васил Стерјовски',
-    'vasil.project.description': 'Васил Стерјовски, истражувач и докторанд по историја и меѓународни односи, спроведува значаен проект насочен кон проучување на политиките кон Македонците во Албанија (1912–2025) и нивниот културен и историски идентитет. Неговото докторско истражување обработува архивски извори и политички развој низ Балканот и Европа, со цел да ја документира и анализира истрајноста, предизвиците и афирмацијата на Македонците во Албанија. Овој проект го истакнува спојот помеѓу историјата, дипломатијата и идентитетот, и фрла светлина врз заедница која често е занемарена во рамките на македонскиот културен простор.',
-    'vasil.support.description': 'Глобалната Македонска Фондација „ВЕЧНА" (ГМФВ) го поддржува проектот на Васил Стерјовски преку:',
+    'vasil.title': 'Истражувач и докторанд по историја и меѓународни односи',
+    'vasil.description': 'Васил е македонски истражувач со силна академска подготовка во областа на меѓународни односи, европски студии и историја. Неговото докторско истражување е насочено кон политиките кон Македонците во Албанија и нивниот културен и историски идентитет. Со долгогодишна академска работа и ангажман во заедницата, придонесува за зачувување на културната меморија и зајакнување на македонскиот идентитет на Балканот и пошироко.',
+    'vasil.focus': 'Фокус: Македонски идентитет и историја, Македонци во Албанија, европска дипломатија, културно наследство и меѓународна соработка.',
+    'vasil.quote': 'Честа да бидам Амбасадор на ГМФВ ја гледам како можност да придонесам за промоција и афирмација на македонскиот идентитет и културно наследство, особено на Македонците во Албанија. Верувам дека преку оваа платформа ќе можеме заеднички да ја зајакнеме поврзаноста на Македонците ширум светот и да ги инспирираме идните генерации.',
     'vasil.support.tuition': 'Покривање на дел од неговата докторска школарина преку фондот за истражување',
     'vasil.support.mentorship': 'Обезбедување на менторска и академска поддршка од членови на Советодавниот одбор',
     'vasil.support.publication': 'Поддршка за промоција и објавување на резултатите од дисертацијата',
