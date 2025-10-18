@@ -177,12 +177,6 @@ const translations = {
     // Vasil Sterjovski
     'vasil.name': 'Vasil Sterjovski',
     'vasil.title': 'Researcher & PhD Candidate',
-    'vasil.description': 'Vasil Sterjovski, researcher and PhD candidate in history and international relations, is conducting a groundbreaking project focused on the policies toward Macedonians in Albania (1912–2025) and their cultural and historical identity. His doctoral research examines archival sources and political developments across the Balkans and Europe, aiming to document and analyze the persistence, challenges, and affirmation of Macedonians in Albania.',
-    'vasil.focus': 'This project highlights the intersection of history, diplomacy, and identity, shedding light on an often-overlooked community within the Macedonian cultural space.',
-    'vasil.quote': '"This project contributes to preserving the historical and cultural identity of Macedonians in Albania and strengthening academic research on Macedonian history in European and Balkan contexts."',
-    'vasil.support.description': 'The Global Macedonian Foundation Eternal (GMFE) supports Vasil Sterjovski\'s work by covering part of his doctoral tuition fees, providing mentorship from Advisory Board members, supporting publication of his dissertation results, and ensuring visibility through our PR and cultural diplomacy network.',
-    'vasil.impact': 'This project contributes to preserving the historical and cultural identity of Macedonians in Albania, strengthening academic research on Macedonian history in European and Balkan contexts, raising international awareness about the challenges and resilience of the Macedonian minority in Albania, and inspiring future scholars to engage with identity and heritage studies.',
-    'vasil.research.focus': 'Bulgarian and regional policies toward Macedonians in Albania (1912–2025), archival and historical research across the Balkans and Europe, and Macedonian identity and cultural heritage in Albania.',
     'vasil.project.title': 'Vasil Sterjovski Research Project',
     'vasil.project.description': 'Vasil Sterjovski, researcher and PhD candidate in history and international relations, is conducting a groundbreaking project focused on the policies toward Macedonians in Albania (1912–2025) and their cultural and historical identity. His doctoral research examines archival sources and political developments across the Balkans and Europe, aiming to document and analyze the persistence, challenges, and affirmation of Macedonians in Albania. This project highlights the intersection of history, diplomacy, and identity, shedding light on an often-overlooked community within the Macedonian cultural space.',
     'vasil.support.description': 'The Global Macedonian Foundation Eternal (GMFE) supports Vasil Sterjovski\'s work by:',
@@ -433,6 +427,12 @@ const translations = {
     // Vasil Sterjovski
     'vasil.name': 'Васил Стерјовски',
     'vasil.title': 'Истражувач и докторанд',
+    'vasil.description': 'Васил Стерјовски, истражувач и докторанд по историја и меѓународни односи, спроведува значаен проект насочен кон проучување на политиките кон Македонците во Албанија (1912–2025) и нивниот културен и историски идентитет. Неговото докторско истражување обработува архивски извори и политички развој низ Балканот и Европа, со цел да ја документира и анализира истрајноста, предизвиците и афирмацијата на Македонците во Албанија.',
+    'vasil.focus': 'Овој проект го истакнува спојот помеѓу историјата, дипломатијата и идентитетот, и фрла светлина врз заедница која често е занемарена во рамките на македонскиот културен простор.',
+    'vasil.quote': '„Овој проект придонесува за зачувување на историскиот и културниот идентитет на Македонците во Албанија и зајакнување на академското истражување за македонската историја во европски и балкански контекст."',
+    'vasil.support.description': 'Глобалната Македонска Фондација „ВЕЧНА" (ГМФВ) го поддржува проектот на Васил Стерјовски преку покривање на дел од неговата докторска школарина преку фондот за истражување, обезбедување на менторска и академска поддршка од членови на Советодавниот одбор, поддршка за промоција и објавување на резултатите од дисертацијата, и обезбедување видливост и промоција преку нашата ПР-мрежа и културна дипломатија.',
+    'vasil.impact': 'Овој проект придонесува за зачувување на историскиот и културниот идентитет на Македонците во Албанија, зајакнување на академското истражување за македонската историја во европски и балкански контекст, подигање на меѓународната свест за предизвиците и истрајноста на македонското малцинство во Албанија, и поттикнување на идни истражувачи да се посветат на теми за идентитет и културно наследство.',
+    'vasil.research.focus': 'Бугарските и регионалните политики кон Македонците во Албанија (1912–2025), архивски и историски истражувања низ Балканот и Европа, и македонски идентитет и културно наследство во Албанија.',
     'vasil.project.title': 'Истражувачки проект на Васил Стерјовски',
     'vasil.project.description': 'Васил Стерјовски, истражувач и докторанд по историја и меѓународни односи, спроведува значаен проект насочен кон проучување на политиките кон Македонците во Албанија (1912–2025) и нивниот културен и историски идентитет. Неговото докторско истражување обработува архивски извори и политички развој низ Балканот и Европа, со цел да ја документира и анализира истрајноста, предизвиците и афирмацијата на Македонците во Албанија. Овој проект го истакнува спојот помеѓу историјата, дипломатијата и идентитетот, и фрла светлина врз заедница која често е занемарена во рамките на македонскиот културен простор.',
     'vasil.support.description': 'Глобалната Македонска Фондација „ВЕЧНА" (ГМФВ) го поддржува проектот на Васил Стерјовски преку:',
@@ -464,7 +464,7 @@ const translations = {
 
     // IT Support
     'it.support': 'IT Подршка',
-    'it.support.by': 'IT Подршка од',
+    'it.support.by': 'ИТ поддршка обезбедена од',
     'it.support.description': 'Софтверски инженер и претприемач. Основач на Excelerator-AI, каде што развиваме CRM решенија со вграденa вештачка интелигенција за индустрии како градежништво, финансии и недвижнини. Страстен за комбинирање на технологија и бизнис стратегија за создавање иновации.',
     'professional.network': 'Професионална мрежа',
     'ognen.veljanovski': 'Огнен Велјановски',
