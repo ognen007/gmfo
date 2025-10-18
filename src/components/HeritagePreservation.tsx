@@ -298,7 +298,7 @@ const HeritagePreservation = () => {
               {/* Image Right */}
               <div className="relative h-70 md:h-85 order-1 md:order-2">
                 <img
-                  src="https://your-vasil-profile-image.com"
+                  src="https://i.ibb.co/Y71vMQ62/image.png"
                   alt="Vasil Sterjovski"
                   className="w-full h-full object-cover"
                 />
