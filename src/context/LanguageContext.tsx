@@ -174,6 +174,26 @@ const translations = {
     'samuel.focus': 'Focus: Cultural diplomacy, peace and development, EU enlargement, transatlantic relations, and promotion of equality through global initiatives.',
     'samuel.quote': 'I am a GMFE ambassador to promote cultural heritage, support educational opportunities, and connect communities worldwide. Drawing on my international experience and leadership in global initiatives, I aim to foster collaboration, celebrate shared values, and inspire future generations.',
 
+    // Vasil Sterjovski
+    'vasil.name': 'Vasil Sterjovski',
+    'vasil.title': 'Researcher & PhD Candidate',
+    'vasil.project.title': 'Vasil Sterjovski Research Project',
+    'vasil.project.description': 'Vasil Sterjovski, researcher and PhD candidate in history and international relations, is conducting a groundbreaking project focused on the policies toward Macedonians in Albania (1912–2025) and their cultural and historical identity. His doctoral research examines archival sources and political developments across the Balkans and Europe, aiming to document and analyze the persistence, challenges, and affirmation of Macedonians in Albania. This project highlights the intersection of history, diplomacy, and identity, shedding light on an often-overlooked community within the Macedonian cultural space.',
+    'vasil.support.description': 'The Global Macedonian Foundation Eternal (GMFE) supports Vasil Sterjovski\'s work by:',
+    'vasil.support.tuition': 'Covering part of his doctoral tuition fees through our research fund',
+    'vasil.support.mentorship': 'Providing mentorship and academic guidance from Advisory Board members',
+    'vasil.support.publication': 'Supporting the promotion and publication of his dissertation results',
+    'vasil.support.visibility': 'Ensuring visibility and outreach through our PR and cultural diplomacy network',
+    'vasil.impact.description': 'This project contributes to:',
+    'vasil.impact.preserving': 'Preserving the historical and cultural identity of Macedonians in Albania',
+    'vasil.impact.strengthening': 'Strengthening academic research on Macedonian history in European and Balkan contexts',
+    'vasil.impact.awareness': 'Raising international awareness about the challenges and resilience of the Macedonian minority in Albania',
+    'vasil.impact.inspiring': 'Inspiring future scholars to engage with identity and heritage studies',
+    'vasil.focus.title': 'Doctoral Research Focus:',
+    'vasil.focus.policies': 'Bulgarian and regional policies toward Macedonians in Albania (1912–2025)',
+    'vasil.focus.archival': 'Archival and historical research across the Balkans and Europe',
+    'vasil.focus.identity': 'Macedonian identity and cultural heritage in Albania',
+
     // Community Cards
     'stay.connected': 'Stay Connected',
     'stay.connected.desc': 'Get the latest updates and insights',
@@ -403,6 +423,26 @@ const translations = {
     'samuel.description': 'Самуел е шведско-македонски професионалец со позадина во мир и развој, дипломатија и меѓународна соработка. Како лидер на невладина организација и политички претставник, тој активно работи на проширување на ЕУ, трансатлантските односи и унапредување на еднаквоста преку глобални иницијативи.',
     'samuel.focus': 'Фокус: Културна дипломатија, мир и развој, проширување на ЕУ, трансатлантски односи и промоција на еднаквост преку глобални иницијативи.',
     'samuel.quote': 'Јас сум амбасадор на ГМФВ со мисија да го промовирам културното наследство, да поддржувам образовни можности и да поврзувам заедници ширум светот. Врз основа на моето меѓународно искуство и лидерство во глобални иницијативи, се стремам да поттикнувам соработка, да ги славам заедничките вредности и да ги инспирирам идните генерации.',
+
+    // Vasil Sterjovski
+    'vasil.name': 'Васил Стерјовски',
+    'vasil.title': 'Истражувач и докторанд',
+    'vasil.project.title': 'Истражувачки проект на Васил Стерјовски',
+    'vasil.project.description': 'Васил Стерјовски, истражувач и докторанд по историја и меѓународни односи, спроведува значаен проект насочен кон проучување на политиките кон Македонците во Албанија (1912–2025) и нивниот културен и историски идентитет. Неговото докторско истражување обработува архивски извори и политички развој низ Балканот и Европа, со цел да ја документира и анализира истрајноста, предизвиците и афирмацијата на Македонците во Албанија. Овој проект го истакнува спојот помеѓу историјата, дипломатијата и идентитетот, и фрла светлина врз заедница која често е занемарена во рамките на македонскиот културен простор.',
+    'vasil.support.description': 'Глобалната Македонска Фондација „ВЕЧНА" (ГМФВ) го поддржува проектот на Васил Стерјовски преку:',
+    'vasil.support.tuition': 'Покривање на дел од неговата докторска школарина преку фондот за истражување',
+    'vasil.support.mentorship': 'Обезбедување на менторска и академска поддршка од членови на Советодавниот одбор',
+    'vasil.support.publication': 'Поддршка за промоција и објавување на резултатите од дисертацијата',
+    'vasil.support.visibility': 'Обезбедување видливост и промоција преку нашата ПР-мрежа и културна дипломатија',
+    'vasil.impact.description': 'Овој проект придонесува за:',
+    'vasil.impact.preserving': 'Зачувување на историскиот и културниот идентитет на Македонците во Албанија',
+    'vasil.impact.strengthening': 'Зајакнување на академското истражување за македонската историја во европски и балкански контекст',
+    'vasil.impact.awareness': 'Подигање на меѓународната свест за предизвиците и истрајноста на македонското малцинство во Албанија',
+    'vasil.impact.inspiring': 'Поттикнување на идни истражувачи да се посветат на теми за идентитет и културно наследство',
+    'vasil.focus.title': 'Фокус на докторското истражување:',
+    'vasil.focus.policies': 'Бугарските и регионалните политики кон Македонците во Албанија (1912–2025)',
+    'vasil.focus.archival': 'Архивски и историски истражувања низ Балканот и Европа',
+    'vasil.focus.identity': 'Македонски идентитет и културно наследство во Албанија',
 
     // Community Cards
     'stay.connected': 'Останете поврзани',
