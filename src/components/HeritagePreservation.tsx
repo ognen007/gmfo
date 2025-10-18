@@ -250,7 +250,7 @@ const HeritagePreservation = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden h-full">
                 <div className="relative h-64">
                   <img
-                    src="https://i.ibb.co/XZWtp6rD/37322731-5b39-4b27-b420-3be5498caf1c.jpg"
+                    src="https://i.ibb.co/WWNdJ5BY/wmremove-transformed.jpg"
                     alt="Vasil Sterjovski Research"
                     className="w-full h-full object-cover"
                   />
