@@ -11,7 +11,7 @@ const HeritagePreservation = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
 
-      {/* Hero Section */}
+      {/* ================== HERO SECTION ================== */}
       <section className="pt-16 relative">
         <div className="absolute inset-0 z-0">
           <img
@@ -37,7 +37,7 @@ const HeritagePreservation = () => {
         </div>
       </section>
 
-      {/* === STOJANCHE KOSTOV SECTION === */}
+      {/* ================== PROJECT 1: STOJANCHE KOSTOV ================== */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
@@ -100,20 +100,14 @@ const HeritagePreservation = () => {
                       {t('our.support.description')}
                     </p>
                     <div className="grid md:grid-cols-3 gap-4">
-                      <div className="bg-gray-50 p-4 rounded-lg">
-                        <span className="text-gray-600 text-sm">
-                          • {t('support.monograph')}
-                        </span>
+                      <div className="bg-gray-50 p-4 rounded-lg text-sm text-gray-600">
+                        • {t('support.monograph')}
                       </div>
-                      <div className="bg-gray-50 p-4 rounded-lg">
-                        <span className="text-gray-600 text-sm">
-                          • {t('support.promotion')}
-                        </span>
+                      <div className="bg-gray-50 p-4 rounded-lg text-sm text-gray-600">
+                        • {t('support.promotion')}
                       </div>
-                      <div className="bg-gray-50 p-4 rounded-lg">
-                        <span className="text-gray-600 text-sm">
-                          • {t('support.distribution')}
-                        </span>
+                      <div className="bg-gray-50 p-4 rounded-lg text-sm text-gray-600">
+                        • {t('support.distribution')}
                       </div>
                     </div>
                   </div>
@@ -134,8 +128,58 @@ const HeritagePreservation = () => {
         </div>
       </section>
 
-      {/* === VASIL STERJOVSKI SECTION === */}
-      <section className="py-20 bg-gray-50">
+      {/* ================== RESEARCHER PROFILE: STOJANCHE KOSTOV ================== */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="md:grid md:grid-cols-2">
+              {/* Image Left */}
+              <div className="relative h-70 md:h-85">
+                <img
+                  src="https://i.ibb.co/3mn91hLy/image.png"
+                  alt="Assoc. Prof. Dr. Stojanche Kostov"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+
+              {/* Text Right */}
+              <div className="p-8 md:p-12 flex flex-col justify-center">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-primary mb-2 font-playfair">
+                    {language === 'en'
+                      ? 'Assoc. Prof. Dr. Stojanche Kostov'
+                      : 'Доц. д-р Стојанче Костов'}
+                  </h3>
+                  <p className="text-secondary font-medium">
+                    {t('kostov.title')}
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    {language === 'en'
+                      ? 'Institute of Folklore "Marko Cepenkov", Skopje'
+                      : 'Институт за фолклор „Марко Цепенков", Скопје'}
+                  </p>
+                </div>
+
+                <div className="space-y-4 text-gray-600 text-sm">
+                  <p>• {language === 'en'
+                      ? 'Research Focus: Macedonian dance traditions in Ovče Pole, Štip, Kočani, Kratovo, and Zletovo'
+                      : 'Истражувачки фокус: Македонски орски традиции во Овче Поле, Штип, Кочани, Кратово и Злетово'}</p>
+                  <p>• {language === 'en'
+                      ? 'Over 10 years of field research and documentation'
+                      : 'Повеќе од 10 години теренски истражувања и документација'}</p>
+                  <p>• {language === 'en'
+                      ? 'Preserving intangible cultural heritage'
+                      : 'Зачувување на нематеријалното културно наследство'}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================== PROJECT 2: VASIL STERJOVSKI ================== */}
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
             {/* Text Left */}
@@ -169,17 +213,17 @@ const HeritagePreservation = () => {
                     <p className="text-gray-600 mb-4">
                       {t('vasil.support.description')}
                     </p>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4">
-                      <div className="bg-gray-100 p-4 rounded-lg text-sm text-gray-600">
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="bg-gray-50 p-4 rounded-lg text-sm text-gray-600">
                         • {t('vasil.support.tuition')}
                       </div>
-                      <div className="bg-gray-100 p-4 rounded-lg text-sm text-gray-600">
+                      <div className="bg-gray-50 p-4 rounded-lg text-sm text-gray-600">
                         • {t('vasil.support.mentorship')}
                       </div>
-                      <div className="bg-gray-100 p-4 rounded-lg text-sm text-gray-600">
+                      <div className="bg-gray-50 p-4 rounded-lg text-sm text-gray-600">
                         • {t('vasil.support.publication')}
                       </div>
-                      <div className="bg-gray-100 p-4 rounded-lg text-sm text-gray-600">
+                      <div className="bg-gray-50 p-4 rounded-lg text-sm text-gray-600">
                         • {t('vasil.support.visibility')}
                       </div>
                     </div>
@@ -190,9 +234,6 @@ const HeritagePreservation = () => {
                       <div className="w-2 h-2 bg-primary rounded-full"></div>
                       {language === 'en' ? 'Impact' : 'Влијание'}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      {t('vasil.impact.description')}
-                    </p>
                     <ul className="list-disc ml-6 text-gray-600 space-y-2">
                       <li>{t('vasil.impact.preserving')}</li>
                       <li>{t('vasil.impact.strengthening')}</li>
@@ -209,7 +250,7 @@ const HeritagePreservation = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden h-full">
                 <div className="relative h-64">
                   <img
-                    src="https://your-placeholder-image-url.com"
+                    src="https://your-vasil-image-url.com"
                     alt="Vasil Sterjovski Research"
                     className="w-full h-full object-cover"
                   />
@@ -225,15 +266,6 @@ const HeritagePreservation = () => {
                   <p className="text-secondary font-medium mb-2">
                     {t('vasil.title')}
                   </p>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {t('vasil.focus.title')}
-                    <br />
-                    • {t('vasil.focus.policies')}
-                    <br />
-                    • {t('vasil.focus.archival')}
-                    <br />
-                    • {t('vasil.focus.identity')}
-                  </p>
                 </div>
               </div>
             </div>
@@ -241,7 +273,43 @@ const HeritagePreservation = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* ================== RESEARCHER PROFILE: VASIL STERJOVSKI ================== */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="md:grid md:grid-cols-2">
+              {/* Text Left */}
+              <div className="p-8 md:p-12 flex flex-col justify-center order-2 md:order-1">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-primary mb-2 font-playfair">
+                    {t('vasil.name')}
+                  </h3>
+                  <p className="text-secondary font-medium">
+                    {t('vasil.title')}
+                  </p>
+                </div>
+                <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
+                  <p>• {t('vasil.focus.policies')}</p>
+                  <p>• {t('vasil.focus.archival')}</p>
+                  <p>• {t('vasil.focus.identity')}</p>
+                </div>
+              </div>
+
+              {/* Image Right */}
+              <div className="relative h-70 md:h-85 order-1 md:order-2">
+                <img
+                  src="https://your-vasil-profile-image.com"
+                  alt="Vasil Sterjovski"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================== CALL TO ACTION ================== */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
