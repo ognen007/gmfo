@@ -408,42 +408,18 @@ const Board = () => {
       <div className="mb-4">
         <p className="text-gray-600 mb-3 leading-relaxed text-sm">
           {expandedCard === 'vasil'
-            ? t('vasil.project.description')
-            : truncateText(t('vasil.project.description'))}
+            ? t('vasil.description')
+            : truncateText(t('vasil.description'))}
         </p>
 
         {expandedCard === 'vasil' && (
           <>
-            <div className="mb-4">
-              <h4 className="font-semibold text-gray-800 mb-2 text-sm">{t('our.support')}</h4>
-              <p className="text-gray-600 mb-2 text-sm">{t('vasil.support.description')}</p>
-              <ul className="text-gray-600 text-xs space-y-1 ml-4">
-                <li>• {t('vasil.support.tuition')}</li>
-                <li>• {t('vasil.support.mentorship')}</li>
-                <li>• {t('vasil.support.publication')}</li>
-                <li>• {t('vasil.support.visibility')}</li>
-              </ul>
-            </div>
-            
-            <div className="mb-4">
-              <h4 className="font-semibold text-gray-800 mb-2 text-sm">{language === 'en' ? 'Impact' : 'Влијание'}</h4>
-              <p className="text-gray-600 mb-2 text-sm">{t('vasil.impact.description')}</p>
-              <ul className="text-gray-600 text-xs space-y-1 ml-4">
-                <li>• {t('vasil.impact.preserving')}</li>
-                <li>• {t('vasil.impact.strengthening')}</li>
-                <li>• {t('vasil.impact.awareness')}</li>
-                <li>• {t('vasil.impact.inspiring')}</li>
-              </ul>
-            </div>
-            
-            <div className="mb-4">
-              <h4 className="font-semibold text-gray-800 mb-2 text-sm">{t('vasil.focus.title')}</h4>
-              <ul className="text-gray-600 text-xs space-y-1 ml-4">
-                <li>• {t('vasil.focus.policies')}</li>
-                <li>• {t('vasil.focus.archival')}</li>
-                <li>• {t('vasil.focus.identity')}</li>
-              </ul>
-            </div>
+            <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+              📍 {t('vasil.focus')}
+            </p>
+            <blockquote className="border-l-4 border-secondary pl-3 italic text-gray-700 mb-4 text-sm">
+              {t('vasil.quote')}
+            </blockquote>
           </>
         )}
 
@@ -461,7 +437,12 @@ const Board = () => {
       </div>
 
       <div className="flex space-x-3">
-        {/* Add social links for Vasil if available */}
+        <a href="https://www.facebook.com/profile.php?id=100064082676439" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
+          <Facebook className="h-5 w-5" />
+        </a>
+        <a href="https://www.facebook.com/vasil.sterjovski/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
+          <Facebook className="h-5 w-5" />
+        </a>
       </div>
     </div>
   </div>
