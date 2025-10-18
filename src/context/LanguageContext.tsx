@@ -105,6 +105,22 @@ const translations = {
     'support.difference': 'Your support makes a difference! By donating, you help preserve and promote Macedonia\'s rich heritage, culture, and history for future generations. Together, we can achieve impactful projects and create a lasting legacy.',
     'donation.confirmation': 'Make Your Impact Today! Click "Donate Now" and receive an automated confirmation email with your donation receipt attached. Your generosity shapes our shared future!',
 
+     'vasil.project.title': 'Vasil Sterjovski Research Project',
+    'vasil.project.description': 'Vasil Sterjovski, researcher and PhD candidate in history and international relations...',
+    'vasil.support.description': 'The Global Macedonian Foundation Eternal (GMFE) supports Vasil Sterjovski\'s work by:',
+    'vasil.support.tuition': 'Covering part of his doctoral tuition fees through our research fund',
+    'vasil.support.mentorship': 'Providing mentorship and academic guidance from Advisory Board members',
+    'vasil.support.publication': 'Supporting the promotion and publication of his dissertation results',
+    'vasil.support.visibility': 'Ensuring visibility and outreach through our PR and cultural diplomacy network',
+    'vasil.impact.description': 'This project contributes to:',
+    'vasil.impact.preserving': 'Preserving the historical and cultural identity of Macedonians in Albania',
+    'vasil.impact.strengthening': 'Strengthening academic research on Macedonian history in European and Balkan contexts',
+    'vasil.impact.awareness': 'Raising international awareness about the challenges and resilience of the Macedonian minority in Albania',
+    'vasil.impact.inspiring': 'Inspiring future scholars to engage with identity and heritage studies',
+    'vasil.focus.title': 'Doctoral Research Focus:',
+    'vasil.focus.policies': 'Bulgarian and regional policies toward Macedonians in Albania (1912–2025)',
+    'vasil.focus.archival': 'Archival and historical research across the Balkans and Europe',
+    'vasil.focus.identity': 'Macedonian identity and cultural heritage in Albania',
     
     // Contact
     'shape.future': 'Shape the Future Together',
