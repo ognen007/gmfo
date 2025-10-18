@@ -388,47 +388,71 @@ const Board = () => {
     <div className="relative h-80">
       <img
         src="https://i.ibb.co/pjV64TkK/image.png"
-        alt="Samuel Naumovski Vickius"
+        alt="Vasil Sterjovski"
         className="w-full h-full object-cover"
       />
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
-        alt="Swedish flag"
+        alt="Macedonian flag"
         className="absolute bottom-2 right-2 w-8 h-6 rounded-sm shadow-md"
       />
     </div>
     <div className="p-6">
       <h3 className="text-xl font-bold mb-2 font-playfair">
-        {t('samuel.name')}
+        {t('vasil.name')}
       </h3>
       <p className="text-secondary font-medium mb-3 text-sm">
-        {t('samuel.title')}
+        {t('vasil.title')}
       </p>
 
       <div className="mb-4">
         <p className="text-gray-600 mb-3 leading-relaxed text-sm">
-          {expandedCard === 'samuel2'
-            ? t('samuel.description')
-            : truncateText(t('samuel.description'))}
+          {expandedCard === 'vasil'
+            ? t('vasil.project.description')
+            : truncateText(t('vasil.project.description'))}
         </p>
 
-        {expandedCard === 'samuel2' && (
+        {expandedCard === 'vasil' && (
           <>
-            <p className="text-gray-600 mb-4 leading-relaxed text-sm">
-              📍 {t('samuel.focus')}
-            </p>
-            <blockquote className="border-l-4 border-secondary pl-3 italic text-gray-700 mb-4 text-sm">
-              {t('samuel.quote')}
-            </blockquote>
+            <div className="mb-4">
+              <h4 className="font-semibold text-gray-800 mb-2 text-sm">{t('our.support')}</h4>
+              <p className="text-gray-600 mb-2 text-sm">{t('vasil.support.description')}</p>
+              <ul className="text-gray-600 text-xs space-y-1 ml-4">
+                <li>• {t('vasil.support.tuition')}</li>
+                <li>• {t('vasil.support.mentorship')}</li>
+                <li>• {t('vasil.support.publication')}</li>
+                <li>• {t('vasil.support.visibility')}</li>
+              </ul>
+            </div>
+            
+            <div className="mb-4">
+              <h4 className="font-semibold text-gray-800 mb-2 text-sm">{language === 'en' ? 'Impact' : 'Влијание'}</h4>
+              <p className="text-gray-600 mb-2 text-sm">{t('vasil.impact.description')}</p>
+              <ul className="text-gray-600 text-xs space-y-1 ml-4">
+                <li>• {t('vasil.impact.preserving')}</li>
+                <li>• {t('vasil.impact.strengthening')}</li>
+                <li>• {t('vasil.impact.awareness')}</li>
+                <li>• {t('vasil.impact.inspiring')}</li>
+              </ul>
+            </div>
+            
+            <div className="mb-4">
+              <h4 className="font-semibold text-gray-800 mb-2 text-sm">{t('vasil.focus.title')}</h4>
+              <ul className="text-gray-600 text-xs space-y-1 ml-4">
+                <li>• {t('vasil.focus.policies')}</li>
+                <li>• {t('vasil.focus.archival')}</li>
+                <li>• {t('vasil.focus.identity')}</li>
+              </ul>
+            </div>
           </>
         )}
 
         <button
-          onClick={() => toggleExpanded('samuel2')}
+          onClick={() => toggleExpanded('vasil')}
           className="flex items-center text-secondary hover:text-primary transition-colors text-sm font-medium"
         >
-          {expandedCard === 'samuel2' ? t('show.less') : t('read.more')}
-          {expandedCard === 'samuel2' ? (
+          {expandedCard === 'vasil' ? t('show.less') : t('read.more')}
+          {expandedCard === 'vasil' ? (
             <ChevronUp className="ml-1 h-4 w-4" />
           ) : (
             <ChevronDown className="ml-1 h-4 w-4" />
@@ -437,14 +461,7 @@ const Board = () => {
       </div>
 
       <div className="flex space-x-3">
-        <a
-          href="https://www.linkedin.com/in/samuel-naumovski-"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-600 hover:text-secondary"
-        >
-          <Linkedin className="h-5 w-5" />
-        </a>
+        {/* Add social links for Vasil if available */}
       </div>
     </div>
   </div>
