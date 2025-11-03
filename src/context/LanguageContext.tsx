@@ -265,6 +265,13 @@ const translations = {
     'friends.gmfe.highlight': 'By becoming a Friend of GMFE, you\'ll receive exclusive updates, early access to new studies, and public recognition as a valued supporter.',
     'friends.gmfe.cta': 'Together, we nurture Roots and build the Future!',
     'friends.gmfe.button': 'Join as a Friend',
+    
+    // Stefan Ivanovski
+    'stefan.name': 'Stefan Ivanovski',
+    'stefan.title': 'Researcher & PhD Candidate',
+    'stefan.description': 'Stefan is a bike to work researcher at Cornell University\'s School of Industrial and Labor Relations. His research focuses on the intersection of workplace democracy, job quality, AI, and the future of work. He studies how organizations can maintain high job quality and protect worker dignity amid the changes expected with the rise of artificial intelligence.',
+    'stefan.focus': 'Focus: workplace democracy, cooperatives, job quality, life quality, AI, future of work, city and regional development, international relations',
+    'stefan.quote': 'I am a GMFE ambassador to promote the beautiful and melodic Macedonian culture and connect Macedonians with the global tribes around the world. I draw on my experiences having lived, worked, and traveled in Europe, North America, South America, Asia, and Africa in bringing and promoting Macedonia, Macedonians, and the Macedonian culture to the world.',
   },
   mk: {
     // Header
@@ -463,6 +470,13 @@ const translations = {
     'vasil.description': 'Васил Стерјовски, истражувач и докторанд по историја и меѓународни односи, спроведува значаен проект насочен кон проучување на политиките кон Македонците во Албанија (1912–2025) и нивниот културен и историски идентитет. Неговото докторско истражување обработува архивски извори и политички развој низ Балканот и Европа, со цел да ја документира и анализира истрајноста, предизвиците и афирмацијата на Македонците во Албанија.',
     'vasil.focus': 'Овој проект го истакнува спојот помеѓу историјата, дипломатијата и идентитетот, и фрла светлина врз заедница која често е занемарена во рамките на македонскиот културен простор.',
     'vasil.quote': '„Честа да бидам Амбасадор на ГМФВ ја гледам како можност да придонесам за промоција и афирмација на македонскиот идентитет и културно наследство, особено на Македонците во Албанија. Верувам дека преку оваа платформа ќе можеме заеднички да ја зајакнеме поврзаноста на Македонците ширум светот и да ги инспирираме идните генерации."',
+    
+    // Stefan Ivanovski
+    'stefan.name': 'Стефан Ивановски',
+    'stefan.title': 'Истражувач и докторанд',
+    'stefan.description': 'Стефан е истражувач на програмата „Bike to Work" при Универзитетот Корнел (Cornell University), во рамките на Школата за индустриски и работни односи. Неговото истражување се фокусира на пресекот помеѓу работничката демократија, квалитетот на работното место, вештачката интелигенција и иднината на трудот. Проучува како организациите можат да го зачуваат високиот квалитет на работа и достоинството на работниците во услови на брзи промени предизвикани од развојот на вештачката интелигенција.',
+    'stefan.focus': 'Фокус: работничка демократија, задруги, квалитет на работа, квалитет на живот, вештачка интелигенција, иднината на трудот, градски и регионален развој, меѓународни односи',
+    'stefan.quote': 'Како амбасадор на Глобалната Македонска Фондација ВЕЧНА (ГМФВ), мојата цел е да ја промовирам убавината и мелодичноста на македонската култура и да ги поврзам Македонците со глобалните заедници ширум светот. Црпам инспирација од моето лично искуство на живот, работа и патувања низ Европа, Северна и Јужна Америка, Азија и Африка, со цел да ја приближам Македонија, Македонците и македонската култура до светот.',
 
     // Stefan Ivanovski
     'stefan.name': 'Стефан Ивановски',

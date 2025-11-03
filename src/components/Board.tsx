@@ -461,7 +461,22 @@ const Board = () => {
       </div>
 
       <div className="flex space-x-3">
-        {/* Add social links for Vasil if available */}
+        <a
+          href="https://www.facebook.com/profile.php?id=100064082676439"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-secondary"
+        >
+          <Facebook className="h-5 w-5" />
+        </a>
+        <a
+          href="https://www.facebook.com/vasil.sterjovski/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-secondary"
+        >
+          <Facebook className="h-5 w-5" />
+        </a>
       </div>
     </div>
   </div>
