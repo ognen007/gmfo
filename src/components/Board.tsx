@@ -473,7 +473,8 @@ const Board = () => {
           href="https://www.facebook.com/vasil.sterjovski/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-600 hover:text-secondary"
+className="text-white bg-[#1877F2] hover:bg-[#166FE5] px-3 py-1 rounded"
+
         >
           <Facebook className="h-5 w-5" />
         </a>
