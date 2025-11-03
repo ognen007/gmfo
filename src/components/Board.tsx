@@ -490,8 +490,8 @@ const Board = () => {
         className="w-full h-full object-cover"
       />
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
-        alt="Macedonian flag"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png"
+        alt="American flag"
         className="absolute bottom-2 right-2 w-8 h-6 rounded-sm shadow-md"
       />
     </div>
