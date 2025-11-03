@@ -474,7 +474,6 @@ const Board = () => {
           target="_blank"
           rel="noopener noreferrer"
 className="text-white bg-[#1877F2] hover:bg-[#166FE5] px-3 py-1 rounded"
-
         >
           <Facebook className="h-5 w-5" />
         </a>
