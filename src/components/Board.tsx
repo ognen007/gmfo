@@ -250,7 +250,7 @@ const Board = () => {
       />
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
-        alt="Macedonian flag"
+        alt="American flag"
         className="absolute bottom-2 right-2 w-8 h-6 rounded-sm shadow-md"
       />
     </div>
