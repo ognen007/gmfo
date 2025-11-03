@@ -465,6 +465,72 @@ const Board = () => {
       </div>
     </div>
   </div>
+
+  {/* Stefan Ivanovski */}
+  <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+    <div className="relative h-80">
+      <img
+        src="https://i.ibb.co/cKPZRpH6/aedd4c20-1c03-4ae9-a6ff-15547ecfb084.jpg"
+        alt="Stefan Ivanovski"
+        className="w-full h-full object-cover"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
+        alt="Macedonian flag"
+        className="absolute bottom-2 right-2 w-8 h-6 rounded-sm shadow-md"
+      />
+    </div>
+    <div className="p-6">
+      <h3 className="text-xl font-bold mb-2 font-playfair">
+        {t('stefan.name')}
+      </h3>
+      <p className="text-secondary font-medium mb-3 text-sm">
+        {t('stefan.title')}
+      </p>
+
+      <div className="mb-4">
+        <p className="text-gray-600 mb-3 leading-relaxed text-sm">
+          {expandedCard === 'stefan'
+            ? t('stefan.description')
+            : truncateText(t('stefan.description'))}
+        </p>
+
+        {expandedCard === 'stefan' && (
+          <>
+            <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+              📍 {t('stefan.focus')}
+            </p>
+            <blockquote className="border-l-4 border-secondary pl-3 italic text-gray-700 mb-4 text-sm">
+              {t('stefan.quote')}
+            </blockquote>
+          </>
+        )}
+
+        <button
+          onClick={() => toggleExpanded('stefan')}
+          className="flex items-center text-secondary hover:text-primary transition-colors text-sm font-medium"
+        >
+          {expandedCard === 'stefan' ? t('show.less') : t('read.more')}
+          {expandedCard === 'stefan' ? (
+            <ChevronUp className="ml-1 h-4 w-4" />
+          ) : (
+            <ChevronDown className="ml-1 h-4 w-4" />
+          )}
+        </button>
+      </div>
+
+      <div className="flex space-x-3">
+        <a
+          href="https://www.linkedin.com/in/stefanivanovski/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-secondary"
+        >
+          <Linkedin className="h-5 w-5" />
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
 
