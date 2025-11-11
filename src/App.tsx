@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import Sponsors from './components/Sponsors';
 import Mission from './components/Mission';
 import Chairman from './components/Chairman';
 import Events from './components/Events';
@@ -15,7 +14,6 @@ function App() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <Header />
-      <Sponsors />
       
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div id="mission">
