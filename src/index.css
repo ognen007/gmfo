@@ -40,6 +40,7 @@
   width: auto;
   height: auto;
   object-fit: contain;
+}
 
 .sponsor-item:hover .sponsor-logo {
   filter: grayscale(0%) opacity(1);
@@ -71,7 +72,6 @@
   
   .sponsor-logo {
     max-width: 130px;
-    max-height: 65px;
     max-height: 40px;
   }
 }
