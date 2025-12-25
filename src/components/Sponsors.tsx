@@ -1,6 +1,9 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 const Sponsors = () => {
+  const { t } = useLanguage();
+
   const sponsors = [
     {
       id: 1,
@@ -33,6 +36,16 @@ const Sponsors = () => {
 
   return (
     <section className="sponsors-section">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2 font-playfair">
+            {t('our.sponsors')}
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            {t('sponsors.description')}
+          </p>
+        </div>
+      </div>
       <div className="sponsors-container">
         <div className="sponsors-track">
           {duplicatedSponsors.map((sponsor, index) => (
