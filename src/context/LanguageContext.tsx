@@ -272,8 +272,6 @@ const translations = {
     'stefan.description': 'Stefan is a bike to work researcher at Cornell University\'s School of Industrial and Labor Relations. His research focuses on the intersection of workplace democracy, job quality, AI, and the future of work. He studies how organizations can maintain high job quality and protect worker dignity amid the changes expected with the rise of artificial intelligence.',
     'stefan.focus': 'Focus: workplace democracy, cooperatives, job quality, life quality, AI, future of work, city and regional development, international relations',
     'stefan.quote': 'I am a GMFE ambassador to promote the beautiful and melodic Macedonian culture and connect Macedonians with the global tribes around the world. I draw on my experiences having lived, worked, and traveled in Europe, North America, South America, Asia, and Africa in bringing and promoting Macedonia, Macedonians, and the Macedonian culture to the world.',
-    'our.sponsors': 'Our Sponsors',
-    'sponsors.description': 'We are grateful to our sponsors who support our mission to preserve and promote Macedonian heritage worldwide.',
   },
   mk: {
     // Header
@@ -562,8 +560,6 @@ const translations = {
     'friends.gmfe.highlight': 'Како Пријател на ГМФВ, ќе добиваш ексклузивни информации, ранен пристап до нови трудови и јавно признание како поддржувач на нашата мисија.',
     'friends.gmfe.cta': 'Заедно ги негуваме корените и ја градиме иднината!',
     'friends.gmfe.button': 'Стани Пријател',
-    'our.sponsors': 'Наши Спонзори',
-    'sponsors.description': 'Благодарни сме на нашите спонзори кои ја поддржуваат нашата мисија за зачувување и промовирање на македонското наследство во светот.',
   }
 };
 
