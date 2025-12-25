@@ -19,6 +19,8 @@ const translations = {
     'support.vision': 'Support Our Vision',
     
     // Mission
+    'our.sponsors': 'Our Sponsors',
+    'sponsors.description': 'We are grateful to our sponsors who support our mission to preserve and promote Macedonian heritage and culture.',
     'mission.vision': 'Our Mission & Vision',
     'about.foundation': 'About the Global Macedonian Foundation Eternal',
     'foundation.purpose': 'The Global Macedonian Foundation Eternal was established with the purpose of preserving and promoting Macedonia\'s rich cultural heritage, historical significance, and educational initiatives. As a global platform, our foundation seeks to connect Macedonians worldwide and celebrate the shared values and traditions that define our unique identity.',
@@ -283,6 +285,8 @@ const translations = {
     'support.vision': 'Поддржете ја нашата визија',
     
     // Mission
+    'our.sponsors': 'Наши Спонзори',
+    'sponsors.description': 'Благодарни сме на нашите спонзори кои ја поддржуваат нашата мисија за зачувување и промовирање на македонското наследство и култура.',
     'mission.vision': 'Нашата мисија и визија',
     'about.foundation': 'За Глобалната Македонска Фондација Вечна',
     'foundation.purpose': 'Глобална Македонска Фондација Вечна е основана со цел да го зачува и промовира богатото културно наследство на Македонија, нејзината историска важност и образовните иницијативи. Како глобална платформа, фондацијата се стреми да ги поврзе Македонците ширум светот и да ги слави заедничките вредности и традиции кои ја дефинираат нашата уникатна идентичност.',
