@@ -6,6 +6,7 @@ import Mission from './components/Mission';
 import Chairman from './components/Chairman';
 import Events from './components/Events';
 import Board from './components/Board';
+import Ambassadors from './components/Ambassadors';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ITSupport from './components/ITSupport';
@@ -28,6 +29,7 @@ function App() {
         <Events />
       </div>
       <Board />
+      <Ambassadors />
       <div id="contact">
         <Contact />
       </div>
