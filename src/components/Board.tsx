@@ -237,6 +237,11 @@ const Board = () => {
                 ? 'Leads grant research, eligibility checks and donor compliance.' 
                 : 'Одговорен за истражување на грантови, проверка на услови и усогласеност со донатори.'}
             </p>
+            <div className="flex justify-center space-x-4">
+              <a href="https://www.linkedin.com/in/dimitar-vasilkoski-56923b251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
           {/* Matea Kargovska */}
@@ -260,6 +265,11 @@ const Board = () => {
                 ? 'Develops project concepts and supports grant proposal preparation.' 
                 : 'Развива проектни концепти и поддржува подготовка на апликации.'}
             </p>
+            <div className="flex justify-center space-x-4">
+              <a href="https://www.linkedin.com/in/matea-kargovska-aba3932a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
           {/* Irena Angelovska */}
@@ -283,6 +293,11 @@ const Board = () => {
                 ? 'Supports project implementation and coordinates partners and reporting.' 
                 : 'Поддржува имплементација на проекти и координација со партнери и извештаи.'}
             </p>
+            <div className="flex justify-center space-x-4">
+              <a href="https://www.linkedin.com/in/irenaangelovska?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
