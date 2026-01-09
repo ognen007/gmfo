@@ -200,32 +200,56 @@ const Board = () => {
           </div>
         </div>
 
-        {/* Executive Manager Position */}
-        <div className="bg-white rounded-xl shadow-sm p-8 max-w-3xl mx-auto">
-          <div className="w-32 h-32 mx-auto mb-6 rounded-xl overflow-hidden relative">
-            <img 
-              src="https://i.ibb.co/q3hpTcnw/58e03b0c-c501-40f6-ac6f-081ceb2046b4.jpg"
-              alt="Marko Vidachek"
-              className="w-full h-full object-cover"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
-              alt="Macedonian flag"
-              className="absolute bottom-0 right-0 w-8 h-6 rounded-sm shadow-md"
-            />
+        {/* Team Members Section */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Marko Vidachek */}
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <div className="w-32 h-32 mx-auto mb-4 rounded-xl overflow-hidden relative">
+              <img 
+                src="https://i.ibb.co/q3hpTcnw/58e03b0c-c501-40f6-ac6f-081ceb2046b4.jpg"
+                alt="Marko Vidachek"
+                className="w-full h-full object-cover"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
+                alt="Macedonian flag"
+                className="absolute bottom-0 right-0 w-8 h-6 rounded-sm shadow-md"
+              />
+            </div>
+            <h4 className="text-xl font-semibold mb-2 text-center">{t('marko.name')}</h4>
+            <p className="text-secondary font-medium mb-4 text-center">{t('executive.director')}</p>
+            <p className="text-gray-600 mb-6 text-center text-sm">
+              {t('manager.description')}
+            </p>
+            <div className="flex justify-center space-x-4">
+              <a href="https://www.linkedin.com/in/marko-vidachek-55491721a/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </div>
           </div>
-          <h4 className="text-xl font-semibold mb-2 text-center">{t('marko.name')}</h4>
-          <p className="text-secondary font-medium mb-4 text-center">{t('executive.director')}</p>
-          <p className="text-gray-600 mb-6 text-center">
-            {t('manager.description')}
-          </p>
-          <div className="flex justify-center space-x-4">
-            <a href="https://www.linkedin.com/in/marko-vidachek-55491721a/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-secondary">
-              <Linkedin className="h-5 w-5" />
-            </a>
-          </div>
-        </div>
 
+          {/* Dimitar Vasilkoski */}
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <div className="w-32 h-32 mx-auto mb-4 rounded-xl overflow-hidden relative">
+              <img 
+                src="https://i.ibb.co/dvGqB3K/a1861cc8-6527-4251-9c36-efd36453e6b8.jpg"
+                alt="Dimitar Vasilkoski"
+                className="w-full h-full object-cover"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
+                alt="Macedonian flag"
+                className="absolute bottom-0 right-0 w-8 h-6 rounded-sm shadow-md"
+              />
+            </div>
+            <h4 className="text-xl font-semibold mb-2 text-center">{language === 'en' ? 'Dimitar Vasilkoski' : 'Димитар Василкоски'}</h4>
+            <p className="text-secondary font-medium mb-4 text-center text-sm">{language === 'en' ? 'Grant Research & Eligibility Lead' : 'Водач за истражување на грантови и услови'}</p>
+            <p className="text-gray-600 mb-6 text-center text-sm">
+              {language === 'en' 
+                ? 'Leads grant research, eligibility checks and donor compliance.' 
+                : 'Одговорен за истражување на грантови, проверка на услови и усогласеност со донатори.'}
+            </p>
+          </div>
 {/* Ambassadors Section */}
 <div className="prose prose-lg text-gray-600 max-w-3xl mx-auto mt-16">
   <h3
@@ -548,7 +572,52 @@ const Board = () => {
   </div>
 </div>
 
+          {/* Matea Kargovska */}
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <div className="w-32 h-32 mx-auto mb-4 rounded-xl overflow-hidden relative">
+              <img 
+                src="https://i.ibb.co/spYc83zX/fb946b5c-3972-457a-96d9-293534b0ef54.jpg"
+                alt="Matea Kargovska"
+                className="w-full h-full object-cover"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
+                alt="Macedonian flag"
+                className="absolute bottom-0 right-0 w-8 h-6 rounded-sm shadow-md"
+              />
+            </div>
+            <h4 className="text-xl font-semibold mb-2 text-center">{language === 'en' ? 'Matea Kargovska' : 'Матеа Карговска'}</h4>
+            <p className="text-secondary font-medium mb-4 text-center text-sm">{language === 'en' ? 'Grant Development & Proposal Support' : 'Развој на грантови и поддршка за апликации'}</p>
+            <p className="text-gray-600 mb-6 text-center text-sm">
+              {language === 'en' 
+                ? 'Develops project concepts and supports grant proposal preparation.' 
+                : 'Развива проектни концепти и поддржува подготовка на апликации.'}
+            </p>
+          </div>
 
+          {/* Irena Angelovska */}
+          <div className="bg-white rounded-xl shadow-sm p-6">
+            <div className="w-32 h-32 mx-auto mb-4 rounded-xl overflow-hidden relative">
+              <img 
+                src="https://i.ibb.co/1fbpBKH7/cfdd5a2d-278a-4c53-bec4-fb79b702963a.jpg"
+                alt="Irena Angelovska"
+                className="w-full h-full object-cover"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/800px-Flag_of_North_Macedonia.svg.png"
+                alt="Macedonian flag"
+                className="absolute bottom-0 right-0 w-8 h-6 rounded-sm shadow-md"
+              />
+            </div>
+            <h4 className="text-xl font-semibold mb-2 text-center">{language === 'en' ? 'Irena Angelovska' : 'Ирена Ангеловска'}</h4>
+            <p className="text-secondary font-medium mb-4 text-center text-sm">{language === 'en' ? 'Grant & Project Support / Partner Coordination' : 'Поддршка за грантови и проекти / Координација со партнери'}</p>
+            <p className="text-gray-600 mb-6 text-center text-sm">
+              {language === 'en' 
+                ? 'Supports project implementation and coordinates partners and reporting.' 
+                : 'Поддржува имплементација на проекти и координација со партнери и извештаи.'}
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
