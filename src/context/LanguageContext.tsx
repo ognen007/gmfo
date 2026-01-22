@@ -11,12 +11,12 @@ interface LanguageContextType {
 const translations = {
   en: {
     // Header
-    'roots.future': 'Roots & Future',
-    'preserving.past': 'Preserving Our Past, Shaping Our Tomorrow',
+    'roots.future': 'Honoring Our Roots, Shaping Our Future',
+    'preserving.past': 'Preserving Heritage. Shaping the Future.',
     'welcome.message': 'Welcome to the Global Macedonian Foundation Eternal',
-    'foundation.description': 'Dedicated to preserving Macedonia\'s heritage and shaping its future, the Global Macedonian Foundation Eternal fosters unity through history, culture, and education.',
-    'join.message': 'Join us in celebrating our shared legacy and building a brighter tomorrow.',
-    'support.vision': 'Support Our Vision',
+    'foundation.description': 'The Global Macedonian Foundation Eternal connects research, culture, and international cooperation to create lasting impact.',
+    'join.message': 'Join us in preserving our heritage and building a brighter future.',
+    'support.vision': 'Explore Ways to Engage',
     
     // Mission
     'our.sponsors': 'Our Sponsors',
@@ -104,9 +104,9 @@ const translations = {
     'research.funding.cta': 'Are you conducting research or preparing a new project?',
     'research.funding.details': 'We invite you to submit your proposal through our online application form. All submissions will be carefully reviewed by our Scientific Advisory Board. Selected projects will receive targeted financial support.',
     'submit.proposal': 'Submit Your Project Proposal',
-    'shape.future': 'Shape the Future Together',
-    'support.difference': 'Your support makes a difference! By donating, you help preserve and promote Macedonia\'s rich heritage, culture, and history for future generations. Together, we can achieve impactful projects and create a lasting legacy.',
-    'donation.confirmation': 'Make Your Impact Today! Click "Donate Now" and receive an automated confirmation email with your donation receipt attached. Your generosity shapes our shared future!',
+    'shape.future': 'Ways to Engage & Create Impact',
+    'support.difference': 'The Global Macedonian Foundation Eternal offers structured ways to support impactful projects, long-term research, and institutional development.',
+    'donation.confirmation': 'From project partnerships to long-term endowment contributions, we work with supporters who seek meaningful and lasting impact.',
 
      'vasil.project.title': 'Vasil Sterjovski Research Project',
     'vasil.project.description': 'Vasil Sterjovski, researcher and PhD candidate in history and international relations...',
@@ -126,14 +126,14 @@ const translations = {
     'vasil.focus.identity': 'Macedonian identity and cultural heritage in Albania',
     
     // Contact
-    'shape.future': 'Shape the Future Together',
-    'support.difference': 'Your support makes a difference! By donating, you help preserve and promote Macedonia\'s rich heritage, culture, and history for future generations. Together, we can achieve impactful projects and create a lasting legacy.',
-    'donation.confirmation': 'Make Your Impact Today! Click "Donate Now" and receive an automated confirmation email with your donation receipt attached. Your generosity shapes our shared future!',
+    'shape.future': 'Ways to Engage & Create Impact',
+    'support.difference': 'The Global Macedonian Foundation Eternal offers structured ways to support impactful projects, long-term research, and institutional development.',
+    'donation.confirmation': 'From project partnerships to long-term endowment contributions, we work with supporters who seek meaningful and lasting impact.',
 
         // Donation Cards
     'support.mission.title': 'Support Our Mission',
-    'support.mission.description': 'Your donation helps sustain the Global Macedonian Foundation Eternal and its long-term initiatives. With your support, we can continue to promote Macedonian heritage, fund key projects, and expand our impact globally.',
-    'support.mission.highlight': 'Ensure the foundation\'s success with your contribution!',
+    'support.mission.description': 'Your contribution directly supports our core mission of preserving and promoting Macedonian heritage through research, education, and cultural initiatives.',
+    'support.mission.highlight': 'Make a direct impact on our foundational work',
     
     'young.researchers.title': 'Fund for Young Researchers',
     'young.researchers.goal': '€15,000 Goal',
@@ -147,11 +147,39 @@ const translations = {
     'preserving.knowledge.highlight': 'Invest in research that protects and strengthens our legacy!',
     'preserving.knowledge.button': 'Support Research Fund',
 
+    // Friends of GMFE
+    'friends.gmfe.title': 'Friends of GMFE',
+    'friends.gmfe.goal': '€5–10 Monthly Support',
+    'friends.gmfe.description': 'Join our circle of Friends of GMFE and become part of a global community preserving Macedonia\'s roots and shaping its future. Your monthly support helps fund research, publications, and cultural initiatives that strengthen Macedonian identity worldwide.',
+    'friends.gmfe.highlight': 'By becoming a Friend of GMFE, you\'ll receive exclusive updates, early access to new studies, and public recognition as a valued supporter.',
+    'friends.gmfe.cta': 'Join our community of supporters',
+    'friends.gmfe.button': 'Become a Friend',
+    
+    // New engagement options
+    'project.partnerships': 'Project Partnerships',
+    'research.knowledge.programs': 'Research & Knowledge Programs',
+    'endowment.longterm.support': 'Endowment & Long-Term Support',
+    'impact.oriented.funding': 'Impact-Oriented Funding',
+    
+    'project.partnerships.desc': 'Support specific projects in research, culture, and education. Project partnerships enable targeted engagement with clearly defined goals, timelines, and impact.',
+    'research.knowledge.desc': 'Support research initiatives, publications, and academic cooperation that preserve and advance Macedonian knowledge and heritage.',
+    'endowment.longterm.desc': 'Contribute to the long-term institutional strength of the Foundation. Endowment contributions ensure sustainable impact beyond individual projects.',
+    'impact.oriented.desc': 'For selected initiatives, we offer structured funding models such as recoverable grants or program-related investments, aligned with measurable impact.',
+    
+    'explore.projects': 'Explore Projects',
+    'support.research.programs': 'Support Research Programs',
+    'learn.about.endowment': 'Learn About Endowment',
+    'discover.impact.models': 'Discover Impact Models',
+    
+    // Updated button text
+    'partner.with.us': 'Partner With Us',
+    'support.partner': 'Support & Partner',
+
     // Footer
     'quick.links': 'Quick Links',
     'connect.with.us': 'Connect With Us',
-    'support.cause': 'Support Our Cause',
-    'help.preserve': 'Help us preserve Macedonian heritage for future generations',
+    'support.cause': 'Partner With the Global Macedonian Foundation Eternal',
+    'help.preserve': 'Whether through project partnerships, research support, or long-term engagement, we welcome individuals and institutions who share our vision of lasting impact.',
     'general.inquiries': 'General Inquiries, Press and Media',
     'stay.connected.desc': 'Get the latest updates and insights',
     'join.community': 'Join Our Community',
@@ -261,14 +289,6 @@ const translations = {
     'grujeski.impact': 'This project will not only highlight Macedonia\'s international historical position but will also serve as an example of how young researchers, with the right support, can contribute to global academic discourse.',
     'educational.cta': 'Your support enables us to fund more young talents like Vladimir. Every contribution helps pave the way for a new generation of Macedonian scholars.',
     
-    // Friends of GMFE
-    'friends.gmfe.title': 'Friends of GMFE',
-    'friends.gmfe.goal': '€5–10 Monthly Support',
-    'friends.gmfe.description': 'Join our circle of Friends of GMFE and become part of a global community preserving Macedonia\'s roots and shaping its future. Your monthly support helps fund research, publications, and cultural initiatives that strengthen Macedonian identity worldwide.',
-    'friends.gmfe.highlight': 'By becoming a Friend of GMFE, you\'ll receive exclusive updates, early access to new studies, and public recognition as a valued supporter.',
-    'friends.gmfe.cta': 'Together, we nurture Roots and build the Future!',
-    'friends.gmfe.button': 'Join as a Friend',
-    
     // Stefan Ivanovski
     'stefan.name': 'Stefan Ivanovski',
     'stefan.title': 'Researcher & PhD Candidate',
@@ -278,12 +298,12 @@ const translations = {
   },
   mk: {
     // Header
-    'roots.future': 'Корени и Иднина',
-    'preserving.past': 'Да го зачуваме минатото, да ја обликуваме иднината',
-    'welcome.message': 'Добредојдовте во Глобалната Македонска Фондација Вечна',
-    'foundation.description': 'Посветена на зачувување на македонското наследство и обликување на иднината, Глобална Македонска Фондација Вечна промовира единство преку историја, култура и образование.',
-    'join.message': 'Придружете ни се во чествувањето на нашето славно наследство и градењето на посветла иднина.',
-    'support.vision': 'Поддржете ја нашата визија',
+    'roots.future': 'Почитување на нашите корени, обликување на нашата иднина',
+    'preserving.past': 'Зачувување на наследството. Обликување на иднината.',
+    'welcome.message': 'Добредојдовте во Глобална Македонска Фондација Вечна',
+    'foundation.description': 'Глобална Македонска Фондациија Вечна ги поврзува истражувањето, културата и меѓународната соработка со цел создавање трајно и одржливо влијание.',
+    'join.message': 'Придружете ни се во зачувувањето на нашето наследство и изградбата на поубава иднина.',
+    'support.vision': 'Истражете ги начините за вклучување',
     
     // Mission
     'our.sponsors': 'Наши Спонзори',
@@ -385,16 +405,16 @@ const translations = {
     'education.description': 'Да ја инспирираме следната генерација на научници од Македонија и соседните региони преку доделување престижни стипендии, овозможувајќи им да продолжат со напредни постдипломски студии и да придонесат во глобалниот академски пејзаж.',
 
     // Contact
-    'shape.future': 'Обликувајте ја иднината заедно',
-    'support.difference': 'Вашата поддршка прави разлика!',
+    'shape.future': 'Начини за вклучување и создавање влијание',
+    'support.difference': 'Глобална Македонска Фондациија Вечна нуди структуриран пристап за поддршка на значајни проекти, долгорочни истражувања и институционален развој.',
     'donation.impact': 'Со донирање помагате за зачувување и промовирање на богатото наследство, култура и историја на Македонија за идните генерации. Заедно, можеме да постигнеме влијателни проекти и да создадеме трајно наследство.',
     'make.impact': 'Направете го вашето влијание денес!',
-    'donation.confirmation': 'Кликнете „Донирај сега" и добијте автоматска потврдна е-пошта со приложена потврда за донација. Вашата великодушност ја обликува нашата заедничка иднина!',
+    'donation.confirmation': 'Од проектни партнерства до долгорочни придонеси во фондот за трајна поддршка (endowment), соработуваме со поддржувачи кои тежнеат кон смислено и долгорочно влијание.',
 
     // Donation Cards
     'support.mission.title': 'Поддржете ја нашата мисија',
-    'support.mission.description': 'Вашата донација помага во одржувањето на Глобалната Македонска Фондација Вечна и нејзините долгорочни иницијативи. Со вашата поддршка, можеме да продолжиме да го промовираме македонското наследство, да финансираме клучни проекти и да го прошириме нашето влијание глобално.',
-    'support.mission.highlight': 'Осигурајте го успехот на фондацијата со вашиот придонес!',
+    'support.mission.description': 'Вашиот придонес директно ја поддржува нашата основна мисија за зачувување и промовирање на македонското наследство преку истражување, образование и културни иницијативи.',
+    'support.mission.highlight': 'Направете директно влијание врз нашата основна работа',
     
     'young.researchers.title': 'Фонд за млади истражувачи',
     'young.researchers.goal': 'Цел €15,000',
@@ -418,17 +438,45 @@ const translations = {
     'research.funding.cta': 'Дали веќе работите на истражувачки проект или подготвувате нов?',
     'research.funding.details': 'Ве охрабруваме да ја поднесете вашата апликација преку нашиот онлајн формулар. Сите пријави ќе бидат темелно разгледани од страна на Научниот совет на Фондацијата. Одбраните проекти ќе добијат финансиска поддршка за нивна реализација.',
     'submit.proposal': 'Поднеси проектна апликација',
-    'shape.future': 'Обликувајте ја иднината заедно',
-    'support.difference': 'Вашата поддршка прави разлика!',
+    'shape.future': 'Начини за вклучување и создавање влијание',
+    'support.difference': 'Глобална Македонска Фондациија Вечна нуди структуриран пристап за поддршка на значајни проекти, долгорочни истражувања и институционален развој.',
     'donation.impact': 'Со донирање помагате за зачувување и промовирање на богатото наследство, култура и историја на Македонија за идните генерации. Заедно, можеме да постигнеме влијателни проекти и да создадеме трајно наследство.',
     'make.impact': 'Направете го вашето влијание денес!',
-    'donation.confirmation': 'Кликнете „Донирај сега" и добијте автоматска потврдна е-пошта со приложена потврда за донација. Вашата великодушност ја обликува нашата заедничка иднина!',
+    'donation.confirmation': 'Од проектни партнерства до долгорочни придонеси во фондот за трајна поддршка (endowment), соработуваме со поддржувачи кои тежнеат кон смислено и долгорочно влијание.',
+    
+    // Friends of GMFE
+    'friends.gmfe.title': 'Пријатели на ГМФВ',
+    'friends.gmfe.goal': 'Месечна поддршка од 5–10 евра',
+    'friends.gmfe.description': 'Приклучи се во кругот на Пријатели на Глобалната Македонска Фондација ВЕЧНА (ГМФВ) и стани дел од глобалната заедница што ги чува корените и ја гради иднината на Македонија. Твојата месечна поддршка овозможува финансирање на истражувања, изданија и културни иницијативи што го зајакнуваат македонскиот идентитет ширум светот.',
+    'friends.gmfe.highlight': 'Како Пријател на ГМФВ, ќе добиваш ексклузивни информации, ранен пристап до нови трудови и јавно признание како поддржувач на нашата мисија.',
+    'friends.gmfe.cta': 'Придружете се на нашата заедница на поддржувачи',
+    'friends.gmfe.button': 'Станете пријател',
+    
+    // New engagement options
+    'project.partnerships': 'Проектни партнерства',
+    'research.knowledge.programs': 'Програми за истражување и знаење',
+    'endowment.longterm.support': 'Endowment и долгорочна поддршка',
+    'impact.oriented.funding': 'Финансирање насочено кон влијание',
+    
+    'project.partnerships.desc': 'Поддршка на конкретни проекти во областа на истражувањето, културата и образованието. Проектните партнерства овозможуваат насочено учество со јасно дефинирани цели, временски рамки и мерливо влијание.',
+    'research.knowledge.desc': 'Поддршка на истражувачки иницијативи, публикации и академска соработка кои го зачувуваат и унапредуваат македонското знаење и културно наследство.',
+    'endowment.longterm.desc': 'Придонес кон долгорочната институционална стабилност и независност на Фондацијата. Endowment придонесите обезбедуваат одржливо влијание кое ги надминува поединечните проекти.',
+    'impact.oriented.desc': 'За одбрани иницијативи, применуваме структуриран пристап на финансирање, како што се повратни грантови или program-related investments, усогласени со јасно дефинирани и мерливи резултати.',
+    
+    'explore.projects': 'Истражете ги проектите',
+    'support.research.programs': 'Поддржете ги истражувачките програми',
+    'learn.about.endowment': 'Дознајте повеќе за Endowment',
+    'discover.impact.models': 'Откријте ги моделите за влијание',
+    
+    // Updated button text
+    'partner.with.us': 'Соработувајте со нас',
+    'support.partner': 'Поддршка и партнерство',
     
     // Footer
     'quick.links': 'Брзи линкови',
     'connect.with.us': 'Поврзете се со нас',
-    'support.cause': 'Поддржете ја нашата кауза',
-    'help.preserve': 'Помогнете ни да го зачуваме македонското наследство за идните генерации',
+    'support.cause': 'Соработувајте со Глобална Македонска Фондациија Вечна',
+    'help.preserve': 'Без разлика дали преку проектни партнерства, поддршка на истражувања или долгорочна ангажираност, ги поздравуваме поединците и институциите кои ја споделуваат нашата визија за трајно и значајно влијание.',
     'general.inquiries': 'Општи прашања, прес и медиуми',
     'stay.connected.desc': 'Добивајте ги најновите информации',
     'join.community': 'Придружете се на нашата заедница',
@@ -559,13 +607,22 @@ const translations = {
     'grujeski.impact': 'Овој проект не само што ќе ја истакне меѓународната историска положба на Македонија, туку и ќе послужи како пример дека младите истражувачи, со соодветна поддршка, можат да придонесат во глобалниот академски дискурс.',
     'educational.cta': 'Вашата поддршка ни овозможува да финансираме повеќе млади таленти како Владимир. Секој придонес помага да се отвори патот за нова генерација македонски научници.',
     
-    // Friends of GMFE
-    'friends.gmfe.title': 'Пријатели на ГМФВ',
-    'friends.gmfe.goal': 'Месечна поддршка од 5–10 евра',
-    'friends.gmfe.description': 'Приклучи се во кругот на Пријатели на Глобалната Македонска Фондација ВЕЧНА (ГМФВ) и стани дел од глобалната заедница што ги чува корените и ја гради иднината на Македонија. Твојата месечна поддршка овозможува финансирање на истражувања, изданија и културни иницијативи што го зајакнуваат македонскиот идентитет ширум светот.',
-    'friends.gmfe.highlight': 'Како Пријател на ГМФВ, ќе добиваш ексклузивни информации, ранен пристап до нови трудови и јавно признание како поддржувач на нашата мисија.',
-    'friends.gmfe.cta': 'Заедно ги негуваме корените и ја градиме иднината!',
-    'friends.gmfe.button': 'Стани Пријател',
+    'get.in.touch': 'Контактирајте не',
+    'name': 'Име',
+    'your.name': 'Вашето име',
+    'email': 'Е-пошта',
+    'your.email': 'vasaadresa@email.com',
+    'subject': 'Наслов',
+    'message.about': 'За што се однесува вашата порака?',
+    'message': 'Порака',
+    'your.message': 'Вашата порака...',
+    'send.message': 'Испрати порака',
+    'captcha.error': 'Ве молиме пополнете ја CAPTCHA верификацијата',
+    'message.sent': 'Порака испратена',
+    'donate.now': 'Донирај',
+    'general.inquiries': 'Општи прашања',
+    'quick.links': 'Брзи врски',
+    'connect.with.us': 'Поврзете се со нас',
   }
 };
 

@@ -152,7 +152,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center bg-secondary text-white px-6 py-2 rounded-md hover:opacity-90 transition-colors font-semibold"
             >
-              <Heart className="h-5 w-5 mr-2 text-white" /> {t('donate.now')}
+              <Heart className="h-5 w-5 mr-2 text-white" /> {t('support.partner')}
             </a>
             <div className="mt-10">
               <img 
