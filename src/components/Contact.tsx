@@ -1,5 +1,5 @@
 import React from 'react';
-import { Send, Heart, ArrowRight, GraduationCap, Library } from 'lucide-react';
+import { Send, Heart, ArrowRight, GraduationCap, Library, BookOpen } from 'lucide-react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser';
 import { useLanguage } from '../context/LanguageContext';
