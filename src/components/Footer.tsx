@@ -147,7 +147,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">{t('support.cause')}</h3>
             <p className="mb-4">{t('help.preserve')}</p>
             <a
-              href="https://pay.raisenow.io/ndyvq"
+              href="https://donate.raisenow.io/jsdvv?lng=en"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-secondary text-white px-6 py-2 rounded-md hover:opacity-90 transition-colors font-semibold"
