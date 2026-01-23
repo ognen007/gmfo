@@ -89,32 +89,32 @@ const Contact = () => {
         </div>
 
         {/* Grid for cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-10 mt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-10 mt-16">
           {/* Card 1 */}
           <div className="bg-white/90 backdrop-blur-sm p-8 sm:p-10 rounded-2xl shadow-lg hover:shadow-2xl transition-all flex flex-col min-h-[420px] hover:-translate-y-1">
             <div className="inline-flex items-center gap-3 mb-5">
-              <div className="p-3 bg-primary/10 rounded-xl">
-                <Heart className="h-6 w-6 text-primary" />
+              <div className="p-3 bg-secondary/10 rounded-xl">
+                <svg className="h-6 w-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
               </div>
-              <h3 className="text-lg font-bold text-primary leading-tight">
-                {t('support.mission.title')}
+              <h3 className="text-lg font-bold text-secondary leading-tight">
+                {language === 'en' ? 'Project Partnerships' : 'Проектни партнерства'}
               </h3>
             </div>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              {t('support.mission.description')}
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              {language === 'en' 
+                ? 'Support specific projects in research, culture, and education. Project partnerships enable targeted engagement with clearly defined goals, timelines, and impact.'
+                : 'Поддршка на конкретни проекти во областа на истражувањето, културата и образованието. Проектните партнерства овозможуваат насочено учество со јасно дефинирани цели, временски рамки и мерливо влијание.'}
             </p>
-            <div className="mb-6 text-gray-700">
-              <span className="text-blue-600">🔹</span>{' '}
-              {t('support.mission.highlight')}
-            </div>
             <div className="mt-auto pt-6">
               <a
-                href="https://pay.raisenow.io/ndyvq"
+                href="https://donate.raisenow.io/jsdvv"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-[1.03] transition-all w-full justify-center"
               >
-                {t('donate.now')} <ArrowRight className="ml-2 h-5 w-5" />
+                {language === 'en' ? 'Explore Projects' : 'Истражете ги проектите'} <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </div>
           </div>
@@ -122,32 +122,26 @@ const Contact = () => {
           {/* Card 2 */}
           <div className="bg-white/90 backdrop-blur-sm p-8 sm:p-10 rounded-2xl shadow-lg hover:shadow-2xl transition-all flex flex-col min-h-[420px] hover:-translate-y-1">
             <div className="inline-flex items-center gap-3 mb-5">
-              <div className="p-3 bg-primary/10 rounded-xl">
-                <GraduationCap className="h-6 w-6 text-primary" />
+              <div className="p-3 bg-secondary/10 rounded-xl">
+                <BookOpen className="h-6 w-6 text-secondary" />
               </div>
-              <h3 className="text-lg font-bold text-primary leading-tight">
-                {t('young.researchers.title')}
+              <h3 className="text-lg font-bold text-secondary leading-tight">
+                {language === 'en' ? 'Research & Knowledge Programs' : 'Програми за истражување и знаење'}
               </h3>
             </div>
-            <div className="text-lg font-semibold text-secondary mb-6">
-              {t('young.researchers.goal')}
-            </div>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              {t('young.researchers.description')}
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              {language === 'en' 
+                ? 'Support research initiatives, publications, and academic cooperation that preserve and advance Macedonian knowledge and heritage.'
+                : 'Поддршка на истражувачки иницијативи, публикации и академска соработка кои го зачувуваат и унапредуваат македонското знаење и културно наследство.'}
             </p>
-            <div className="mb-6 text-gray-700">
-              <span className="text-blue-600">🔹</span>{' '}
-              {t('young.researchers.highlight')}
-            </div>
             <div className="mt-auto pt-6">
               <a
-                href="https://donate.raisenow.io/gmtzs"
+                href="https://donate.raisenow.io/mvfdt"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-[1.03] transition-all w-full justify-center"
               >
-                {t('young.researchers.button')}{' '}
-                <ArrowRight className="ml-2 h-5 w-5" />
+                {language === 'en' ? 'Support Research Programs' : 'Поддржете ги истражувачките програми'} <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </div>
           </div>
@@ -155,32 +149,28 @@ const Contact = () => {
           {/* Card 3 */}
           <div className="bg-white/90 backdrop-blur-sm p-8 sm:p-10 rounded-2xl shadow-lg hover:shadow-2xl transition-all flex flex-col min-h-[420px] hover:-translate-y-1">
             <div className="inline-flex items-center gap-3 mb-5">
-              <div className="p-3 bg-primary/10 rounded-xl">
-                <Library className="h-6 w-6 text-primary" />
+              <div className="p-3 bg-secondary/10 rounded-xl">
+                <svg className="h-6 w-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
               </div>
-              <h3 className="text-lg font-bold text-primary leading-tight">
-                {t('preserving.knowledge.title')}
+              <h3 className="text-lg font-bold text-secondary leading-tight">
+                {language === 'en' ? 'Endowment & Long-Term Support' : 'Endowment и долгорочна поддршка'}
               </h3>
             </div>
-            <div className="text-lg font-semibold text-secondary mb-6">
-              {t('preserving.knowledge.goal')}
-            </div>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              {t('preserving.knowledge.description')}
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              {language === 'en' 
+                ? 'Contribute to the long-term institutional strength of the Foundation. Endowment contributions ensure sustainable impact beyond individual projects.'
+                : 'Придонес кон долгорочната институционална стабилност и независност на Фондацијата. Endowment придонесите обезбедуваат одржливо влијание кое ги надминува поединечните проекти.'}
             </p>
-            <div className="mb-6 text-gray-700">
-              <span className="text-blue-600">🔹</span>{' '}
-              {t('preserving.knowledge.highlight')}
-            </div>
             <div className="mt-auto pt-6">
               <a
-                href="https://donate.raisenow.io/knqgq"
+                href="https://donate.raisenow.io/qrykn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-[1.03] transition-all w-full justify-center"
               >
-                {t('preserving.knowledge.button')}{' '}
-                <ArrowRight className="ml-2 h-5 w-5" />
+                {language === 'en' ? 'Learn About Endowment' : 'Дознајте повеќе за Endowment'} <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </div>
           </div>
@@ -188,35 +178,28 @@ const Contact = () => {
           {/* Card 4 */}
           <div className="bg-white/90 backdrop-blur-sm p-8 sm:p-10 rounded-2xl shadow-lg hover:shadow-2xl transition-all flex flex-col min-h-[420px] hover:-translate-y-1">
             <div className="inline-flex items-center gap-3 mb-5">
-              <div className="p-3 bg-primary/10 rounded-xl">
-                <Heart className="h-6 w-6 text-primary" />
+              <div className="p-3 bg-secondary/10 rounded-xl">
+                <svg className="h-6 w-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
               </div>
-              <h3 className="text-lg font-bold text-primary leading-tight">
-                {t('friends.gmfe.title')}
+              <h3 className="text-lg font-bold text-secondary leading-tight">
+                {language === 'en' ? 'Impact-Oriented Funding' : 'Финансирање насочено кон влијание'}
               </h3>
             </div>
-            <div className="text-lg font-semibold text-secondary mb-6">
-              {t('friends.gmfe.goal')}
-            </div>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              {t('friends.gmfe.description')}
+              {language === 'en' 
+                ? 'For selected initiatives, we offer structured funding models such as recoverable grants or program-related investments, aligned with measurable impact.'
+                : 'За одбрани иницијативи, применуваме структуриран пристап на финансирање, како што се повратни грантови или program-related investments, усогласени со јасно дефинирани и мерливи резултати.'}
             </p>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              {t('friends.gmfe.highlight')}
-            </p>
-            <div className="mb-6 text-gray-700">
-              <span className="text-blue-600">🔹</span>{' '}
-              {t('friends.gmfe.cta')}
-            </div>
             <div className="mt-auto pt-6">
               <a
-                href={`https://donate.raisenow.io/pcyxk?lng=${language}`}
+                href="https://donate.raisenow.io/vscvc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-[1.03] transition-all w-full justify-center"
               >
-                {t('friends.gmfe.button')}{' '}
-                <ArrowRight className="ml-2 h-5 w-5" />
+                {language === 'en' ? 'Discover Impact Models' : 'Откријте ги моделите за влијание'} <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </div>
           </div>
