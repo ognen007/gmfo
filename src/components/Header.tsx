@@ -35,10 +35,8 @@ const Header = () => {
           <p className="text-lg md:text-xl mb-12">
             {t('join.message')}
           </p>
-          <a 
-            href="https://pay.raisenow.io/ndyvq" 
-            target="_blank"
-            rel="noopener noreferrer"
+          <a
+            href="#contact"
             className="inline-flex items-center bg-secondary text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-colors"
           >
             {t('support.vision')} <ArrowRight className="ml-2 h-5 w-5" />
