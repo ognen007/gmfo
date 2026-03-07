@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Sponsors from './components/Sponsors';
@@ -44,12 +44,10 @@ function HomePage() {
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/vision-eternal-203" element={<VisionEternal />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/vision-eternal-203" element={<VisionEternal />} />
+    </Routes>
   );
 }
 
