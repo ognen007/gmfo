@@ -36,7 +36,7 @@ const Header = () => {
             {t('join.message')}
           </p>
           <a
-            href="#contact"
+            href="/ways-to-engage"
             className="inline-flex items-center bg-secondary text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-colors"
           >
             {t('support.vision')} <ArrowRight className="ml-2 h-5 w-5" />
