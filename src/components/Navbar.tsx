@@ -39,24 +39,28 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { 
-      name: language === 'en' ? 'Mission' : 'Мисија', 
+    {
+      name: language === 'en' ? 'Mission' : 'Мисија',
       action: () => handleNavigation('mission')
     },
-    { 
-      name: language === 'en' ? 'About' : 'За нас', 
+    {
+      name: language === 'en' ? 'About' : 'За нас',
       action: () => handleNavigation('board')
     },
-    { 
-      name: language === 'en' ? 'Projects' : 'Проекти', 
+    {
+      name: language === 'en' ? 'Projects' : 'Проекти',
       action: () => handleNavigation('endeavors')
     },
-    { 
-      name: language === 'en' ? 'Ambassadors' : 'Амбасадори', 
+    {
+      name: language === 'en' ? 'Ambassadors' : 'Амбасадори',
       action: () => handleNavigation('ambassadors')
     },
-    { 
-      name: language === 'en' ? 'Contact' : 'Контакт', 
+    {
+      name: language === 'en' ? 'Vision 2035' : 'Визија 2035',
+      action: () => handleRouteNavigation('/vision-eternal-203')
+    },
+    {
+      name: language === 'en' ? 'Contact' : 'Контакт',
       action: () => handleNavigation('contact')
     },
   ];
