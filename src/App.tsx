@@ -46,7 +46,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/vision-eternal-203" element={<VisionEternal />} />
+      <Route path="/vision-eternal-2035" element={<VisionEternal />} />
     </Routes>
   );
 }
