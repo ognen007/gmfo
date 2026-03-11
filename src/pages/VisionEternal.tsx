@@ -359,7 +359,7 @@ const VisionEternal = () => {
               <p className="mt-6 max-w-2xl text-xl font-semibold text-blue-100 sm:text-2xl">
                 {isEnglish
                   ? "Institution. Knowledge. Impact."
-                  : "Институција. Знаење. Влијание."}
+                  : "Институција. Сознание. Влијание."}
               </p>
 
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
@@ -627,8 +627,8 @@ const VisionEternal = () => {
                         <IconComponent className="h-7 w-7 text-primary" />
                         <p className="mt-3 px-2 text-center text-[11px] font-bold uppercase leading-tight tracking-[0.1em] text-primary">
                           {isEnglish
-                            ? `Phase ${programme.id}`
-                            : `Фаза ${programme.id}`}
+                            ? `FP${programme.id}`
+                            : `FP${programme.id}`}
                         </p>
                       </div>
 
