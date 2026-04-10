@@ -475,7 +475,7 @@ const VisionEternal = () => {
                 <p className="mt-5 text-xl font-semibold leading-snug text-primary sm:text-3xl">
                   {isEnglish
                     ? "By 2035, GMFE will be the internationally recognised reference institution for Macedonian heritage, academic research, and institutional development."
-                    : "До 2035 година, GMFE ќе се позиционира како меѓународно призната референтна instituция за македонско наследство, научни истражувања и институционален развој."}
+                    : "До 2035 година, ГМФЕ ќе се позиционира како меѓународно призната референтна институција за македонско наследство, научни истражувања и институционален развој."}
                 </p>
 
                 <div className="mt-6 h-px w-full bg-gradient-to-r from-transparent via-blue-200 to-transparent" />
