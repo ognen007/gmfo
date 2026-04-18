@@ -1,17 +1,17 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-import Sponsors from './components/Sponsors';
-import Mission from './components/Mission';
-import Chairman from './components/Chairman';
-import Events from './components/Events';
-import Board from './components/Board';
-import Ambassadors from './components/Ambassadors';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import ITSupport from './components/ITSupport';
-import VisionEternal from './pages/VisionEternal';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Sponsors from "./components/Sponsors";
+import Mission from "./components/Mission";
+import Chairman from "./components/Chairman";
+import Events from "./components/Events";
+import Board from "./components/Board";
+import Ambassadors from "./components/Ambassadors";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import ITSupport from "./components/ITSupport";
+import VisionEternal from "./pages/VisionEternal";
 
 function HomePage() {
   return (

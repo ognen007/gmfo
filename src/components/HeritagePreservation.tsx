@@ -3,6 +3,7 @@ import { BookOpen, Heart } from 'lucide-react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { useLanguage } from '../context/LanguageContext';
+import HeritagePreservationProject from '../pages/HeritagePreservationProject';
 
 const HeritagePreservation = () => {
   const { t, language } = useLanguage();
@@ -334,6 +335,8 @@ const HeritagePreservation = () => {
           </div>
         </div>
       </section>
+
+      <HeritagePreservationProject />
 
       <Footer />
     </div>
