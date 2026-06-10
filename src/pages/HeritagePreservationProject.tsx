@@ -9,7 +9,6 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { useLanguage } from "../context/LanguageContext";
 
 type DownloadItem = {
@@ -597,8 +596,6 @@ const HeritagePreservationProject = () => {
           </div>
         </div>
       )}
-
-      <Footer />
     </div>
   );
 };
