@@ -1,14 +1,31 @@
-import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import React, { useState, useRef, useEffect } from "react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "../context/LanguageContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [networkOpen, setNetworkOpen] = useState(false);
+  const [mobileNetworkOpen, setMobileNetworkOpen] = useState(false);
+  const networkRef = useRef<HTMLDivElement>(null);
   const { t, language } = useLanguage();
   const navigate = useNavigate();
   const location = useLocation();
+
+  // Close desktop dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        networkRef.current &&
+        !networkRef.current.contains(e.target as Node)
+      ) {
+        setNetworkOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -19,14 +36,13 @@ const Navbar = () => {
 
   const handleNavigation = (sectionId: string) => {
     setIsOpen(false);
+    setNetworkOpen(false);
+    setMobileNetworkOpen(false);
 
     if (location.pathname === "/") {
-      // Already on homepage, just scroll
       scrollToSection(sectionId);
     } else {
-      // Navigate to homepage first, then scroll
       navigate("/");
-      // Use setTimeout to ensure the page has loaded before scrolling
       setTimeout(() => {
         scrollToSection(sectionId);
       }, 100);
@@ -35,6 +51,8 @@ const Navbar = () => {
 
   const handleRouteNavigation = (path: string) => {
     setIsOpen(false);
+    setNetworkOpen(false);
+    setMobileNetworkOpen(false);
     navigate(path);
   };
 
@@ -52,16 +70,31 @@ const Navbar = () => {
       action: () => handleNavigation("endeavors"),
     },
     {
-      name: language === "en" ? "Ambassadors" : "Амбасадори",
-      action: () => handleNavigation("ambassadors"),
+      name: "NETWORK_DROPDOWN",
+      action: () => {},
     },
     {
       name: language === "en" ? "Vision 2035" : "Визија 2035",
       action: () => handleRouteNavigation("/vision-eternal-2035"),
     },
     {
+      name: language === "en" ? "Services" : "Услуги",
+      action: () => handleRouteNavigation("/services"),
+    },
+    {
       name: language === "en" ? "Contact" : "Контакт",
       action: () => handleNavigation("contact"),
+    },
+  ];
+
+  const networkDropdownItems = [
+    {
+      name: language === "en" ? "Ambassadors" : "Амбасадори",
+      action: () => handleNavigation("ambassadors"),
+    },
+    {
+      name: "Senior Fellows",
+      action: () => handleRouteNavigation("/senior-fellows"),
     },
   ];
 
@@ -107,16 +140,43 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="ml-auto hidden items-center gap-3 md:flex">
-            <div className="flex min-w-0 items-center gap-1 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-              {navItems.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={item.action}
-                  className="rounded-md px-2.5 py-2 text-sm font-semibold tracking-[0.01em] text-white/90 transition hover:bg-white/10 hover:text-white"
-                >
-                  {item.name}
-                </button>
-              ))}
+            <div className="flex min-w-0 items-center gap-1 whitespace-nowrap">
+              {navItems.map((item) =>
+                item.name === "NETWORK_DROPDOWN" ? (
+                  <div key="network" className="relative" ref={networkRef}>
+                    <button
+                      onClick={() => setNetworkOpen((prev) => !prev)}
+                      className="inline-flex items-center gap-1 rounded-md px-2.5 py-2 text-sm font-semibold tracking-[0.01em] text-white/90 transition hover:bg-white/10 hover:text-white"
+                    >
+                      {language === "en" ? "Network" : "Мрежа"}
+                      <ChevronDown
+                        className={`h-3.5 w-3.5 transition-transform ${networkOpen ? "rotate-180" : ""}`}
+                      />
+                    </button>
+                    {networkOpen && (
+                      <div className="absolute left-0 top-full mt-1 w-44 rounded-lg bg-primary shadow-xl border border-white/10 py-1 z-50">
+                        {networkDropdownItems.map((sub) => (
+                          <button
+                            key={sub.name}
+                            onClick={sub.action}
+                            className="block w-full text-left px-4 py-2.5 text-sm text-white/90 hover:bg-white/10 hover:text-white transition"
+                          >
+                            {sub.name}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <button
+                    key={item.name}
+                    onClick={item.action}
+                    className="rounded-md px-2.5 py-2 text-sm font-semibold tracking-[0.01em] text-white/90 transition hover:bg-white/10 hover:text-white"
+                  >
+                    {item.name}
+                  </button>
+                ),
+              )}
             </div>
 
             <div className="shrink-0">
@@ -153,15 +213,42 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={item.action}
-                className="text-white hover:text-secondary block px-3 py-2 rounded-md text-base font-medium w-full text-left"
-              >
-                {item.name}
-              </button>
-            ))}
+            {navItems.map((item) =>
+              item.name === "NETWORK_DROPDOWN" ? (
+                <div key="network-mobile">
+                  <button
+                    onClick={() => setMobileNetworkOpen((prev) => !prev)}
+                    className="text-white hover:text-secondary flex items-center justify-between px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                  >
+                    {language === "en" ? "Network" : "Мрежа"}
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform ${mobileNetworkOpen ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  {mobileNetworkOpen && (
+                    <div className="pl-6 space-y-1">
+                      {networkDropdownItems.map((sub) => (
+                        <button
+                          key={sub.name}
+                          onClick={sub.action}
+                          className="text-white/80 hover:text-secondary block px-3 py-2 rounded-md text-sm font-medium w-full text-left"
+                        >
+                          {sub.name}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <button
+                  key={item.name}
+                  onClick={item.action}
+                  className="text-white hover:text-secondary block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                >
+                  {item.name}
+                </button>
+              ),
+            )}
             <LanguageSwitcher className="mx-3 my-2" />
             <a
               href="https://donate.raisenow.io/jsdvv"

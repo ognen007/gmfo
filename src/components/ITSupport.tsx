@@ -25,7 +25,7 @@ const ITSupport = () => {
               <div className="md:grid md:grid-cols-3">
                 <div className="relative h-64 md:h-auto">
                   <img 
-                    src="https://i.ibb.co/wZ9d38K4/image.png"
+                    src="https://i.ibb.co/S4P829RP/image.png"
                     alt="IT Support Professional"
                     className="w-full h-full object-cover"
                   />

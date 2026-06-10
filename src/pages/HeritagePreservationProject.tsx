@@ -72,6 +72,18 @@ const HeritagePreservationProject = () => {
         "Ensuring international visibility",
         "Positioning the work within a broader institutional and intellectual framework",
       ],
+      supportInitiativeTitle: "Support This Initiative",
+      supportInitiativeBody1:
+        'As part of GMFE\'s commitment to preserving and promoting Macedonian intellectual heritage, a limited number of foundation copies of "Macedonian Identity Questions" by Prof. Dr. Jovanka Kepeska are available through the Foundation.',
+      supportInitiativeBody2:
+        "These copies are not offered as a commercial sale, but as part of our donor-supported cultural distribution efforts.",
+      supportInitiativeBody3:
+        "Individuals, institutions, libraries, and supporters interested in receiving a copy are welcome to contact us.",
+      supportInitiativeBody4:
+        "A suggested donation helps us continue supporting future research, publications, and cultural initiatives aligned with Vision Eternal 2035.",
+      supportInitiativeDonation:
+        "Suggested donation: from EUR 20 (plus shipping if applicable)",
+      supportInitiativeButton: "Request a Foundation Copy",
       downloadsTitle: "Additional Materials",
       downloadsSubtitle: "Download Section",
       downloadCta: "Download",
@@ -155,6 +167,18 @@ const HeritagePreservationProject = () => {
         "Обезбедување меѓународна видливост",
         "Институционално позиционирање на делото",
       ],
+      supportInitiativeTitle: "Поддржете ја оваа иницијатива",
+      supportInitiativeBody1:
+        "Како дел од заложбата на Глобалната Македонска Фондација ВЕЧНА за зачувување и промоција на македонското интелектуално наследство, ограничен број примероци од книгата „Македонските идентитетски прашања“ од проф. д-р Јованка Кепеска се достапни преку Фондацијата.",
+      supportInitiativeBody2:
+        "Овие примероци не се нудат како комерцијална продажба, туку како дел од нашите донаторски активности за поддршка на културни и научни иницијативи.",
+      supportInitiativeBody3:
+        "Поединци, институции, библиотеки и поддржувачи кои имаат интерес да добијат примерок, слободно можат да нè контактираат.",
+      supportInitiativeBody4:
+        "Со предложена донација ја поддржувате нашата работа и идни истражувачки, издавачки и културни иницијативи во согласност со Vision Eternal 2035.",
+      supportInitiativeDonation:
+        "Препорачана донација: од 1.200 денари (плус достава доколку е потребно)",
+      supportInitiativeButton: "Побарај примерок",
       downloadsTitle: "Дополнителни материјали",
       downloadsSubtitle: "Download секција",
       downloadCta: "Преземи",
@@ -406,6 +430,57 @@ const HeritagePreservationProject = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-14 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 items-stretch bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="relative overflow-hidden md:self-stretch">
+              <img
+                src="https://i.ibb.co/x88ngfnL/image.png"
+                alt={
+                  language === "en"
+                    ? "Macedonian Identity Questions foundation copy"
+                    : "Примерок од Македонските идентитетски прашања"
+                }
+                className="w-full h-[280px] md:h-full object-cover"
+              />
+            </div>
+
+            <div className="p-8 md:p-10 flex flex-col justify-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-primary font-playfair">
+                {t.supportInitiativeTitle}
+              </h2>
+
+              <p className="mt-5 text-gray-600 leading-relaxed">
+                {t.supportInitiativeBody1}
+              </p>
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                {t.supportInitiativeBody2}
+              </p>
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                {t.supportInitiativeBody3}
+              </p>
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                {t.supportInitiativeBody4}
+              </p>
+
+              <p className="mt-5 text-primary font-semibold">
+                {t.supportInitiativeDonation}
+              </p>
+
+              <a
+                href="https://forms.gle/fuaRdwR318XM2Ang6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg bg-secondary px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+              >
+                {t.supportInitiativeButton}
+                <ExternalLink className="h-4 w-4" />
+              </a>
             </div>
           </div>
         </div>

@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "./App.tsx";
 import HeritagePreservation from "./components/HeritagePreservation.tsx";
 import EducationalInitiatives from "./components/EducationalInitiatives.tsx";
+import Services from "./components/Services.tsx";
+import SeniorFellows from "./pages/SeniorFellows.tsx";
 import WaysToEngage from "./components/WaysToEngage.tsx";
 import { LanguageProvider } from "./context/LanguageContext";
 import "./index.css";
@@ -22,6 +24,8 @@ createRoot(document.getElementById("root")!).render(
             path="/projects/educational-initiatives"
             element={<EducationalInitiatives />}
           />
+          <Route path="/services" element={<Services />} />
+          <Route path="/senior-fellows" element={<SeniorFellows />} />
           <Route path="/ways-to-engage" element={<WaysToEngage />} />
         </Routes>
       </Router>
