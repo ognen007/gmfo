@@ -517,7 +517,10 @@ const translations: Record<Language, Record<string, string>> = {
     ],
     ["professional.network", "Professional Network"],
     ["ognen.veljanovski", "Ognen Veljanovski"],
-    ["ognen.title", "Entrepreneur, Software and Cloud Engineer and Security Specialist"],
+    [
+      "ognen.title",
+      "Entrepreneur, Software and Cloud Engineer and Security Specialist",
+    ],
 
     // Heritage Preservation Page
     ["heritage.preservation.title", "Safeguarding Macedonia's Cultural Memory"],
@@ -1204,7 +1207,10 @@ const translations: Record<Language, Record<string, string>> = {
     ],
     ["professional.network", "Професионална мрежа"],
     ["ognen.veljanovski", "Огнен Велјановски"],
-    ["ognen.title", "Инженер за софтвер, облачни системи и системска архитектура | Фокус на безбедност и бизнис решенија"],
+    [
+      "ognen.title",
+      "Инженер за софтвер, облачни системи и системска архитектура | Фокус на безбедност и бизнис решенија",
+    ],
 
     // Heritage Preservation Page
     [
