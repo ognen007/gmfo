@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -8,7 +8,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [networkOpen, setNetworkOpen] = useState(false);
   const [mobileNetworkOpen, setMobileNetworkOpen] = useState(false);
+  const [knowledgeOpen, setKnowledgeOpen] = useState(false);
+  const [mobileKnowledgeOpen, setMobileKnowledgeOpen] = useState(false);
   const networkRef = useRef<HTMLDivElement>(null);
+  const knowledgeRef = useRef<HTMLDivElement>(null);
   const { t, language } = useLanguage();
   const navigate = useNavigate();
   const location = useLocation();
@@ -21,6 +24,12 @@ const Navbar = () => {
         !networkRef.current.contains(e.target as Node)
       ) {
         setNetworkOpen(false);
+      }
+      if (
+        knowledgeRef.current &&
+        !knowledgeRef.current.contains(e.target as Node)
+      ) {
+        setKnowledgeOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -38,6 +47,8 @@ const Navbar = () => {
     setIsOpen(false);
     setNetworkOpen(false);
     setMobileNetworkOpen(false);
+    setKnowledgeOpen(false);
+    setMobileKnowledgeOpen(false);
 
     if (location.pathname === "/") {
       scrollToSection(sectionId);
@@ -53,6 +64,8 @@ const Navbar = () => {
     setIsOpen(false);
     setNetworkOpen(false);
     setMobileNetworkOpen(false);
+    setKnowledgeOpen(false);
+    setMobileKnowledgeOpen(false);
     navigate(path);
   };
 
@@ -66,8 +79,8 @@ const Navbar = () => {
       action: () => handleNavigation("board"),
     },
     {
-      name: language === "en" ? "Projects" : "Проекти",
-      action: () => handleNavigation("endeavors"),
+      name: "KNOWLEDGE_DROPDOWN",
+      action: () => {},
     },
     {
       name: "NETWORK_DROPDOWN",
@@ -95,6 +108,13 @@ const Navbar = () => {
     {
       name: "Senior Fellows",
       action: () => handleRouteNavigation("/senior-fellows"),
+    },
+  ];
+
+  const knowledgeDropdownItems = [
+    {
+      name: language === "en" ? "Research Papers" : "Научни трудови",
+      action: () => handleRouteNavigation("/research-papers"),
     },
   ];
 
@@ -142,7 +162,32 @@ const Navbar = () => {
           <div className="ml-auto hidden items-center gap-3 md:flex">
             <div className="flex min-w-0 items-center gap-1 whitespace-nowrap">
               {navItems.map((item) =>
-                item.name === "NETWORK_DROPDOWN" ? (
+                item.name === "KNOWLEDGE_DROPDOWN" ? (
+                  <div key="knowledge" className="relative" ref={knowledgeRef}>
+                    <button
+                      onClick={() => setKnowledgeOpen((prev) => !prev)}
+                      className="inline-flex items-center gap-1 rounded-md px-2.5 py-2 text-sm font-semibold tracking-[0.01em] text-white/90 transition hover:bg-white/10 hover:text-white"
+                    >
+                      {language === "en" ? "Knowledge" : "Сознание"}
+                      <ChevronDown
+                        className={`h-3.5 w-3.5 transition-transform ${knowledgeOpen ? "rotate-180" : ""}`}
+                      />
+                    </button>
+                    {knowledgeOpen && (
+                      <div className="absolute left-0 top-full mt-1 w-44 rounded-lg bg-primary shadow-xl border border-white/10 py-1 z-50">
+                        {knowledgeDropdownItems.map((sub) => (
+                          <button
+                            key={sub.name}
+                            onClick={sub.action}
+                            className="block w-full text-left px-4 py-2.5 text-sm text-white/90 hover:bg-white/10 hover:text-white transition"
+                          >
+                            {sub.name}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : item.name === "NETWORK_DROPDOWN" ? (
                   <div key="network" className="relative" ref={networkRef}>
                     <button
                       onClick={() => setNetworkOpen((prev) => !prev)}
@@ -214,7 +259,32 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) =>
-              item.name === "NETWORK_DROPDOWN" ? (
+              item.name === "KNOWLEDGE_DROPDOWN" ? (
+                <div key="knowledge-mobile">
+                  <button
+                    onClick={() => setMobileKnowledgeOpen((prev) => !prev)}
+                    className="text-white hover:text-secondary flex items-center justify-between px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                  >
+                    {language === "en" ? "Knowledge" : "Сознание"}
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform ${mobileKnowledgeOpen ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  {mobileKnowledgeOpen && (
+                    <div className="pl-6 space-y-1">
+                      {knowledgeDropdownItems.map((sub) => (
+                        <button
+                          key={sub.name}
+                          onClick={sub.action}
+                          className="text-white/80 hover:text-secondary block px-3 py-2 rounded-md text-sm font-medium w-full text-left"
+                        >
+                          {sub.name}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : item.name === "NETWORK_DROPDOWN" ? (
                 <div key="network-mobile">
                   <button
                     onClick={() => setMobileNetworkOpen((prev) => !prev)}

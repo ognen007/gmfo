@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -12,6 +11,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ITSupport from "./components/ITSupport";
 import VisionEternal from "./pages/VisionEternal";
+import ResearchPapers from "./pages/ResearchPapers";
+import PaperDetail from "./pages/PaperDetail";
 
 function HomePage() {
   return (
@@ -47,6 +48,8 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/vision-eternal-2035" element={<VisionEternal />} />
+      <Route path="/research-papers" element={<ResearchPapers />} />
+      <Route path="/research-papers/:id" element={<PaperDetail />} />
     </Routes>
   );
 }
