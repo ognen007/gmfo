@@ -653,6 +653,24 @@ const translations: Record<Language, Record<string, string>> = {
     ["paper.published.by", "Published by GMFE"],
     ["paper.vision", "Vision Eternal 2035"],
     ["categories", "Categories"],
+
+    // Paper Detail – additional sections
+    ["paper.subtitle", "Subtitle"],
+    ["paper.research.context", "Research Context"],
+    ["paper.about.author", "About the Author"],
+    ["paper.roles.affiliations", "Roles and Affiliations"],
+    ["paper.short.biography", "Short Biography"],
+    ["paper.research.areas", "Research Areas"],
+    ["paper.contact.profiles", "Contact and Academic Profiles"],
+    ["paper.share.paper", "Share Paper"],
+    ["paper.copy.citation", "Copy Citation"],
+    ["paper.citation.copied", "Citation copied"],
+    ["paper.link.copied", "Section link copied"],
+    ["paper.download.pdf", "Download PDF"],
+    ["paper.published.by", "Published by GMFE"],
+    ["paper.vision", "Vision Eternal 2035"],
+    ["paper.not.found", "Paper not found"],
+    ["paper.back", "Back to Papers"],
   ]),
   mk: Object.fromEntries([
     // Header
@@ -1367,6 +1385,22 @@ const translations: Record<Language, Record<string, string>> = {
     ["paper.published.by", "Објавено од ГМФВ"],
     ["paper.vision", "Визија ВЕЧНА 2035"],
     ["categories", "Категории:"],
+
+    // Paper Detail – additional sections
+    ["paper.subtitle", "Превод"],
+    ["paper.research.context", "Истражувачки контекст"],
+    ["paper.about.author", "За авторката"],
+    ["paper.roles.affiliations", "Улоги и афилијации"],
+    ["paper.short.biography", "Кратка биографија"],
+    ["paper.research.areas", "Истражувачки области"],
+    ["paper.contact.profiles", "Контакт и академски профили"],
+    ["paper.share.paper", "Сподели труд"],
+    ["paper.copy.citation", "Копирај цитат"],
+    ["paper.citation.copied", "Цитатот е копиран"],
+    ["paper.link.copied", "Линкот до секцијата е копиран"],
+    ["paper.download.pdf", "Превземи PDF"],
+    ["paper.not.found", "Трудот не е пронајден"],
+    ["paper.back", "Назад кон трудовите"],
 
     ["get.in.touch", "Контактирајте не"],
     ["name", "Име"],

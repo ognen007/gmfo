@@ -23,7 +23,7 @@ const ResearchPapers = () => {
       paper.abstract[language].toLowerCase().includes(searchQuery.toLowerCase());
 
     const matchesCategory =
-      selectedCategory === "all" || paper.category === selectedCategory;
+      selectedCategory === "all" || paper.categories.includes(selectedCategory);
 
     return matchesSearch && matchesCategory;
   });

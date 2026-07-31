@@ -5,6 +5,10 @@ export interface Paper {
     en: string;
     mk: string;
   };
+  subtitle: {
+    en: string;
+    mk: string;
+  };
   author: {
     en: string;
     mk: string;
@@ -18,99 +22,144 @@ export interface Paper {
     en: string[];
     mk: string[];
   };
-  category: string;
-  publishedDate: string;
+  categories: string[];
+  researchContext: {
+    en: string;
+    mk: string;
+  };
   citation: {
     en: string;
     mk: string;
   };
   pdfUrl: string;
+  authorSection: {
+    name: {
+      en: string;
+      mk: string;
+    };
+    roles: {
+      en: string[];
+      mk: string[];
+    };
+    shortBio: {
+      en: string;
+      mk: string;
+    };
+    researchAreas: {
+      en: string[];
+      mk: string[];
+    };
+    email: string;
+    linkedin: string;
+    orcid: string;
+    orcidUrl: string;
+    photo: string;
+  };
 }
 
 export const papers: Paper[] = [
   {
-    id: "2026-001",
-    number: "2026/001",
+    id: "GMFE-RP-2026-001-brexit-eu-language-regime",
+    number: "GMFE-RP-2026-001",
     title: {
-      en: "Macedonians",
-      mk: "Македонците",
+      en: "Brexit and Its Potential Influence on the EU Language Regime",
+      mk: "Брегзит и неговото потенцијално влијание врз јазичниот режим на ЕУ",
+    },
+    subtitle: {
+      en: "A Legal and Scenario-Based Analysis of the Case of Macedonia",
+      mk: "Правна и сценарио-базирана анализа на случајот на Македонија",
     },
     author: {
-      en: "Branislav Svetozarevikj Pokorni",
-      mk: "Бранислав Светозаревиќ Покорни",
+      en: "Mgr. Bc. Barbora Tomečková",
+      mk: "Мгр. Бц. Барбора Томечкова",
     },
     year: 2026,
     abstract: {
-      en: "This comprehensive study examines the historical development and cultural identity of Macedonians throughout the centuries, focusing on key periods that shaped their national consciousness and cultural heritage.",
-      mk: "Оваа сеопфатна студија го испитува историскиот развој и културниот идентитет на Македонците низ вековите, со фокус на клучните периоди што го обликуваа нивното национално свесност и културно наследство.",
+      en: "This paper examines how Brexit may influence the EU language regime and the future language choices of Macedonia as an EU candidate country. It focuses on treaty and official languages, the continued role of English, and the legal and constitutional variables that may shape possible accession scenarios.",
+      mk: "Овој труд испитува како Брегзит може да влијае врз јазичниот режим на ЕУ и врз идните јазични избори на Македонија како земја-кандидат за членство во ЕУ. Фокусот е врз договорните и официјалните јазици, понатамошната улога на англискиот јазик, како и правните и уставните променливи кои може да ги обликуваат можните сценарија за пристапување.",
     },
     keywords: {
-      en: ["Macedonian identity", "History", "Culture", "Heritage"],
-      mk: ["Македонски идентитет", "Историја", "Култура", "Наследство"],
+      en: [
+        "Brexit",
+        "EU language regime",
+        "Macedonia",
+        "EU accession",
+        "treaty languages",
+        "official languages",
+        "language notification",
+        "constitutional language policy",
+      ],
+      mk: [
+        "Брегзит",
+        "Јазичен режим на ЕУ",
+        "Македонија",
+        "Пристапување кон ЕУ",
+        "Договорни јазици",
+        "Официјални јазици",
+        "Јазична нотификација",
+        "Уставна јазична политика",
+      ],
     },
-    category: "History",
-    publishedDate: "2026-01-15",
+    categories: ["language", "policy", "research"],
+    researchContext: {
+      en: "This paper is based on research presented at The Future of European Law and Policy IX: The EU and the UK, 10 Years After the Referendum, hosted by the University of Birmingham Law School.",
+      mk: "Овој труд се заснова на истражување презентирано на The Future of European Law and Policy IX: The EU and the UK, 10 Years After the Referendum, во организација на Правниот факултет на Универзитетот во Бирмингем.",
+    },
     citation: {
-      en: "Pokorni, B. S. (2026). Macedonians. GMFE Research Papers – Knowledge Series, 2026/001.",
-      mk: "Покорни, Б. С. (2026). Македонците. ГМФВ Научни трудови / Серија \"Сознание\", 2026/001.",
+      en: "Tomečková, B. (2026). Brexit and Its Potential Influence on the EU Language Regime: A Legal and Scenario-Based Analysis of the Case of Macedonia. GMFE Research Papers – Knowledge Series, Paper No. GMFE-RP-2026-001. Global Macedonian Foundation Eternal.",
+      mk: "Томечкова, Б. (2026). Брегзит и неговото потенцијално влијание врз јазичниот режим на ЕУ: Правна и сценарио-базирана анализа на случајот на Македонија. ГМФВ Научни трудови / Серија „Сознание“, Бр. GMFE-RP-2026-001. Глобална Македонска Фондација Вечна.",
     },
-    pdfUrl: "#",
-  },
-  {
-    id: "2026-002",
-    number: "2026/002",
-    title: {
-      en: "Macedonian Identity Issues",
-      mk: "Проблеми со македонскиот идентитет",
+    pdfUrl:
+      "https://drive.google.com/file/d/1LPxvvAXcbozkZ1nL10SrQsl7-XZVg-tC/view?usp=sharing",
+    authorSection: {
+      name: {
+        en: "Mgr. Bc. Barbora Tomečková",
+        mk: "Мгр. Бц. Барбора Томечкова",
+      },
+      roles: {
+        en: [
+          "GMFE International Academic and Research Cooperation Contributor",
+          "PhD Candidate, Department of Constitutional Law and Political Studies, Faculty of Law, Masaryk University",
+          "Vice-Secretary, Austrian Association for Legal Linguistics",
+        ],
+        mk: [
+          "Соработник за меѓународна академска и истражувачка соработка на ГМФВ",
+          "Докторанд, Катедра за уставно право и политички студии, Правен факултет, Универзитет Масарик",
+          "Заменик-секретар, Австриско здружение за правна лингвистика",
+        ],
+      },
+      shortBio: {
+        en: "Barbora Tomečková is a PhD candidate at the Faculty of Law of Masaryk University. Her doctoral research combines the study of official-language designation with language and status planning, national conceptualisations of official languages, and constitutional identity. Her principal countries of interest are Macedonia and Ireland. She contributes to GMFE as an International Academic and Research Cooperation Contributor and also serves as Vice-Secretary of the Austrian Association for Legal Linguistics.",
+        mk: "Барбора Томечкова е докторанд на Правниот факултет на Универзитетот Масарик. Нејзиното докторско истражување ја комбинира студијата за одредување на официјален јазик со планирање на јазикот и статусот, националните концептуализации на официјалните јазици и уставниот идентитет. Нејзини главни земји на интерес се Македонија и Ирска. Таа придонесува во ГМФВ како Соработник за меѓународна академска и истражувачка соработка, а исто така е и заменик-секретар на Австриското здружение за правна лингвистика.",
+      },
+      researchAreas: {
+        en: [
+          "Legal linguistics",
+          "Official-language designation",
+          "EU language regime",
+          "Language and status planning",
+          "Official languages of Ireland",
+          "Official language policy in Macedonia",
+          "Constitutional and national identity",
+          "AI in translation studies and human rights",
+        ],
+        mk: [
+          "Правна лингвистика",
+          "Одредување на официјален јазик",
+          "Јазичен режим на ЕУ",
+          "Планирање на јазик и статус",
+          "Официјални јазици на Ирска",
+          "Политика за официјален јазик во Македонија",
+          "Уставен и национален идентитет",
+          "Вештачка интелигенција во студиите за превод и човекови права",
+        ],
+      },
+      email: "BALARAZ@outlook.cz",
+      linkedin: "https://www.linkedin.com/in/barbora-tomečková-3b2b56182",
+      orcid: "0009-0002-4848-2152",
+      orcidUrl: "https://orcid.org/0009-0002-4848-2152",
+      photo: "https://i.ibb.co/Y4PKfTqN/image.png",
     },
-    author: {
-      en: "Prof. Jovanka Kepeska",
-      mk: "Проф. Јованка Кепеска",
-    },
-    year: 2026,
-    abstract: {
-      en: "An in-depth analysis of contemporary challenges facing Macedonian identity in the global context, exploring the intersection of tradition, modernity, and geopolitical influences on national consciousness.",
-      mk: "Длабока анализа на современите предизвици со кои се соочува македонскиот идентитет во глобалниот контекст, истражувајќи го пресекот на традицијата, модерноста и геополитичките влијанија врз националната свесност.",
-    },
-    keywords: {
-      en: ["Identity", "Society", "Culture", "Modernization"],
-      mk: ["Идентитет", "Општество", "Култура", "Модернизација"],
-    },
-    category: "Identity",
-    publishedDate: "2026-02-20",
-    citation: {
-      en: "Kepeska, J. (2026). Macedonian Identity Issues. GMFE Research Papers – Knowledge Series, 2026/002.",
-      mk: "Кепеска, Ј. (2026). Проблеми со македонскиот идентитет. ГМФВ Научни трудови / Серија \"Сознание\", 2026/002.",
-    },
-    pdfUrl: "#",
-  },
-  {
-    id: "2026-003",
-    number: "2026/003",
-    title: {
-      en: "Ancient Macedonians and European Civilization",
-      mk: "Античките Македонци и европската цивилизација",
-    },
-    author: {
-      en: "Sveto Toevski",
-      mk: "Свето Тоевски",
-    },
-    year: 2026,
-    abstract: {
-      en: "This research explores the significant contributions of Ancient Macedonians to the development of European civilization, examining their political, cultural, and intellectual legacy that continues to influence modern Europe.",
-      mk: "Ова истражување го истражува значајниот придонес на Античките Македонци кон развојот на европската цивилизација, испитувајќи го нивното политичко, културно и интелектуално наследство што продолжува да влијае врз модерна Европа.",
-    },
-    keywords: {
-      en: ["Ancient Macedonia", "European civilization", "History", "Heritage"],
-      mk: ["Античка Македонија", "Европска цивилизација", "Историја", "Наследство"],
-    },
-    category: "History",
-    publishedDate: "2026-03-10",
-    citation: {
-      en: "Toevski, S. (2026). Ancient Macedonians and European Civilization. GMFE Research Papers – Knowledge Series, 2026/003.",
-      mk: "Тоевски, С. (2026). Античките Македонци и европската цивилизација. ГМФВ Научни трудови / Серија \"Сознание\", 2026/003.",
-    },
-    pdfUrl: "#",
   },
 ];
 
