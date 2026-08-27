@@ -129,9 +129,11 @@ const PaperDetail = () => {
           <h1 className="text-3xl md:text-4xl font-playfair font-bold mb-3">
             {paper.title[language]}
           </h1>
-          <p className="text-lg md:text-xl text-white/85 font-playfair italic mb-4">
-            {paper.subtitle[language]}
-          </p>
+          {paper.subtitle && (
+            <p className="text-lg md:text-xl text-white/85 font-playfair italic mb-4">
+              {paper.subtitle[language]}
+            </p>
+          )}
           <p className="text-lg text-white/90">{paper.author[language]}</p>
         </div>
       </div>
@@ -207,14 +209,16 @@ const PaperDetail = () => {
           </section>
 
           {/* Research Context */}
-          <section id="research-context" className="mb-8 scroll-mt-24">
-            <SectionHeading id="research-context">
-              {t("paper.research.context")}
-            </SectionHeading>
-            <p className="text-gray-700 leading-relaxed mt-4">
-              {paper.researchContext[language]}
-            </p>
-          </section>
+          {paper.researchContext && (
+            <section id="research-context" className="mb-8 scroll-mt-24">
+              <SectionHeading id="research-context">
+                {t("paper.research.context")}
+              </SectionHeading>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                {paper.researchContext[language]}
+              </p>
+            </section>
+          )}
 
           {/* Citation */}
           <section id="citation" className="mb-8 scroll-mt-24">
@@ -267,116 +271,212 @@ const PaperDetail = () => {
           </div>
 
           {/* About the Author */}
-          <section id="author" className="border-t border-gray-200 pt-8 scroll-mt-24">
-            <SectionHeading id="author">{t("paper.about.author")}</SectionHeading>
+          {paper.authorSection && (
+            <section id="author" className="border-t border-gray-200 pt-8 scroll-mt-24">
+              <SectionHeading id="author">{t("paper.about.author")}</SectionHeading>
 
-            <div className="mt-6 flex flex-col md:flex-row gap-8">
-              {/* Photo */}
-              <div className="flex-shrink-0">
-                <img
-                  src={paper.authorSection.photo}
-                  alt={
-                    language === "en"
-                      ? "Portrait of Barbora Tomečková"
-                      : "Портрет на Барбора Томечкова"
-                  }
-                  className="w-30 h-30 rounded-2xl object-cover shadow-md"
-                  style={{ width: 120, height: 120 }}
-                />
-              </div>
-
-              <div className="flex-1 space-y-6">
-                {/* Name */}
-                <div>
-                  <h4 className="text-lg font-bold text-gray-900 font-playfair">
-                    {paper.authorSection.name[language]}
-                  </h4>
+              <div className="mt-6 flex flex-col md:flex-row gap-8">
+                {/* Photo */}
+                <div className="flex-shrink-0">
+                  <img
+                    src={paper.authorSection.photo}
+                    alt={
+                      language === "en"
+                        ? "Portrait of Barbora Tomečková"
+                        : "Портрет на Барбора Томечкова"
+                    }
+                    className="w-30 h-30 rounded-2xl object-cover shadow-md"
+                    style={{ width: 120, height: 120 }}
+                  />
                 </div>
 
-                {/* Roles */}
-                <div>
-                  <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
-                    {t("paper.roles.affiliations")}
-                  </h5>
-                  <ul className="space-y-1">
-                    {paper.authorSection.roles[language].map((role, idx) => (
-                      <li
-                        key={idx}
-                        className="text-gray-700 text-sm flex items-start gap-2"
-                      >
-                        <span className="text-secondary mt-1">•</span>
-                        <span>{role}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <div className="flex-1 space-y-6">
+                  {/* Name */}
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-900 font-playfair">
+                      {paper.authorSection.name[language]}
+                    </h4>
+                  </div>
 
-                {/* Short Bio */}
-                <div>
-                  <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
-                    {t("paper.short.biography")}
-                  </h5>
-                  <p className="text-gray-700 leading-relaxed text-sm">
-                    {paper.authorSection.shortBio[language]}
-                  </p>
-                </div>
-
-                {/* Research Areas */}
-                <div>
-                  <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
-                    {t("paper.research.areas")}
-                  </h5>
-                  <ul className="grid sm:grid-cols-2 gap-1">
-                    {paper.authorSection.researchAreas[language].map(
-                      (area, idx) => (
+                  {/* Roles */}
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
+                      {t("paper.roles.affiliations")}
+                    </h5>
+                    <ul className="space-y-1">
+                      {paper.authorSection.roles[language].map((role, idx) => (
                         <li
                           key={idx}
                           className="text-gray-700 text-sm flex items-start gap-2"
                         >
                           <span className="text-secondary mt-1">•</span>
-                          <span>{area}</span>
+                          <span>{role}</span>
                         </li>
-                      ),
-                    )}
-                  </ul>
-                </div>
+                      ))}
+                    </ul>
+                  </div>
 
-                {/* Contact and Academic Profiles */}
-                <div>
-                  <h5 className="text-sm font-semibold text-gray-500 uppercase mb-3">
-                    {t("paper.contact.profiles")}
-                  </h5>
-                  <div className="flex flex-wrap gap-3">
-                    <a
-                      href={`mailto:${paper.authorSection.email}`}
-                      className="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
-                    >
-                      <Mail className="h-4 w-4 text-secondary" />
-                      {paper.authorSection.email}
-                    </a>
-                    <a
-                      href={paper.authorSection.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
-                    >
-                      <Linkedin className="h-4 w-4 text-secondary" />
-                      LinkedIn
-                    </a>
-                    <a
-                      href={paper.authorSection.orcidUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
-                    >
-                      <ExternalLink className="h-4 w-4 text-secondary" />
-                      ORCID: {paper.authorSection.orcid}
-                    </a>
+                  {/* Short Bio */}
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
+                      {t("paper.short.biography")}
+                    </h5>
+                    <p className="text-gray-700 leading-relaxed text-sm">
+                      {paper.authorSection.shortBio[language]}
+                    </p>
+                  </div>
+
+                  {/* Research Areas */}
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
+                      {t("paper.research.areas")}
+                    </h5>
+                    <ul className="grid sm:grid-cols-2 gap-1">
+                      {paper.authorSection.researchAreas[language].map(
+                        (area, idx) => (
+                          <li
+                            key={idx}
+                            className="text-gray-700 text-sm flex items-start gap-2"
+                          >
+                            <span className="text-secondary mt-1">•</span>
+                            <span>{area}</span>
+                          </li>
+                        ),
+                      )}
+                    </ul>
+                  </div>
+
+                  {/* Contact and Academic Profiles */}
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-500 uppercase mb-3">
+                      {t("paper.contact.profiles")}
+                    </h5>
+                    <div className="flex flex-wrap gap-3">
+                      <a
+                        href={`mailto:${paper.authorSection.email}`}
+                        className="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
+                      >
+                        <Mail className="h-4 w-4 text-secondary" />
+                        {paper.authorSection.email}
+                      </a>
+                      <a
+                        href={paper.authorSection.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
+                      >
+                        <Linkedin className="h-4 w-4 text-secondary" />
+                        LinkedIn
+                      </a>
+                      <a
+                        href={paper.authorSection.orcidUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
+                      >
+                        <ExternalLink className="h-4 w-4 text-secondary" />
+                        ORCID: {paper.authorSection.orcid}
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          )}
+
+          {/* Contributors (for papers without authorSection) */}
+          {paper.contributors && paper.contributors.length > 0 && (
+            <section id="contributors" className="border-t border-gray-200 pt-8 scroll-mt-24">
+              <SectionHeading id="contributors">
+                {language === "en" ? "About the Contributors" : "За соработниците"}
+              </SectionHeading>
+              <div className="mt-6 space-y-6">
+                {paper.contributors.map((contributor, index) => (
+                  <div
+                    key={index}
+                    className="border-l-4 border-secondary pl-4 py-2"
+                  >
+                    <p className="text-sm font-semibold text-gray-500 uppercase mb-1">
+                      {contributor.role[language]}
+                    </p>
+                    <p className="text-lg font-semibold text-gray-900 mb-1">
+                      {contributor.name}
+                    </p>
+                    {contributor.affiliation && (
+                      <p className="text-sm text-gray-600 mb-2">
+                        {contributor.affiliation}
+                      </p>
+                    )}
+                    {contributor.biography && (
+                      <p className="text-gray-700 text-sm">
+                        {contributor.biography[language]}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Research Areas (for papers without authorSection) */}
+          {paper.researchAreas && !paper.authorSection && (
+            <section id="research-areas" className="border-t border-gray-200 pt-8 scroll-mt-24">
+              <SectionHeading id="research-areas">
+                {language === "en" ? "Research Areas" : "Истражувачки области"}
+              </SectionHeading>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {paper.researchAreas[language].map((area, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Contact (for papers without authorSection) */}
+          {paper.contact && !paper.authorSection && (
+            <section id="contact" className="border-t border-gray-200 pt-8 scroll-mt-24">
+              <SectionHeading id="contact">
+                {language === "en" ? "Contact and Academic Profiles" : "Контакт и академски профили"}
+              </SectionHeading>
+              <div className="space-y-2 mt-4">
+                <p className="text-gray-700">
+                  <span className="font-semibold">
+                    {language === "en" ? "General contact:" : "Општ контакт:"}
+                  </span>{" "}
+                  <a
+                    href={`mailto:${paper.contact.general}`}
+                    className="text-secondary hover:underline"
+                  >
+                    {paper.contact.general}
+                  </a>
+                </p>
+                <p className="text-gray-700">
+                  <span className="font-semibold">
+                    {language === "en" ? "Website:" : "Веб-страница:"}
+                  </span>{" "}
+                  <a
+                    href={`https://${paper.contact.website}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-secondary hover:underline"
+                  >
+                    {paper.contact.website}
+                  </a>
+                </p>
+                {paper.contact.academicProfiles && (
+                  <p className="text-gray-700 text-sm">
+                    {language === "en" ? "Academic profiles:" : "Академски профили:"}{" "}
+                    {paper.contact.academicProfiles}
+                  </p>
+                )}
+              </div>
+            </section>
+          )}
 
           {/* Footer Info */}
           <div className="border-t border-gray-200 pt-6 mt-8">
