@@ -45,6 +45,11 @@ export interface Paper {
     mk: string;
   };
   pdfUrl: string;
+  pdfs?: Array<{
+    number: string;
+    url: string;
+    language: "en" | "mk";
+  }>;
   authorSection?: {
     name: {
       en: string;
@@ -251,6 +256,122 @@ export const papers: Paper[] = [
         biography: {
           en: "Mirčo Krsteski is Chairman of the Global Macedonian Foundation Eternal and Coordinator of the project \"Mapping Macedonian Identity in the Balkans.\" He developed the publication concept, compiled and structured its content, coordinated the expert consultation process, and managed its editorial preparation. His work focuses on cultural diplomacy, the preservation of Macedonian cultural heritage, and the international promotion of Macedonian identity.",
           mk: "Мирчо Крстески е претседател на Глобалната Македонска Фондација ВЕЧНА и координатор на проектот \"Мапирање на македонскиот идентитет на Балканот\". Тој го разви концептот на публикацијата, ја состави и структурираше нејзината содржина, го координираше процесот на стручни консултации и ја водеше уредничката подготовка. Неговата работа е насочена кон културната дипломатија, зачувувањето на македонското културно наследство и меѓународната афирмација на македонскиот идентитет.",
+        },
+      },
+      {
+        role: {
+          en: "Expert consultation and review",
+          mk: "Стручна консултација и преглед",
+        },
+        name: "Prof. Dr. Stojko Stojkov",
+      },
+      {
+        role: {
+          en: "Expert consultation and review",
+          mk: "Стручна консултација и преглед",
+        },
+        name: "MA Ile Velkov",
+      },
+      {
+        role: {
+          en: "Expert consultation and review",
+          mk: "Стручна консултација и преглед",
+        },
+        name: "Dr. Marjan Gijovski",
+      },
+    ],
+    researchAreas: {
+      en: [
+        "Macedonian identity",
+        "Macedonian history",
+        "cultural heritage",
+        "historical memory",
+        "Macedonians in the Balkans",
+        "cultural diplomacy",
+        "minority rights",
+      ],
+      mk: [
+        "македонски идентитет",
+        "македонска историја",
+        "културно наследство",
+        "историска меморија",
+        "Македонците на Балканот",
+        "културна дипломатија",
+        "малцински права",
+      ],
+    },
+    contact: {
+      general: "contact@gmfe.org",
+      website: "www.gmfe.org",
+      academicProfiles: "Individual academic profiles are not currently listed.",
+    },
+  },
+  {
+    id: "2026-005",
+    number: "GMFE-RP-2026-002-EN",
+    title: {
+      en: "Mapping Macedonian Identity in the Balkans",
+      mk: "Мапирање на македонскиот идентитет на Балканот",
+    },
+    author: {
+      en: "Global Macedonian Foundation Eternal (GMFE)",
+      mk: "Глобална Македонска Фондација Вечна (ГМФЕ)",
+    },
+    year: 2026,
+    categories: ["History", "Identity", "Culture", "Research"],
+    abstract: {
+      en: "This study examines the historical development, preservation, and different forms of expression of Macedonian identity in the Balkans. Drawing on available historical sources, academic literature, and relevant testimonies, it identifies key processes that have influenced its formation and continuity. The study seeks to contribute to a structured and evidence-based understanding of Macedonian identity within its broader historical and regional context.",
+      mk: "Оваа студија го разгледува историскиот развој, зачувувањето и различните облици на изразување на македонскиот идентитет на Балканот. Преку анализа на достапни историски извори, научна литература и релевантни сведоштва, се издвојуваат клучните процеси што влијаеле врз неговото формирање и континуитет. Целта на студијата е да придонесе кон систематизирано и аргументирано разбирање на македонскиот идентитет во неговиот поширок историски и регионален контекст.",
+    },
+    keywords: {
+      en: [
+        "Macedonian identity",
+        "Macedonia",
+        "Balkans",
+        "history",
+        "cultural heritage",
+        "national consciousness",
+        "historical continuity",
+      ],
+      mk: [
+        "македонски идентитет",
+        "Македонија",
+        "Балкан",
+        "историја",
+        "културно наследство",
+        "национална свест",
+        "историски континуитет",
+      ],
+    },
+    researchContext: {
+      en: "The study was developed within the GMFE project \"Mapping Macedonian Identity in the Balkans.\" It brings together historical material and relevant academic perspectives to support the documentation, preservation, and informed examination of Macedonian identity. The publication forms part of the GMFE Research Papers – Knowledge Series and contributes to the research and knowledge objectives of Vision Eternal 2035.",
+      mk: "Студијата е подготвена во рамките на проектот на ГМФЕ \"Мапирање на македонскиот идентитет на Балканот\". Таа обединува историски материјали и релевантни научни согледувања со цел да придонесе кон документирањето, зачуввањето и аргументираното проучување на македонскиот идентитет. Публикацијата е дел од едицијата \"GMFE Research Papers – Knowledge Series\" и придонесува кон истражувачките и образовните цели на Vision Eternal 2035.",
+    },
+    publishedDate: "2026-04-15",
+    citation: {
+      en: "Global Macedonian Foundation Eternal. (2026). Mapping Macedonian Identity in the Balkans. GMFE Research Papers – Knowledge Series, No. GMFE-RP-2026-002-EN. Global Macedonian Foundation Eternal.",
+      mk: "Глобална Македонска Фондација Вечна. (2026). Мапирање на македонскиот идентитет на Балканот. GMFE Research Papers – Knowledge Series, бр. GMFE-RP-2026-002-EN. Глобална Македонска Фондација Вечна.",
+    },
+    pdfUrl: "https://drive.google.com/file/d/1w7eFVc9JPBjsXZ8ELY80Ksks91lGZV0Z/view?usp=drive_link",
+    contributors: [
+      {
+        role: {
+          en: "Institutional author and publisher",
+          mk: "Институционален автор и издавач",
+        },
+        name: "Global Macedonian Foundation Eternal (GMFE)",
+      },
+      {
+        role: {
+          en: "Concept, compilation, coordination, and editorial preparation",
+          mk: "Концепт, составување, координација и уредничка подготовка",
+        },
+        name: "Mirčo Krsteski",
+        affiliation:
+          "Chairman of the Global Macedonian Foundation Eternal and Coordinator of the project \"Mapping Macedonian Identity in the Balkans.\"",
+        biography: {
+          en: "Mirčo Krsteski is Chairman of the Global Macedonian Foundation Eternal and Coordinator of the project \"Mapping Macedonian Identity in the Balkans.\" He developed the publication concept, compiled and structured its content, coordinated the expert consultation process, and managed its editorial preparation. His work focuses on cultural diplomacy, the preservation of Macedonian cultural heritage, and the international promotion of Macedonian identity.",
+          mk: "Мирчо Крстески е претседател на Глобалната Македонска Фондација ВЕЧНА и координатор на проектот \"Мапирање на македонскиот идентитет на Балканот\". Тој го разви концептот на публикацијата, ја состави и структурираше нејзината содржина, го координираше процесот на стручни консултации и ја водеше уредничката подготовка. Неговата работа е насочена кон културната дипломатија, зачуввањето на македонското културно наследство и меѓународната афирмација на македонскиот идентитет.",
         },
       },
       {

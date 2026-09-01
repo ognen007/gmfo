@@ -147,13 +147,30 @@ const ResearchPapers = () => {
                         {paper.year}
                       </td>
                       <td className="px-6 py-4">
-                        <a
-                          href={paper.pdfUrl}
-                          className="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors"
-                        >
-                          <Download className="h-4 w-4" />
-                          <span className="text-sm font-medium">PDF</span>
-                        </a>
+                        {paper.pdfs && paper.pdfs.length > 0 ? (
+                          <div className="flex flex-col gap-1">
+                            {paper.pdfs.map((pdf) => (
+                              <a
+                                key={pdf.number}
+                                href={pdf.url}
+                                className="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors"
+                              >
+                                <Download className="h-4 w-4" />
+                                <span className="text-sm font-medium">
+                                  {pdf.language === "en" ? "PDF (EN)" : "PDF (MK)"} - {pdf.number}
+                                </span>
+                              </a>
+                            ))}
+                          </div>
+                        ) : (
+                          <a
+                            href={paper.pdfUrl}
+                            className="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors"
+                          >
+                            <Download className="h-4 w-4" />
+                            <span className="text-sm font-medium">PDF</span>
+                          </a>
+                        )}
                       </td>
                     </tr>
                   ))

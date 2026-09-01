@@ -234,15 +234,30 @@ const PaperDetail = () => {
 
           {/* Download / Share / Copy Citation buttons */}
           <div className="mb-8 flex flex-wrap gap-3">
-            <a
-              href={paper.pdfUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors"
-            >
-              <Download className="h-5 w-5" />
-              {t("paper.download.pdf")}
-            </a>
+            {paper.pdfs && paper.pdfs.length > 0 ? (
+              paper.pdfs.map((pdf) => (
+                <a
+                  key={pdf.number}
+                  href={pdf.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors"
+                >
+                  <Download className="h-5 w-5" />
+                  {pdf.language === "en" ? "PDF (EN)" : "PDF (MK)"} - {pdf.number}
+                </a>
+              ))
+            ) : (
+              <a
+                href={paper.pdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors"
+              >
+                <Download className="h-5 w-5" />
+                {t("paper.download.pdf")}
+              </a>
+            )}
             <button
               onClick={sharePaper}
               className="inline-flex items-center gap-2 bg-white border border-secondary text-secondary px-6 py-3 rounded-lg font-semibold hover:bg-secondary/5 transition-colors"
