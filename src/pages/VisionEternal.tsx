@@ -402,7 +402,7 @@ const VisionEternal = () => {
                 <div className="relative rounded-[20px] border border-white/10 bg-slate-950/55 p-5 backdrop-blur-xl sm:p-7">
                   <div className="mx-auto h-20 w-20 overflow-hidden rounded-2xl border border-white/15 bg-white/10 sm:h-24 sm:w-24">
                     <img
-                      src="https://i.ibb.co/23JYWPS5/0eb91ee9-bc90-47c2-a5eb-eef397207198.jpg"
+                      src="https://i.ibb.co/qYd3xgZh/image.png"
                       alt="Vision 2035 Logo"
                       className="h-full w-full object-cover"
                     />
