@@ -422,6 +422,111 @@ export const papers: Paper[] = [
       academicProfiles: "Individual academic profiles are not currently listed.",
     },
   },
+  {
+    id: "2026-006",
+    number: "GMFE-RP-2026-003-EN",
+    title: {
+      en: "Macedonia as a Symbol of Ancient Knowledge and Wisdom in World Literature",
+      mk: "Македонија како симбол на древното знаење и мудроста во светската литература",
+    },
+    subtitle: {
+      en: "From Aristotle and Alexander to the Alchemists of García Márquez",
+      mk: "Од Аристотел и Александар до алхемичарите кај Гарсија Маркес",
+    },
+    author: {
+      en: "Global Macedonian Foundation Eternal (GMFE)",
+      mk: "Глобална Македонска Фондација Вечна (ГМФЕ)",
+    },
+    year: 2026,
+    categories: ["History", "Culture", "Heritage", "Research"],
+    abstract: {
+      en: "This paper examines Macedonia as a setting and symbol of knowledge in selected literary traditions. It compares García Márquez's alchemists, Plutarch's Aristotle and Alexander, Euripidean poetry and royal patronage, and Nizami's philosophical Iskandar. New Testament passages add inquiry, hospitality and generosity. The comparison distinguishes historical testimony, literary imagination and later reception. It supports a plural image of intellectual and ethical encounter, without establishing an uninterrupted institution, a direct chain of influence or an unchanged national identity.",
+      mk: "Овој труд ја разгледува Македонија како простор и симбол на знаењето во избрани книжевни традиции. Ги споредува алхемичарите кај Гарсија Маркес, Аристотел и Александар во делото на Плутарх, поезијата на Еврипид и кралското покровителство, како и филозофскиот Искандар на Низами. Пасусите од Новиот завет ја дополнуваат анализата со мотиви на испитување, гостопримство и дарежливост. Споредбата прави разлика меѓу историските сведоштва, книжевната имагинација и подоцнежната рецепција. Таа поддржува повеќеслојна слика на интелектуални и етички средби, без притоа да докажува непрекинато постоење на една институција, директен синџир на влијанија или непроменет национален идентитет.",
+    },
+    keywords: {
+      en: [
+        "Macedonia",
+        "cultural memory",
+        "knowledge and wisdom",
+        "Gabriel García Márquez",
+        "Aristotle and Alexander",
+        "Euripides",
+        "Nizami",
+        "literary reception",
+      ],
+      mk: [
+        "Македонија",
+        "културна меморија",
+        "знаење и мудрост",
+        "Габриел Гарсија Маркес",
+        "Аристотел и Александар",
+        "Еврипид",
+        "Низами",
+        "книжевна рецепција",
+      ],
+    },
+    researchContext: {
+      en: "Developed for the GMFE Research Papers – Knowledge Series, this comparative study examines selected literary and religious representations of knowledge associated with Macedonia and Alexander. It contributes to the cultural and educational aims of Vision Eternal 2035 through close reading, historical context and transparent source references. The study brings different traditions into dialogue while keeping historical testimony, literary imagination and modern heritage interpretation distinct.",
+      mk: "Оваа компаративна студија е подготвена за серијата „Знаење“ во рамките на истражувачките трудови на ГМФВ. Во неа се разгледуваат избрани книжевни и религиски претстави за знаењето поврзани со Македонија и Александар. Преку внимателна анализа на текстовите, нивно сместување во историски контекст и јасно наведување на изворите, студијата придонесува кон културните и образовните цели на Визија ВЕЧНА 2035. Таа воспоставува дијалог меѓу различни традиции, притоа јасно разграничувајќи ги историските сведоштва, книжевната имагинација и современото толкување на културното наследство.",
+    },
+    publishedDate: "2026-04-15",
+    citation: {
+      en: "Global Macedonian Foundation Eternal. (2026). Macedonia as a Symbol of Ancient Knowledge and Wisdom in World Literature. GMFE Research Papers – Knowledge Series, Paper No. GMFE-RP2026-003-EN. Global Macedonian Foundation Eternal.",
+      mk: "Глобална Македонска Фондација Вечна. (2026). Македонија како симбол на древното знаење и мудроста во светската литература. ГМФВ Научни трудови / Серија „Сознание“, Бр. GMFE-RP2026-003-EN. Глобална Македонска Фондација Вечна.",
+    },
+    pdfUrl: "https://drive.google.com/file/d/13imrs6evpk7r_s3xuziM4qY69k_TCpnr/view?usp=sharing",
+    contributors: [
+      {
+        role: {
+          en: "Institutional author and publisher",
+          mk: "Институционален автор и издавач",
+        },
+        name: "Global Macedonian Foundation Eternal (GMFE)",
+        affiliation: "Institutional author and publisher of the GMFE Research Papers – Knowledge Series.",
+        biography: {
+          en: "The Global Macedonian Foundation Eternal (GMFE) connects research, culture and international cooperation. Its Knowledge Series provides a platform for examining Macedonian history, heritage and cultural memory. GMFE is the institutional author and publisher of this paper.",
+          mk: "Глобалната Македонска Фондација ВЕЧНА (ГМФВ) ги поврзува истражувањето, културата и меѓународната соработка. Нејзината Серија „Знаење“ обезбедува платформа за проучување на македонската историја, културното наследство и културната меморија. ГМФВ е институционален автор и издавач на овој труд.",
+        },
+      },
+      {
+        role: {
+          en: "Concept and project initiation",
+          mk: "Концепт и иницирање на проектот",
+        },
+        name: "Mirčo Krsteski",
+        affiliation: "Chairman of GMFE and initiator of the paper's research question.",
+        biography: {
+          en: "Chairman of GMFE and initiator of the paper's research question.",
+          mk: "Претседател на ГМФВ и иницијатор на истражувачкото прашање на овој труд.",
+        },
+      },
+    ],
+    researchAreas: {
+      en: [
+        "Comparative literature",
+        "Macedonian cultural heritage",
+        "Classical reception",
+        "History of education",
+        "Persian Alexander traditions",
+        "Cultural memory",
+        "Biblical reception",
+      ],
+      mk: [
+        "Компаративна книжевност",
+        "Македонско културно наследство",
+        "Рецепција на антиката",
+        "Историја на образованието",
+        "Персиски традиции за Александар",
+        "Културна меморија",
+        "Рецепција на Библијата",
+      ],
+    },
+    contact: {
+      general: "contact@gmfe.org",
+      website: "www.gmfe.org",
+      academicProfiles: "Source-based research analysis. No external peer review is claimed for this edition.",
+    },
+  },
 ];
 
 export const categories = [
